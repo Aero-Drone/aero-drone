@@ -331,17 +331,17 @@
     </section>
 
     <footer class="bg-slate-950 text-slate-500 text-xs py-8 px-4 text-center">
-        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-            <div>
-                © 2026 AERO-DRONE – Patrick Runkel | Waldstraße 68, 51145 Köln
-            </div>
-            <div class="space-x-4">
-                <a href="#" class="hover:text-slate-300">Impressum</a>
-                <a href="#" class="hover:text-slate-300">Datenschutz</a>
-                <a href="#" class="hover:text-slate-300">AGB</a>
-            </div>
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+        <div>
+            © 2026 AERO-DRONE – Patrick Runkel | Waldstraße 68, 51145 Köln
         </div>
-    </footer>
+        <div class="space-x-4">
+            <button onclick="document.getElementById('modal-impressum').classList.remove('hidden')" class="hover:text-slate-300 underline">Impressum</button>
+            <button onclick="document.getElementById('modal-datenschutz').classList.remove('hidden')" class="hover:text-slate-300 underline">Datenschutz</button>
+        </div>
+    </div>
+</footer>
+
 <!-- Impressum Modal -->
 <div id="modal-impressum" class="hidden fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4">
     <div class="bg-white text-slate-800 rounded-xl max-w-2xl w-full p-6 max-h-[80vh] overflow-y-auto relative">
