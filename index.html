@@ -2,34 +2,17 @@
 <html lang="de" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AERO-DRONE Köln | Gebäude, Gelände & Luftaufnahmen</title>
 
   <meta
     name="description"
-    content="AERO-DRONE Köln – drohnengestützte Dach-, Fassaden-, Gebäude- und Geländeerfassung sowie professionelle Luftbilder und Videos für Handwerk, Immobilien, Unternehmen und ausgewählte Veranstaltungen."
-  >
-
-  <meta
-    name="keywords"
-    content="Drohnenaufnahmen Köln, Luftaufnahmen Köln, Gebäudeerfassung, Dachaufnahme, Fassadenaufnahme, Gerüstbau, PV Planung, Grundstücksaufnahme, 3D Modell, Orthofoto"
+    content="AERO-DRONE Köln – strukturierte Drohnenaufnahmen von Gebäuden, Dächern, Fassaden und Gelände sowie hochwertige Luftbilder und Videos."
   >
 
   <meta name="author" content="Patrick Runkel">
   <meta name="theme-color" content="#101214">
-
-  <meta property="og:title" content="AERO-DRONE Köln">
-  <meta
-    property="og:description"
-    content="Digitale Gebäude- und Geländeerfassung sowie professionelle Luftaufnahmen in Köln und Umgebung."
-  >
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="hero-drohne-koeln.PNG">
 
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -41,22 +24,13 @@
             graphite: {
               950: "#090a0b",
               900: "#101214",
-              850: "#151719",
-              800: "#1a1d20",
-              700: "#292d31",
-              600: "#3a3f44"
+              850: "#151719"
             },
             silver: {
-              50: "#f8f8f8",
-              100: "#eeeeee",
               200: "#d6d8da",
               300: "#babec2",
-              400: "#979da3",
-              500: "#737a81"
+              400: "#979da3"
             }
-          },
-          boxShadow: {
-            soft: "0 20px 60px rgba(0,0,0,.32)"
           }
         }
       }
@@ -64,17 +38,13 @@
   </script>
 
   <style>
-    :root {
-      --header-height: 82px;
-    }
-
     * {
       box-sizing: border-box;
     }
 
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: var(--header-height);
+      scroll-padding-top: 82px;
     }
 
     body {
@@ -82,33 +52,23 @@
       overflow-x: hidden;
       color: #eeeeee;
       background: #101214;
-      font-family:
-        Inter, ui-sans-serif, system-ui, -apple-system,
-        BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    body.modal-open {
-      overflow: hidden;
-    }
-
-    ::selection {
-      color: #101214;
-      background: #d6d8da;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
     }
 
     .hero-background {
       position: relative;
+      background-color: #090a0b;
       background-image:
         linear-gradient(
           180deg,
-          rgba(6, 7, 8, .48) 0%,
-          rgba(9, 10, 11, .67) 54%,
+          rgba(6, 7, 8, .38) 0%,
+          rgba(9, 10, 11, .60) 55%,
           rgba(9, 10, 11, .98) 100%
         ),
         url("hero-drohne-koeln.PNG");
-      background-position: 45% center;
+      background-position: center, 45% center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: cover, cover;
     }
 
     .hero-background::before {
@@ -118,76 +78,35 @@
       pointer-events: none;
       background:
         radial-gradient(
-          circle at 50% 34%,
-          rgba(255,255,255,.07),
+          circle at 50% 30%,
+          rgba(255, 255, 255, .07),
           transparent 43%
         ),
         linear-gradient(
           90deg,
-          rgba(0,0,0,.24),
+          rgba(0, 0, 0, .20),
           transparent 30%,
           transparent 70%,
-          rgba(0,0,0,.24)
+          rgba(0, 0, 0, .20)
         );
     }
 
-    .grid-pattern {
-      background-image:
-        linear-gradient(rgba(255,255,255,.032) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.032) 1px, transparent 1px);
-      background-size: 42px 42px;
-    }
-
     .glass {
-      background: rgba(21,23,25,.80);
-      border: 1px solid rgba(255,255,255,.10);
-      box-shadow: 0 20px 60px rgba(0,0,0,.28);
+      background: rgba(21, 23, 25, .80);
+      border: 1px solid rgba(255, 255, 255, .10);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, .28);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
     }
 
     .card {
-      position: relative;
-      overflow: hidden;
       background:
         linear-gradient(
           145deg,
-          rgba(255,255,255,.058),
-          rgba(255,255,255,.018)
+          rgba(255, 255, 255, .058),
+          rgba(255, 255, 255, .018)
         );
-      border: 1px solid rgba(255,255,255,.09);
-      transition:
-        transform .3s ease,
-        border-color .3s ease,
-        background .3s ease;
-    }
-
-    .card::before {
-      position: absolute;
-      top: 0;
-      left: 20%;
-      width: 60%;
-      height: 1px;
-      content: "";
-      opacity: .45;
-      background:
-        linear-gradient(
-          90deg,
-          transparent,
-          rgba(255,255,255,.55),
-          transparent
-        );
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(255,255,255,.20);
-      background:
-        linear-gradient(
-          145deg,
-          rgba(255,255,255,.085),
-          rgba(255,255,255,.025)
-        );
+      border: 1px solid rgba(255, 255, 255, .09);
     }
 
     .section-label {
@@ -196,8 +115,8 @@
       gap: .6rem;
       padding: .48rem .95rem;
       color: #d6d8da;
-      background: rgba(255,255,255,.055);
-      border: 1px solid rgba(255,255,255,.11);
+      background: rgba(255, 255, 255, .055);
+      border: 1px solid rgba(255, 255, 255, .11);
       border-radius: 999px;
       font-size: .75rem;
       font-weight: 800;
@@ -210,33 +129,7 @@
       height: 6px;
       content: "";
       background: #d6d8da;
-      border-radius: 999px;
-      box-shadow: 0 0 12px rgba(214,216,218,.7);
-    }
-
-    .icon-box {
-      display: inline-flex;
-      width: 54px;
-      height: 54px;
-      align-items: center;
-      justify-content: center;
-      color: #f8f8f8;
-      background: rgba(255,255,255,.065);
-      border: 1px solid rgba(255,255,255,.11);
-      border-radius: 16px;
-    }
-
-    .reveal {
-      opacity: 0;
-      transform: translateY(22px);
-      transition:
-        opacity .7s ease,
-        transform .7s ease;
-    }
-
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
+      border-radius: 50%;
     }
 
     .modal {
@@ -247,45 +140,19 @@
       display: flex;
     }
 
-    .modal-panel {
-      animation: modalIn .25s ease-out;
-    }
-
-    @keyframes modalIn {
-      from {
-        opacity: 0;
-        transform: translateY(16px) scale(.98);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-      }
-    }
-
     @media (max-width: 767px) {
-      :root {
-        --header-height: 72px;
+      html {
+        scroll-padding-top: 72px;
       }
 
       .hero-background {
-        background-position: 64% center;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
-
-      .reveal {
-        opacity: 1;
-        transform: none;
-        transition: none;
-      }
-
-      .card {
-        transition: none;
+        /*
+          Farbverlauf und Foto werden getrennt positioniert.
+          Das Foto wird etwas verkleinert und nach rechts/oben ausgerichtet,
+          damit Drohne und Dom besser sichtbar sind.
+        */
+        background-position: center, 68% 30%;
+        background-size: cover, auto 94%;
       }
     }
   </style>
@@ -293,49 +160,27 @@
 
 <body>
 
-  <!-- HEADER -->
-  <header
-    class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-graphite-950/90 backdrop-blur-xl"
-  >
-    <div
-      class="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-4 sm:px-5 md:h-[82px] md:px-8"
-    >
-      <a
-        href="#start"
-        class="flex min-w-0 items-center"
-        aria-label="AERO-DRONE Startseite"
-      >
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-graphite-950/90 backdrop-blur-xl">
+    <div class="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-4 md:h-[82px] md:px-8">
+
+      <a href="#start" class="flex items-center" aria-label="AERO-DRONE Startseite">
         <img
           src="aero-drone-logo.PNG"
           alt="AERO-DRONE – Gebäude, Gelände und Luftaufnahmen"
-          class="block h-11 max-w-[225px] object-contain sm:max-w-[280px] md:h-14"
-          onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='block';"
+          class="block h-14 max-w-[265px] object-contain sm:max-w-[300px] md:h-16"
         >
-
-        <div id="logoFallback" style="display:none">
-          <div class="text-base font-black tracking-[.16em] text-white sm:text-lg">
-            AERO-DRONE
-          </div>
-
-          <div class="mt-1 text-[9px] uppercase tracking-[.11em] text-silver-400">
-            Gebäude · Gelände · Luftaufnahmen
-          </div>
-        </div>
       </a>
 
-      <nav
-        class="hidden items-center gap-5 text-sm font-semibold text-silver-300 xl:flex"
-        aria-label="Hauptnavigation"
-      >
-        <a class="transition hover:text-white" href="#leistungen">Leistungen</a>
-        <a class="transition hover:text-white" href="#branchen">Branchen</a>
-        <a class="transition hover:text-white" href="#ablauf">Ablauf</a>
-        <a class="transition hover:text-white" href="#ueber-mich">Über mich</a>
-        <a class="transition hover:text-white" href="#faq">FAQ</a>
+      <nav class="hidden items-center gap-6 text-sm font-semibold text-silver-300 xl:flex">
+        <a href="#leistungen" class="hover:text-white">Leistungen</a>
+        <a href="#branchen" class="hover:text-white">Branchen</a>
+        <a href="#ablauf" class="hover:text-white">Ablauf</a>
+        <a href="#ueber-mich" class="hover:text-white">Über mich</a>
+        <a href="#faq" class="hover:text-white">FAQ</a>
 
         <a
           href="#kontakt"
-          class="rounded-full bg-white px-5 py-2.5 font-extrabold text-graphite-950 transition hover:bg-silver-200"
+          class="rounded-full bg-white px-5 py-2.5 font-extrabold text-graphite-950"
         >
           Anfrage stellen
         </a>
@@ -344,71 +189,40 @@
       <button
         id="menuButton"
         type="button"
-        class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-white xl:hidden"
+        class="flex h-12 w-12 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-2xl xl:hidden"
         aria-label="Menü öffnen"
-        aria-controls="mobileMenu"
-        aria-expanded="false"
       >
-        <svg
-          id="menuOpenIcon"
-          width="23"
-          height="23"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <path d="M4 7h16M4 12h16M4 17h16"></path>
-        </svg>
-
-        <svg
-          id="menuCloseIcon"
-          class="hidden"
-          width="23"
-          height="23"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <path d="M6 6l12 12M18 6L6 18"></path>
-        </svg>
+        ☰
       </button>
     </div>
 
-    <div
+    <nav
       id="mobileMenu"
-      class="hidden border-t border-white/10 bg-graphite-950 px-5 py-5 xl:hidden"
+      class="hidden border-t border-white/10 bg-graphite-950 px-5 py-5 text-center xl:hidden"
     >
-      <nav class="mx-auto flex max-w-7xl flex-col text-center">
-        <a class="mobile-link py-3 text-silver-200" href="#leistungen">Leistungen</a>
-        <a class="mobile-link py-3 text-silver-200" href="#branchen">Branchen</a>
-        <a class="mobile-link py-3 text-silver-200" href="#ablauf">Ablauf</a>
-        <a class="mobile-link py-3 text-silver-200" href="#ueber-mich">Über mich</a>
-        <a class="mobile-link py-3 text-silver-200" href="#faq">FAQ</a>
-
-        <a
-          class="mobile-link mt-3 rounded-xl bg-white px-5 py-3 font-extrabold text-graphite-950"
-          href="#kontakt"
-        >
+      <div class="flex flex-col gap-1">
+        <a class="mobile-link py-3" href="#leistungen">Leistungen</a>
+        <a class="mobile-link py-3" href="#branchen">Branchen</a>
+        <a class="mobile-link py-3" href="#ablauf">Ablauf</a>
+        <a class="mobile-link py-3" href="#ueber-mich">Über mich</a>
+        <a class="mobile-link py-3" href="#faq">FAQ</a>
+        <a class="mobile-link mt-2 rounded-xl bg-white px-5 py-3 font-bold text-black" href="#kontakt">
           Unverbindlich anfragen
         </a>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 
   <main>
 
-    <!-- HERO -->
     <section
       id="start"
-      class="hero-background flex min-h-screen items-center justify-center overflow-hidden pt-[72px] md:pt-[82px]"
+      class="hero-background flex min-h-screen items-start justify-center overflow-hidden pt-[72px] md:items-center md:pt-[82px]"
     >
-      <div
-        class="relative z-10 mx-auto w-full max-w-6xl px-5 py-20 text-center md:px-8 md:py-28"
-      >
+      <div class="relative z-10 mx-auto w-full max-w-6xl px-5 pb-16 pt-10 text-center md:px-8 md:py-28">
         <div class="mx-auto flex max-w-5xl flex-col items-center">
-          <span class="section-label mb-6">
+
+          <span class="section-label mb-5">
             Köln &amp; Umgebung
           </span>
 
@@ -416,47 +230,39 @@
             AERO-DRONE
           </p>
 
-          <h1
-            class="max-w-5xl text-4xl font-black leading-[1.08] tracking-tight text-white sm:text-5xl md:text-7xl"
-          >
+          <h1 class="max-w-5xl text-4xl font-black leading-[1.08] tracking-tight text-white sm:text-5xl md:text-7xl">
             Gebäude, Gelände &amp;
             <span class="text-silver-300">Luftaufnahmen</span>
           </h1>
 
-          <p
-            class="mt-7 max-w-3xl text-base leading-8 text-silver-200 sm:text-lg md:text-xl"
-          >
-            AERO-DRONE bietet strukturierte Drohnenaufnahmen für Handwerk, Immobilien, 
-            Planung und Dokumentation sowie hochwertige Luftbilder und Videos für 
-            Unternehmen und ausgewählte Veranstaltungen. <br><br>
-            Als Drohnenpilot mit EU-Kompetenznachweis und spezieller gewerblicher Haftpflichtversicherung 
-            führe ich Ihre Aufnahmen in Köln und Umgebung zuverlässig, professionell 
-            und unter Beachtung der geltenden Vorschriften durch.
-
-</p>
+          <p class="mt-7 max-w-3xl text-base leading-8 text-silver-200 sm:text-lg md:text-xl">
+            AERO-DRONE bietet strukturierte Drohnenaufnahmen für Handwerk,
+            Immobilien, Planung und Dokumentation sowie hochwertige Luftbilder
+            und Videos für Unternehmen und ausgewählte Veranstaltungen.
+            <br><br>
+            Als Drohnenpilot mit EU-Kompetenznachweis und spezieller gewerblicher
+            Haftpflichtversicherung führe ich Ihre Aufnahmen in Köln und Umgebung
+            zuverlässig, professionell und unter Beachtung der geltenden
+            Vorschriften durch.
           </p>
 
-          <div
-            class="mt-9 flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row"
-          >
+          <div class="mt-8 flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row">
             <a
               href="#kontakt"
-              class="rounded-full bg-white px-8 py-4 text-sm font-extrabold text-graphite-950 shadow-soft transition hover:-translate-y-0.5 hover:bg-silver-200"
+              class="rounded-full bg-white px-8 py-4 text-sm font-extrabold text-graphite-950"
             >
               Projekt unverbindlich anfragen
             </a>
 
             <a
               href="#leistungen"
-              class="rounded-full border border-white/30 bg-black/20 px-8 py-4 text-sm font-bold text-white backdrop-blur transition hover:border-white/60 hover:bg-white/10"
+              class="rounded-full border border-white/30 bg-black/20 px-8 py-4 text-sm font-bold text-white"
             >
               Leistungen ansehen
             </a>
           </div>
 
-          <div
-            class="glass mt-12 grid w-full max-w-4xl grid-cols-1 overflow-hidden rounded-2xl sm:grid-cols-3"
-          >
+          <div class="glass mt-10 grid w-full max-w-4xl rounded-2xl sm:grid-cols-3">
             <div class="border-b border-white/10 p-5 sm:border-b-0 sm:border-r">
               <p class="font-bold text-white">Strukturiert aufgenommen</p>
               <p class="mt-1 text-sm leading-6 text-silver-400">
@@ -478,299 +284,66 @@
               </p>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- SCHNELLÜBERSICHT -->
-    <section class="border-y border-white/10 bg-graphite-950 py-7">
-      <div
-        class="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-8 gap-y-4 px-5 text-center text-sm font-semibold text-silver-300 md:px-8"
-      >
-        <span>Dächer &amp; Fassaden</span>
-        <span class="hidden text-silver-600 sm:inline">•</span>
-        <span>Gerüstbau &amp; PV</span>
-        <span class="hidden text-silver-600 sm:inline">•</span>
-        <span>Grundstücke &amp; Außenanlagen</span>
-        <span class="hidden text-silver-600 sm:inline">•</span>
-        <span>Luftbilder &amp; Videos</span>
-      </div>
-    </section>
-
-    <!-- LEISTUNGEN -->
-    <section
-      id="leistungen"
-      class="grid-pattern bg-graphite-900 py-24 md:py-32"
-    >
+    <section id="leistungen" class="bg-graphite-900 py-24">
       <div class="mx-auto max-w-7xl px-5 text-center md:px-8">
-        <div class="reveal mx-auto max-w-3xl">
-          <span class="section-label">Leistungen</span>
+        <span class="section-label">Leistungen</span>
 
-          <h2 class="mt-6 text-3xl font-black tracking-tight text-white md:text-5xl">
-            Flexible Drohnenleistungen für unterschiedliche Projekte
-          </h2>
+        <h2 class="mt-6 text-3xl font-black text-white md:text-5xl">
+          Flexible Drohnenleistungen für unterschiedliche Projekte
+        </h2>
 
-          <p class="mt-5 text-base leading-8 text-silver-300 md:text-lg">
-            Vom dokumentarischen Dachfoto bis zur vollständigen
-            Gebäudeaufnahme: Der Umfang wird passend zum tatsächlichen
-            Verwendungszweck zusammengestellt.
-          </p>
-        </div>
+        <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
 
-        <div class="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-
-          <article class="card reveal rounded-3xl p-7">
-            <div class="icon-box mx-auto">
-              <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M3 11l9-7 9 7"></path>
-                <path d="M5 10v9h14v-9"></path>
-                <path d="M8 14h8"></path>
-              </svg>
-            </div>
-
-            <h3 class="mt-6 text-xl font-extrabold text-white">
-              Dach- &amp; Gebäudeerfassung
-            </h3>
-
+          <article class="card rounded-3xl p-7">
+            <h3 class="text-xl font-extrabold">Dach- &amp; Gebäudeerfassung</h3>
             <p class="mt-3 leading-7 text-silver-300">
               Übersichts-, Detail- und Zustandsaufnahmen von Dächern,
               Aufbauten, Anschlüssen und schwer einsehbaren Bereichen.
             </p>
-
-            <ul class="mt-5 space-y-2 text-sm leading-6 text-silver-400">
-              <li>• Dachflächen und Dachaufbauten</li>
-              <li>• Schornsteine, Anschlüsse und Details</li>
-              <li>• Gebäudeübersichten aus mehreren Perspektiven</li>
-            </ul>
           </article>
 
-          <article class="card reveal rounded-3xl p-7">
-            <div class="icon-box mx-auto">
-              <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <rect x="4" y="4" width="16" height="16" rx="2"></rect>
-                <path d="M8 4v16M16 4v16M4 9h16M4 15h16"></path>
-              </svg>
-            </div>
-
-            <h3 class="mt-6 text-xl font-extrabold text-white">
-              Fassadenaufnahme
-            </h3>
-
+          <article class="card rounded-3xl p-7">
+            <h3 class="text-xl font-extrabold">Fassadenaufnahme</h3>
             <p class="mt-3 leading-7 text-silver-300">
-              Systematische Aufnahmen von Fassadenflächen, Fenstern,
-              Vorsprüngen, Anschlüssen und sichtbaren Auffälligkeiten.
+              Systematische Ansichten von Fassaden, Fenstern, Vorsprüngen,
+              Anschlüssen und sichtbaren Auffälligkeiten.
             </p>
-
-            <ul class="mt-5 space-y-2 text-sm leading-6 text-silver-400">
-              <li>• Frontal- und Schrägansichten</li>
-              <li>• Dokumentation einzelner Bauteile</li>
-              <li>• Aufnahmen vor und nach Arbeiten</li>
-            </ul>
           </article>
 
-          <article class="card reveal rounded-3xl p-7">
-            <div class="icon-box mx-auto">
-              <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M4 20V4M9 20V8M14 20V6M19 20V11"></path>
-                <path d="M2 20h20"></path>
-              </svg>
-            </div>
-
-            <h3 class="mt-6 text-xl font-extrabold text-white">
-              Gerüstbau-Grundlagen
-            </h3>
-
+          <article class="card rounded-3xl p-7">
+            <h3 class="text-xl font-extrabold">Gerüstbau-Grundlagen</h3>
             <p class="mt-3 leading-7 text-silver-300">
-              Visuelle Gebäude- und Fassadenübersichten zur Vorbereitung
-              von Besichtigung, Planung und interner Abstimmung.
+              Gebäudeübersichten zur Vorbereitung von Besichtigung,
+              Planung und interner Abstimmung.
             </p>
-
-            <ul class="mt-5 space-y-2 text-sm leading-6 text-silver-400">
-              <li>• Dachkanten, Vorsprünge und Anbauten</li>
-              <li>• Zugänge und mögliche Hindernisse</li>
-              <li>• Dokumentation vor und nach Arbeiten</li>
-            </ul>
           </article>
 
-          <article class="card reveal rounded-3xl p-7">
-            <div class="icon-box mx-auto">
-              <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <rect x="4" y="5" width="16" height="14" rx="1"></rect>
-                <path d="M4 10h16M9 5l-1 14M15 5l1 14"></path>
-              </svg>
-            </div>
-
-            <h3 class="mt-6 text-xl font-extrabold text-white">
-              PV- &amp; Solargrundlagen
-            </h3>
-
+          <article class="card rounded-3xl p-7">
+            <h3 class="text-xl font-extrabold">PV- &amp; Solargrundlagen</h3>
             <p class="mt-3 leading-7 text-silver-300">
               Dokumentation von Dachflächen, Aufbauten und möglichen
-              Hindernissen für die weitere technische Prüfung.
+              Hindernissen für die weitere Fachplanung.
             </p>
-
-            <ul class="mt-5 space-y-2 text-sm leading-6 text-silver-400">
-              <li>• Übersicht nutzbarer Dachbereiche</li>
-              <li>• Aufbauten und mögliche Verschattung</li>
-              <li>• Bildgrundlage für die Fachplanung</li>
-            </ul>
           </article>
 
-          <article class="card reveal rounded-3xl p-7">
-            <div class="icon-box mx-auto">
-              <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M3 18l5-6 4 3 4-7 5 10"></path>
-                <path d="M3 21h18"></path>
-              </svg>
-            </div>
-
-            <h3 class="mt-6 text-xl font-extrabold text-white">
-              Gelände &amp; Außenanlagen
-            </h3>
-
+          <article class="card rounded-3xl p-7">
+            <h3 class="text-xl font-extrabold">Gelände &amp; Außenanlagen</h3>
             <p class="mt-3 leading-7 text-silver-300">
               Übersichtliche Erfassung von Grundstücken, Gärten,
-              Zufahrten, Pflasterflächen und Außenanlagen.
-            </p>
-
-            <ul class="mt-5 space-y-2 text-sm leading-6 text-silver-400">
-              <li>• Grundstücks- und Gartenübersichten</li>
-              <li>• Wege, Zufahrten und Pflasterflächen</li>
-              <li>• Zustands- und Fortschrittsdokumentation</li>
-            </ul>
-          </article>
-
-          <article class="card reveal rounded-3xl p-7">
-            <div class="icon-box mx-auto">
-              <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                <path d="M4 7l8-4 8 4-8 4-8-4z"></path>
-                <path d="M4 12l8 4 8-4M4 17l8 4 8-4"></path>
-              </svg>
-            </div>
-
-            <h3 class="mt-6 text-xl font-extrabold text-white">
-              3D- &amp; Bestandsdarstellung
-            </h3>
-
-            <p class="mt-3 leading-7 text-silver-300">
-              Strukturierte Bilddatenerfassung als Grundlage für
-              photogrammetrische Modelle und digitale Objektübersichten.
-            </p>
-
-            <ul class="mt-5 space-y-2 text-sm leading-6 text-silver-400">
-              <li>• Bildbasierte 3D-Modelle</li>
-              <li>• Punktwolken und Orthofoto-Grundlagen</li>
-              <li>• Projektbezogene Ansichten</li>
-            </ul>
-          </article>
-
-          <article class="card reveal rounded-3xl p-7 md:col-span-2 lg:col-span-3">
-            <div class="mx-auto max-w-4xl">
-              <div class="icon-box mx-auto">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                  <path d="M4 8h4l2-3h4l2 3h4v11H4z"></path>
-                  <circle cx="12" cy="13" r="3.5"></circle>
-                </svg>
-              </div>
-
-              <h3 class="mt-6 text-2xl font-extrabold text-white">
-                Allgemeine Luftbilder &amp; Videos
-              </h3>
-
-              <p class="mx-auto mt-3 max-w-3xl leading-7 text-silver-300">
-                Hochwertige Perspektiven für Immobilien, Unternehmen,
-                Grundstücke, Tourismus, private Anlässe und ausgewählte
-                Veranstaltungen.
-              </p>
-
-              <div class="mt-6 flex flex-wrap justify-center gap-3">
-                <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-silver-300">
-                  Immobilien
-                </span>
-                <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-silver-300">
-                  Firmenstandorte
-                </span>
-                <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-silver-300">
-                  Grundstücke
-                </span>
-                <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-silver-300">
-                  Hochzeiten
-                </span>
-                <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-silver-300">
-                  Kleine Veranstaltungen
-                </span>
-              </div>
-
-              <p class="mx-auto mt-6 max-w-3xl text-sm leading-6 text-silver-400">
-                Eventaufnahmen erfolgen nur nach Prüfung von Einsatzort,
-                Luftraum, Datenschutz und Personensituation. Flüge über
-                Menschenansammlungen werden nicht angeboten.
-              </p>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- BRANCHEN -->
-    <section id="branchen" class="bg-graphite-950 py-24 md:py-32">
-      <div class="mx-auto max-w-7xl px-5 text-center md:px-8">
-        <div class="reveal mx-auto max-w-3xl">
-          <span class="section-label">Einsatzbereiche</span>
-
-          <h2 class="mt-6 text-3xl font-black tracking-tight text-white md:text-5xl">
-            Für Handwerk, Immobilien und visuelle Projekte
-          </h2>
-        </div>
-
-        <div class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-
-          <article class="card reveal rounded-3xl p-7">
-            <p class="text-sm font-extrabold uppercase tracking-[.13em] text-silver-400">Dach</p>
-            <h3 class="mt-3 text-xl font-extrabold text-white">Dachdecker &amp; Zimmerer</h3>
-            <p class="mt-3 leading-7 text-silver-300">
-              Dachübersichten, Aufbauten, Details und Zustandsbilder.
+              Zufahrten, Wegen und Pflasterflächen.
             </p>
           </article>
 
-          <article class="card reveal rounded-3xl p-7">
-            <p class="text-sm font-extrabold uppercase tracking-[.13em] text-silver-400">Gerüst</p>
-            <h3 class="mt-3 text-xl font-extrabold text-white">Gerüstbaubetriebe</h3>
+          <article class="card rounded-3xl p-7">
+            <h3 class="text-xl font-extrabold">3D- &amp; Bestandsdarstellung</h3>
             <p class="mt-3 leading-7 text-silver-300">
-              Fassaden, Gebäudekanten, Vorsprünge, Zugänge und Hindernisse.
-            </p>
-          </article>
-
-          <article class="card reveal rounded-3xl p-7">
-            <p class="text-sm font-extrabold uppercase tracking-[.13em] text-silver-400">Energie</p>
-            <h3 class="mt-3 text-xl font-extrabold text-white">Solar- &amp; PV-Betriebe</h3>
-            <p class="mt-3 leading-7 text-silver-300">
-              Visuelle Dachgrundlagen für Prüfung und weitere Fachplanung.
-            </p>
-          </article>
-
-          <article class="card reveal rounded-3xl p-7">
-            <p class="text-sm font-extrabold uppercase tracking-[.13em] text-silver-400">Gebäude</p>
-            <h3 class="mt-3 text-xl font-extrabold text-white">Fassade, Maler &amp; Sanierung</h3>
-            <p class="mt-3 leading-7 text-silver-300">
-              Ansichten und Details von Fassaden, Bauteilen und Anschlüssen.
-            </p>
-          </article>
-
-          <article class="card reveal rounded-3xl p-7">
-            <p class="text-sm font-extrabold uppercase tracking-[.13em] text-silver-400">Fläche</p>
-            <h3 class="mt-3 text-xl font-extrabold text-white">GaLaBau &amp; Außenanlagen</h3>
-            <p class="mt-3 leading-7 text-silver-300">
-              Grundstücks-, Garten-, Pflaster- und Geländeübersichten.
-            </p>
-          </article>
-
-          <article class="card reveal rounded-3xl p-7">
-            <p class="text-sm font-extrabold uppercase tracking-[.13em] text-silver-400">Medien</p>
-            <h3 class="mt-3 text-xl font-extrabold text-white">Immobilien, Firmen &amp; Anlässe</h3>
-            <p class="mt-3 leading-7 text-silver-300">
-              Luftbilder und Videosequenzen für Präsentation und Erinnerung.
+              Strukturierte Bilddaten als Grundlage für bildbasierte
+              3D-Modelle, Punktwolken und digitale Objektübersichten.
             </p>
           </article>
 
@@ -778,102 +351,71 @@
       </div>
     </section>
 
-    <!-- ERGEBNISSE -->
-    <section class="grid-pattern bg-graphite-900 py-24 md:py-32">
+    <section id="branchen" class="bg-graphite-950 py-24">
       <div class="mx-auto max-w-6xl px-5 text-center md:px-8">
-        <div class="reveal mx-auto max-w-3xl">
-          <span class="section-label">Mögliche Ergebnisse</span>
+        <span class="section-label">Einsatzbereiche</span>
 
-          <h2 class="mt-6 text-3xl font-black tracking-tight text-white md:text-5xl">
-            Passend zum tatsächlichen Projektbedarf
-          </h2>
+        <h2 class="mt-6 text-3xl font-black md:text-5xl">
+          Für Handwerk, Immobilien und visuelle Projekte
+        </h2>
 
-          <p class="mt-5 text-lg leading-8 text-silver-300">
-            Vor dem Einsatz wird festgelegt, welche Aufnahmen,
-            Aufbereitung und Dateiformate sinnvoll und technisch erreichbar sind.
-          </p>
-        </div>
-
-        <div class="reveal mt-12 flex flex-wrap justify-center gap-3">
-          <span class="rounded-full border border-white/10 bg-white/5 px-5 py-3 font-semibold text-silver-200">Luftbilder</span>
-          <span class="rounded-full border border-white/10 bg-white/5 px-5 py-3 font-semibold text-silver-200">Videosequenzen</span>
-          <span class="rounded-full border border-white/10 bg-white/5 px-5 py-3 font-semibold text-silver-200">Dachansichten</span>
-          <span class="rounded-full border border-white/10 bg-white/5 px-5 py-3 font-semibold text-silver-200">Fassadenansichten</span>
-          <span class="rounded-full border border-white/10 bg-white/5 px-5 py-3 font-semibold text-silver-200">Detailaufnahmen</span>
-          <span class="rounded-full border border-white/10 bg-white/5 px-5 py-3 font-semibold text-silver-200">Bildübersichten</span>
-          <span class="rounded-full border border-white/10 bg-white/5 px-5 py-3 font-semibold text-silver-200">3D-Modelle</span>
-          <span class="rounded-full border border-white/10 bg-white/5 px-5 py-3 font-semibold text-silver-200">Punktwolken</span>
-          <span class="rounded-full border border-white/10 bg-white/5 px-5 py-3 font-semibold text-silver-200">PDF-Dokumentation</span>
-        </div>
-
-        <div class="reveal mx-auto mt-10 max-w-4xl rounded-2xl border border-white/10 bg-white/[.035] p-6">
-          <p class="text-sm leading-7 text-silver-400">
-            <strong class="text-silver-200">Hinweis:</strong>
-            Die erreichbare Genauigkeit hängt unter anderem von Objekt,
-            Aufnahmeverfahren, Bildqualität, Wetter, Georeferenzierung und
-            Auswertung ab. AERO-DRONE ersetzt keine amtliche Kataster-,
-            Grenz- oder Ingenieurvermessung.
-          </p>
+        <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="card rounded-3xl p-6">Dachdecker &amp; Zimmerer</div>
+          <div class="card rounded-3xl p-6">Gerüstbaubetriebe</div>
+          <div class="card rounded-3xl p-6">Solar- &amp; PV-Betriebe</div>
+          <div class="card rounded-3xl p-6">Fassade, Maler &amp; Sanierung</div>
+          <div class="card rounded-3xl p-6">GaLaBau &amp; Außenanlagen</div>
+          <div class="card rounded-3xl p-6">Immobilien, Firmen &amp; Anlässe</div>
         </div>
       </div>
     </section>
 
-    <!-- ABLAUF -->
-    <section id="ablauf" class="bg-graphite-950 py-24 md:py-32">
+    <section id="ablauf" class="bg-graphite-900 py-24">
       <div class="mx-auto max-w-7xl px-5 text-center md:px-8">
-        <div class="reveal mx-auto max-w-3xl">
-          <span class="section-label">Projektablauf</span>
+        <span class="section-label">Projektablauf</span>
 
-          <h2 class="mt-6 text-3xl font-black tracking-tight text-white md:text-5xl">
-            Klar abgestimmt. Sicher vorbereitet.
-          </h2>
-        </div>
+        <h2 class="mt-6 text-3xl font-black md:text-5xl">
+          Klar abgestimmt. Sicher vorbereitet.
+        </h2>
 
-        <div class="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-
-          <article class="card reveal rounded-3xl p-7">
-            <span class="text-4xl font-black text-white/15">01</span>
-            <h3 class="mt-5 text-xl font-extrabold text-white">Anfrage</h3>
-            <p class="mt-3 leading-7 text-silver-300">
-              Sie beschreiben Standort, Objekt, gewünschte Bereiche und Verwendungszweck.
+        <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <article class="card rounded-3xl p-7">
+            <strong>01 · Anfrage</strong>
+            <p class="mt-3 text-silver-300">
+              Standort, Objekt und gewünschte Aufnahmen beschreiben.
             </p>
           </article>
 
-          <article class="card reveal rounded-3xl p-7">
-            <span class="text-4xl font-black text-white/15">02</span>
-            <h3 class="mt-5 text-xl font-extrabold text-white">Prüfung</h3>
-            <p class="mt-3 leading-7 text-silver-300">
-              Luftraum, Umgebung, Wetter, Datenschutz und Zustimmungen werden geprüft.
+          <article class="card rounded-3xl p-7">
+            <strong>02 · Prüfung</strong>
+            <p class="mt-3 text-silver-300">
+              Luftraum, Umgebung, Wetter und Zustimmungen prüfen.
             </p>
           </article>
 
-          <article class="card reveal rounded-3xl p-7">
-            <span class="text-4xl font-black text-white/15">03</span>
-            <h3 class="mt-5 text-xl font-extrabold text-white">Aufnahme</h3>
-            <p class="mt-3 leading-7 text-silver-300">
-              Das Projekt wird nach einem abgestimmten Foto- oder Videoablauf erfasst.
+          <article class="card rounded-3xl p-7">
+            <strong>03 · Aufnahme</strong>
+            <p class="mt-3 text-silver-300">
+              Das Projekt nach dem vereinbarten Ablauf erfassen.
             </p>
           </article>
 
-          <article class="card reveal rounded-3xl p-7">
-            <span class="text-4xl font-black text-white/15">04</span>
-            <h3 class="mt-5 text-xl font-extrabold text-white">Übergabe</h3>
-            <p class="mt-3 leading-7 text-silver-300">
-              Sie erhalten die vereinbarten Aufnahmen oder aufbereiteten Projektdaten.
+          <article class="card rounded-3xl p-7">
+            <strong>04 · Übergabe</strong>
+            <p class="mt-3 text-silver-300">
+              Aufnahmen und vereinbarte Projektdaten übergeben.
             </p>
           </article>
-
         </div>
       </div>
     </section>
 
-    <!-- ÜBER MICH -->
-    <section id="ueber-mich" class="bg-graphite-900 py-24 md:py-32">
-      <div class="mx-auto max-w-6xl px-5 md:px-8">
-        <div class="glass reveal rounded-[2rem] p-7 text-center md:p-12">
+    <section id="ueber-mich" class="bg-graphite-950 py-24">
+      <div class="mx-auto max-w-5xl px-5 text-center md:px-8">
+        <div class="glass rounded-3xl p-8 md:p-12">
           <span class="section-label">Über AERO-DRONE</span>
 
-          <h2 class="mt-6 text-3xl font-black tracking-tight text-white md:text-5xl">
+          <h2 class="mt-6 text-3xl font-black md:text-5xl">
             Persönliche Betreuung statt anonymer Abwicklung
           </h2>
 
@@ -883,191 +425,90 @@
             private Auftraggeber bei der visuellen und digitalen Erfassung
             von Gebäuden, Flächen und besonderen Perspektiven.
           </p>
-
-          <p class="mx-auto mt-4 max-w-3xl leading-8 text-silver-400">
-            Für die Aufnahmen kommt eine moderne, kompakte Kameradrohne zum
-            Einsatz. Das leichte System ermöglicht flexible Foto- und
-            Videoaufnahmen. Im Mittelpunkt stehen ein sauber geplanter Flug,
-            passende Perspektiven und eine ehrliche Einschätzung dessen,
-            was für das jeweilige Projekt sinnvoll erreichbar ist.
-          </p>
-
-          <div class="mt-8 grid gap-4 sm:grid-cols-3">
-            <div class="rounded-2xl border border-white/10 bg-white/[.035] p-5">
-              <p class="font-bold text-white">Direkter Kontakt</p>
-              <p class="mt-2 text-sm leading-6 text-silver-400">
-                Persönliche Abstimmung von Anfrage bis Übergabe
-              </p>
-            </div>
-
-            <div class="rounded-2xl border border-white/10 bg-white/[.035] p-5">
-              <p class="font-bold text-white">Passender Umfang</p>
-              <p class="mt-2 text-sm leading-6 text-silver-400">
-                Leistungen passend zum tatsächlichen Projektbedarf
-              </p>
-            </div>
-
-            <div class="rounded-2xl border border-white/10 bg-white/[.035] p-5">
-              <p class="font-bold text-white">Regionaler Einsatz</p>
-              <p class="mt-2 text-sm leading-6 text-silver-400">
-                Köln und Umgebung nach vorheriger Prüfung
-              </p>
-            </div>
-          </div>
-
-          <div class="mt-8">
-            <p class="font-extrabold text-white">Patrick Runkel</p>
-            <p class="mt-1 text-sm text-silver-400">
-              AERO-DRONE · Gebäude, Gelände &amp; Luftaufnahmen
-            </p>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="bg-graphite-950 py-24 md:py-32">
+    <section id="faq" class="bg-graphite-900 py-24">
       <div class="mx-auto max-w-4xl px-5 md:px-8">
-        <div class="reveal text-center">
+        <div class="text-center">
           <span class="section-label">Häufige Fragen</span>
-
-          <h2 class="mt-6 text-3xl font-black tracking-tight text-white md:text-5xl">
+          <h2 class="mt-6 text-3xl font-black md:text-5xl">
             Transparent und verständlich
           </h2>
         </div>
 
         <div class="mt-12 space-y-4">
-
-          <details class="reveal rounded-2xl border border-white/10 bg-white/[.035] p-6">
-            <summary class="cursor-pointer font-bold text-white">
+          <details class="card rounded-2xl p-6">
+            <summary class="cursor-pointer font-bold">
               Welche Projekte können aufgenommen werden?
             </summary>
             <p class="mt-4 leading-7 text-silver-300">
-              Möglich sind unter anderem Dächer, Fassaden, Wohn- und
-              Gewerbeobjekte, Grundstücke, Gärten, Außenanlagen,
-              Immobilienpräsentationen sowie ausgewählte private oder
-              geschäftliche Anlässe.
+              Möglich sind unter anderem Dächer, Fassaden, Gebäude,
+              Grundstücke, Außenanlagen und Immobilienpräsentationen.
             </p>
           </details>
 
-          <details class="reveal rounded-2xl border border-white/10 bg-white/[.035] p-6">
-            <summary class="cursor-pointer font-bold text-white">
-              Sind Hochzeiten und Eventaufnahmen möglich?
+          <details class="card rounded-2xl p-6">
+            <summary class="cursor-pointer font-bold">
+              Sind die Ergebnisse vermessungsgenau?
             </summary>
             <p class="mt-4 leading-7 text-silver-300">
-              Einzelne Luftbilder oder Videosequenzen können möglich sein.
-              Voraussetzung sind ein geeigneter Flugbereich, notwendige
-              Zustimmungen und ausreichender Abstand zu unbeteiligten Personen.
-              Über Menschenansammlungen wird nicht geflogen.
-            </p>
-          </details>
-
-          <details class="reveal rounded-2xl border border-white/10 bg-white/[.035] p-6">
-            <summary class="cursor-pointer font-bold text-white">
-              Kann bei jedem Wetter geflogen werden?
-            </summary>
-            <p class="mt-4 leading-7 text-silver-300">
-              Nein. Regen, starker Wind, schlechte Sicht oder andere
-              ungünstige Bedingungen können eine Verschiebung erforderlich machen.
-            </p>
-          </details>
-
-          <details class="reveal rounded-2xl border border-white/10 bg-white/[.035] p-6">
-            <summary class="cursor-pointer font-bold text-white">
-              Sind die Ergebnisse automatisch vermessungsgenau?
-            </summary>
-            <p class="mt-4 leading-7 text-silver-300">
-              Nein. Die Genauigkeit hängt vom Aufnahmeverfahren, Objekt,
-              der Georeferenzierung und Auswertung ab. Eine amtliche
+              Die Genauigkeit hängt vom Aufnahmeverfahren, Objekt,
+              der Georeferenzierung und der Auswertung ab. Eine amtliche
               Vermessung wird nicht ersetzt.
             </p>
           </details>
 
-          <details class="reveal rounded-2xl border border-white/10 bg-white/[.035] p-6">
-            <summary class="cursor-pointer font-bold text-white">
+          <details class="card rounded-2xl p-6">
+            <summary class="cursor-pointer font-bold">
               Was erhalte ich nach dem Einsatz?
             </summary>
             <p class="mt-4 leading-7 text-silver-300">
               Je nach Vereinbarung erhalten Sie Fotos, Videosequenzen,
-              Bildübersichten, eine PDF-Dokumentation oder aufbereitete
-              digitale Projektdaten.
+              Bildübersichten, PDF-Dokumentationen oder digitale Projektdaten.
             </p>
           </details>
-
-          <details class="reveal rounded-2xl border border-white/10 bg-white/[.035] p-6">
-            <summary class="cursor-pointer font-bold text-white">
-              Wie wird der Preis berechnet?
-            </summary>
-            <p class="mt-4 leading-7 text-silver-300">
-              Der Preis richtet sich nach Standort, Objektgröße,
-              Aufnahmeumfang, Einsatzbedingungen, Anfahrt und gewünschter
-              Datenaufbereitung.
-            </p>
-          </details>
-
         </div>
       </div>
     </section>
 
-    <!-- KONTAKT -->
-    <section
-      id="kontakt"
-      class="relative overflow-hidden bg-graphite-900 py-24 md:py-32"
-    >
-      <div class="absolute inset-0 grid-pattern opacity-60"></div>
-
-      <div class="relative mx-auto max-w-5xl px-5 text-center md:px-8">
-        <div class="glass reveal rounded-[2rem] p-7 md:p-14">
+    <section id="kontakt" class="bg-graphite-950 py-24">
+      <div class="mx-auto max-w-5xl px-5 text-center md:px-8">
+        <div class="glass rounded-3xl p-8 md:p-14">
           <span class="section-label">Kontakt</span>
 
-          <h2 class="mt-6 text-3xl font-black tracking-tight text-white md:text-5xl">
+          <h2 class="mt-6 text-3xl font-black md:text-5xl">
             Erzählen Sie mir kurz von Ihrem Projekt
           </h2>
 
           <p class="mx-auto mt-5 max-w-3xl text-lg leading-8 text-silver-300">
-            Nennen Sie möglichst Standort, Objektart, gewünschte Aufnahmen
-            und Verwendungszweck. Sie erhalten anschließend eine ehrliche
+            Nennen Sie Standort, Objektart, gewünschte Aufnahmen und
+            Verwendungszweck. Sie erhalten anschließend eine ehrliche
             Einschätzung zur Durchführbarkeit.
           </p>
 
           <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <a
               href="mailto:patrickrunkel86@yahoo.com?subject=Projektanfrage%20AERO-DRONE"
-              class="rounded-full bg-white px-8 py-4 text-sm font-extrabold text-graphite-950 transition hover:-translate-y-0.5 hover:bg-silver-200"
+              class="rounded-full bg-white px-8 py-4 font-extrabold text-black"
             >
               Anfrage per E-Mail
             </a>
 
             <a
               href="tel:+4917656114565"
-              class="rounded-full border border-white/25 bg-white/5 px-8 py-4 text-sm font-bold text-white transition hover:border-white/50 hover:bg-white/10"
+              class="rounded-full border border-white/25 px-8 py-4 font-bold"
             >
               0176 56114565 anrufen
             </a>
           </div>
 
-          <div class="mt-9 text-sm leading-7 text-silver-400">
-            <p class="font-bold text-silver-200">Patrick Runkel</p>
-            <p>AERO-DRONE</p>
+          <div class="mt-9 leading-7 text-silver-400">
+            <p class="font-bold text-white">Patrick Runkel · AERO-DRONE</p>
             <p>Waldstraße 68 · 51145 Köln</p>
-
-            <p class="mt-3">
-              <a
-                href="mailto:patrickrunkel86@yahoo.com"
-                class="transition hover:text-white"
-              >
-                patrickrunkel86@yahoo.com
-              </a>
-            </p>
-
-            <p>
-              <a
-                href="tel:+4917656114565"
-                class="transition hover:text-white"
-              >
-                0176 56114565
-              </a>
-            </p>
+            <p>patrickrunkel86@yahoo.com</p>
+            <p>0176 56114565</p>
           </div>
         </div>
       </div>
@@ -1075,366 +516,38 @@
 
   </main>
 
-  <!-- FOOTER -->
-  <footer class="border-t border-white/10 bg-[#08090a]">
-    <div
-      class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 px-5 py-8 text-center text-sm text-silver-400 md:flex-row md:px-8 md:text-left"
-    >
-      <div>
-        <p class="font-bold tracking-[.12em] text-white">AERO-DRONE</p>
-        <p class="mt-1">© <span id="year"></span> Patrick Runkel</p>
-      </div>
-
-      <div class="flex flex-wrap justify-center gap-5">
-        <button
-          type="button"
-          data-open-modal="impressumModal"
-          class="transition hover:text-white"
-        >
-          Impressum
-        </button>
-
-        <button
-          type="button"
-          data-open-modal="privacyModal"
-          class="transition hover:text-white"
-        >
-          Datenschutz
-        </button>
-
-        <a href="#start" class="transition hover:text-white">
-          Nach oben ↑
-        </a>
-      </div>
-    </div>
+  <footer class="border-t border-white/10 bg-[#08090a] py-8 text-center text-sm text-silver-400">
+    © <span id="year"></span> Patrick Runkel · AERO-DRONE
   </footer>
 
-  <!-- IMPRESSUM -->
-  <div
-    id="impressumModal"
-    class="modal fixed inset-0 z-[100] items-center justify-center bg-black/80 p-4 backdrop-blur-sm"
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="impressumTitle"
-  >
-    <div
-      class="modal-panel max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-3xl border border-white/15 bg-graphite-850 p-6 shadow-soft md:p-9"
-    >
-      <div class="flex items-start justify-between gap-5">
-        <h2 id="impressumTitle" class="text-2xl font-black text-white">
-          Impressum
-        </h2>
-
-        <button
-          type="button"
-          data-close-modal
-          class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/15 text-xl text-white hover:bg-white/10"
-          aria-label="Impressum schließen"
-        >
-          ×
-        </button>
-      </div>
-
-      <div class="mt-7 space-y-6 leading-7 text-silver-300">
-        <section>
-          <h3 class="font-bold text-white">Angaben gemäß § 5 DDG</h3>
-
-          <p class="mt-2">
-            Patrick Runkel<br>
-            AERO-DRONE<br>
-            Waldstraße 68<br>
-            51145 Köln<br>
-            Deutschland
-          </p>
-        </section>
-
-        <section>
-          <h3 class="font-bold text-white">Kontakt</h3>
-
-          <p class="mt-2">
-            Telefon:
-            <a href="tel:+4917656114565" class="hover:text-white">
-              0176 56114565
-            </a>
-            <br>
-
-            E-Mail:
-            <a href="mailto:patrickrunkel86@yahoo.com" class="hover:text-white">
-              patrickrunkel86@yahoo.com
-            </a>
-          </p>
-        </section>
-
-        <section>
-          <h3 class="font-bold text-white">
-            Verantwortlich für den Inhalt
-          </h3>
-
-          <p class="mt-2">
-            Patrick Runkel<br>
-            Waldstraße 68<br>
-            51145 Köln
-          </p>
-        </section>
-
-        <section>
-          <h3 class="font-bold text-white">Haftung für Inhalte</h3>
-
-          <p class="mt-2">
-            Als Diensteanbieter bin ich für eigene Inhalte auf diesen
-            Seiten nach den allgemeinen Gesetzen verantwortlich.
-            Eine Verpflichtung zur Überwachung übermittelter oder
-            gespeicherter fremder Informationen besteht im Rahmen der
-            gesetzlichen Regelungen nicht.
-          </p>
-        </section>
-
-        <section>
-          <h3 class="font-bold text-white">Urheberrecht</h3>
-
-          <p class="mt-2">
-            Die durch den Seitenbetreiber erstellten Inhalte, Bilder und
-            Werke auf dieser Website unterliegen dem deutschen Urheberrecht.
-            Eine Vervielfältigung oder Verwendung außerhalb der gesetzlichen
-            Grenzen bedarf der vorherigen Zustimmung.
-          </p>
-        </section>
-      </div>
-    </div>
-  </div>
-
-  <!-- DATENSCHUTZ -->
-  <div
-    id="privacyModal"
-    class="modal fixed inset-0 z-[100] items-center justify-center bg-black/80 p-4 backdrop-blur-sm"
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="privacyTitle"
-  >
-    <div
-      class="modal-panel max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-white/15 bg-graphite-850 p-6 shadow-soft md:p-9"
-    >
-      <div class="flex items-start justify-between gap-5">
-        <h2 id="privacyTitle" class="text-2xl font-black text-white">
-          Datenschutzerklärung
-        </h2>
-
-        <button
-          type="button"
-          data-close-modal
-          class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/15 text-xl text-white hover:bg-white/10"
-          aria-label="Datenschutz schließen"
-        >
-          ×
-        </button>
-      </div>
-
-      <div class="mt-7 space-y-6 leading-7 text-silver-300">
-        <section>
-          <h3 class="font-bold text-white">1. Verantwortlicher</h3>
-
-          <p class="mt-2">
-            Patrick Runkel<br>
-            AERO-DRONE<br>
-            Waldstraße 68<br>
-            51145 Köln<br>
-            E-Mail: patrickrunkel86@yahoo.com<br>
-            Telefon: 0176 56114565
-          </p>
-        </section>
-
-        <section>
-          <h3 class="font-bold text-white">2. Hosting</h3>
-
-          <p class="mt-2">
-            Diese Website wird über GitHub Pages bereitgestellt.
-            Beim Aufruf können technisch notwendige Verbindungsdaten,
-            insbesondere die IP-Adresse, durch den Hostinganbieter
-            verarbeitet und in Serverprotokollen gespeichert werden.
-          </p>
-        </section>
-
-        <section>
-          <h3 class="font-bold text-white">3. Kontaktaufnahme</h3>
-
-          <p class="mt-2">
-            Wenn Sie per E-Mail oder Telefon Kontakt aufnehmen, werden die
-            übermittelten Daten zur Bearbeitung Ihrer Anfrage und möglicher
-            Anschlussfragen verarbeitet. Rechtsgrundlage ist je nach Inhalt
-            der Anfrage Art. 6 Abs. 1 lit. b oder lit. f DSGVO.
-          </p>
-        </section>
-
-        <section>
-          <h3 class="font-bold text-white">4. Externe Inhalte</h3>
-
-          <p class="mt-2">
-            Diese Website lädt das CSS-Framework Tailwind CSS über ein
-            externes Content Delivery Network. Dabei können technische
-            Verbindungsdaten an den Anbieter übertragen werden.
-          </p>
-        </section>
-
-        <section>
-          <h3 class="font-bold text-white">5. Ihre Rechte</h3>
-
-          <p class="mt-2">
-            Im Rahmen der gesetzlichen Voraussetzungen bestehen Rechte auf
-            Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung,
-            Datenübertragbarkeit und Widerspruch. Außerdem besteht ein
-            Beschwerderecht bei einer zuständigen Datenschutzaufsichtsbehörde.
-          </p>
-        </section>
-
-        <section>
-          <h3 class="font-bold text-white">6. Speicherdauer</h3>
-
-          <p class="mt-2">
-            Personenbezogene Daten werden nur so lange gespeichert, wie dies
-            zur Bearbeitung der Anfrage oder zur Erfüllung gesetzlicher
-            Aufbewahrungspflichten erforderlich ist.
-          </p>
-        </section>
-
-        <section>
-          <h3 class="font-bold text-white">7. Stand</h3>
-          <p class="mt-2">September 2026</p>
-        </section>
-      </div>
-    </div>
-  </div>
-
   <script>
+    const menuButton = document.getElementById("menuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+
+      menuButton.textContent =
+        mobileMenu.classList.contains("hidden") ? "☰" : "×";
+    });
+
+    document.querySelectorAll(".mobile-link").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        menuButton.textContent = "☰";
+      });
+    });
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
     if ("scrollRestoration" in history) {
       history.scrollRestoration = "manual";
     }
 
-    document.addEventListener("DOMContentLoaded", () => {
-      if (!window.location.hash) {
-        window.scrollTo(0, 0);
-      }
-
-      const menuButton = document.getElementById("menuButton");
-      const mobileMenu = document.getElementById("mobileMenu");
-      const menuOpenIcon = document.getElementById("menuOpenIcon");
-      const menuCloseIcon = document.getElementById("menuCloseIcon");
-      const mobileLinks = document.querySelectorAll(".mobile-link");
-
-      function closeMenu() {
-        mobileMenu.classList.add("hidden");
-        menuOpenIcon.classList.remove("hidden");
-        menuCloseIcon.classList.add("hidden");
-        menuButton.setAttribute("aria-expanded", "false");
-      }
-
-      menuButton.addEventListener("click", () => {
-        const isClosed = mobileMenu.classList.contains("hidden");
-
-        mobileMenu.classList.toggle("hidden");
-        menuOpenIcon.classList.toggle("hidden", isClosed);
-        menuCloseIcon.classList.toggle("hidden", !isClosed);
-        menuButton.setAttribute("aria-expanded", String(isClosed));
-      });
-
-      mobileLinks.forEach(link => {
-        link.addEventListener("click", closeMenu);
-      });
-
-      const revealElements = document.querySelectorAll(".reveal");
-
-      if ("IntersectionObserver" in window) {
-        const observer = new IntersectionObserver(
-          entries => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-                observer.unobserve(entry.target);
-              }
-            });
-          },
-          {
-            threshold: 0.1
-          }
-        );
-
-        revealElements.forEach(element => observer.observe(element));
-      } else {
-        revealElements.forEach(element => {
-          element.classList.add("visible");
-        });
-      }
-
-      const modalButtons =
-        document.querySelectorAll("[data-open-modal]");
-
-      const closeButtons =
-        document.querySelectorAll("[data-close-modal]");
-
-      const modals =
-        document.querySelectorAll(".modal");
-
-      function openModal(modal) {
-        modal.classList.add("open");
-        document.body.classList.add("modal-open");
-
-        const closeButton =
-          modal.querySelector("[data-close-modal]");
-
-        if (closeButton) {
-          closeButton.focus();
-        }
-      }
-
-      function closeModal(modal) {
-        if (!modal) {
-          return;
-        }
-
-        modal.classList.remove("open");
-        document.body.classList.remove("modal-open");
-      }
-
-      modalButtons.forEach(button => {
-        button.addEventListener("click", () => {
-          const modal =
-            document.getElementById(
-              button.getAttribute("data-open-modal")
-            );
-
-          if (modal) {
-            openModal(modal);
-          }
-        });
-      });
-
-      closeButtons.forEach(button => {
-        button.addEventListener("click", () => {
-          closeModal(button.closest(".modal"));
-        });
-      });
-
-      modals.forEach(modal => {
-        modal.addEventListener("click", event => {
-          if (event.target === modal) {
-            closeModal(modal);
-          }
-        });
-      });
-
-      document.addEventListener("keydown", event => {
-        if (event.key === "Escape") {
-          const openModalElement =
-            document.querySelector(".modal.open");
-
-          if (openModalElement) {
-            closeModal(openModalElement);
-          }
-        }
-      });
-
-      document.getElementById("year").textContent =
-        new Date().getFullYear();
-    });
+    if (!window.location.hash) {
+      window.scrollTo(0, 0);
+    }
   </script>
 
 </body>
