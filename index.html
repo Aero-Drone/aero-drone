@@ -78,7 +78,7 @@
       overflow: hidden;
     }
 
-    /* ORIGINAL HINTERGRUND-POSITION (EXAKT WIE IM URSPRUNG) */
+    /* ORIGINAL HINTERGRUND-POSITION */
     .hero-background {
       position: relative;
       background-color: #090a0b;
@@ -151,7 +151,6 @@
       display: flex;
     }
 
-    /* ORIGINAL MOBILE-POSITION MIT AUTO 94% (DAMIT DIE DROHNE SICHTBAR BLEIBT) */
     @media (max-width: 767px) {
       .hero-background {
         background-position: center, 68% 30%;
@@ -189,8 +188,8 @@
       >
         <a href="#direkteinstieg" class="hover:text-white transition-colors">Schnellauswahl</a>
         <a href="#schaden" class="hover:text-white transition-colors">Dach- &amp; Sturmschaden</a>
-        <a href="#saeulen" class="hover:text-white transition-colors">Die 2 Säulen</a>
-        <a href="#leistungen" class="hover:text-white transition-colors">Leistungen</a>
+        <a href="#kompetenzen" class="hover:text-white transition-colors">Leistungsbereiche</a>
+        <a href="#leistungen" class="hover:text-white transition-colors">Alle Leistungen</a>
         <a href="#ueber-mich" class="hover:text-white transition-colors">Über mich</a>
         <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
 
@@ -221,8 +220,8 @@
       <div class="flex flex-col gap-1">
         <a class="mobile-link py-3 font-semibold" href="#direkteinstieg">Schnellauswahl</a>
         <a class="mobile-link py-3 font-semibold" href="#schaden">Dach- &amp; Sturmschaden</a>
-        <a class="mobile-link py-3 font-semibold" href="#saeulen">Die 2 Säulen</a>
-        <a class="mobile-link py-3 font-semibold" href="#leistungen">Leistungen</a>
+        <a class="mobile-link py-3 font-semibold" href="#kompetenzen">Leistungsbereiche</a>
+        <a class="mobile-link py-3 font-semibold" href="#leistungen">Alle Leistungen</a>
         <a class="mobile-link py-3 font-semibold" href="#ueber-mich">Über mich</a>
         <a class="mobile-link py-3 font-semibold" href="#faq">FAQ</a>
 
@@ -365,13 +364,13 @@
             <p class="text-xs text-silver-400 mt-1">Beweise für die Versicherung</p>
           </a>
 
-          <a href="#saeulen" class="card rounded-2xl p-5 hover:border-emerald-500/50 transition-colors">
+          <a href="#kompetenzen" class="card rounded-2xl p-5 hover:border-emerald-500/50 transition-colors">
             <div class="text-3xl mb-2">⚡</div>
             <p class="font-bold text-white text-sm md:text-base">Handwerk &amp; PV</p>
             <p class="text-xs text-silver-400 mt-1">Dachflächen, Maße &amp; Gerüstbau</p>
           </a>
 
-          <a href="#saeulen" class="card rounded-2xl p-5 hover:border-emerald-500/50 transition-colors">
+          <a href="#kompetenzen" class="card rounded-2xl p-5 hover:border-emerald-500/50 transition-colors">
             <div class="text-3xl mb-2">📸</div>
             <p class="font-bold text-white text-sm md:text-base">Immobilien &amp; Medien</p>
             <p class="text-xs text-silver-400 mt-1">Exposés, Events &amp; Fotografen-B2B</p>
@@ -457,25 +456,25 @@
       </div>
     </section>
 
-    <!-- DIE 2 SÄULEN IM DETAIL -->
-    <section id="saeulen" class="bg-graphite-950 py-24 border-t border-white/5">
+    <!-- UNSERE KOMPETENZBEREICHE -->
+    <section id="kompetenzen" class="bg-graphite-950 py-24 border-t border-white/5">
       <div class="mx-auto max-w-7xl px-5 md:px-8">
         <div class="text-center">
-          <span class="section-label">Struktur</span>
+          <span class="section-label">Kompetenzbereiche</span>
           <h2 class="mt-4 text-3xl font-black md:text-5xl text-white">
-            Das 2-Säulen-Modell von AERO-DRONE
+            Unsere Kernbereiche im Überblick
           </h2>
           <p class="mx-auto mt-4 max-w-2xl text-silver-300 text-sm md:text-base">
-            Für jeden Bedarf die passende Flughöhe: Technische Präzision oder erstklassiges Medienmaterial.
+            Für jede Anforderung die exakte Lösung: Technische Präzision für das Handwerk oder erstklassige 4K-Medienaufnahmen.
           </p>
         </div>
 
         <div class="mt-12 grid gap-8 lg:grid-cols-2">
           
-          <!-- Säule 1 -->
+          <!-- Bereich 1 -->
           <div class="card rounded-3xl p-8 lg:p-10 border-t-2 border-t-emerald-500/50">
             <div class="flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Säule 01</span>
+              <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Bereich 01</span>
               <span class="rounded-full bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 text-xs font-semibold text-emerald-300">Technik &amp; Handwerk</span>
             </div>
             <h3 class="mt-4 text-2xl font-black text-white">Inspektion, Aufmaß &amp; Baufortschritt</h3>
@@ -507,11 +506,11 @@
             </a>
           </div>
 
-          <!-- Säule 2 -->
-          <div class="card rounded-3xl p-8 lg:p-10 border-t-2 border-t-white/40">
+          <!-- Bereich 2 -->
+          <div class="card rounded-3xl p-8 lg:p-10 border-t-2 border-t-emerald-500/50">
             <div class="flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-widest text-silver-400">Säule 02</span>
-              <span class="rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-silver-200">Immobilien &amp; Medien</span>
+              <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Bereich 02</span>
+              <span class="rounded-full bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 text-xs font-semibold text-emerald-300">Immobilien &amp; Medien</span>
             </div>
             <h3 class="mt-4 text-2xl font-black text-white">Exposés, Events &amp; Fotografen-B2B</h3>
             <p class="mt-3 text-silver-300 leading-relaxed text-sm md:text-base">
@@ -520,24 +519,24 @@
 
             <ul class="mt-6 space-y-3 text-sm text-silver-200 border-t border-white/10 pt-6">
               <li class="flex items-start gap-2">
-                <span class="text-white font-bold">•</span>
+                <span class="text-emerald-400 font-bold">•</span>
                 <span><strong>Immobilien-Marketing:</strong> Hochwertige Verkaufsfotos, Grundstücksgrenzen und Video-Überflüge.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-white font-bold">•</span>
+                <span class="text-emerald-400 font-bold">•</span>
                 <span><strong>Drohnenpilot für Fotografen:</strong> Sie leiten das Shooting am Boden – wir liefern Ihnen RAW/D-Log-Luftdaten.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-white font-bold">•</span>
+                <span class="text-emerald-400 font-bold">•</span>
                 <span><strong>Gewerbe &amp; Fuhrpark:</strong> Repräsentative Panoramen von Hallen, Außenanlagen und Betriebsgeländen.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-white font-bold">•</span>
+                <span class="text-emerald-400 font-bold">•</span>
                 <span><strong>Outdoor-Veranstaltungen:</strong> Eindrucksvolle Perspektiven von Festen und Sportanlässen (sicherheitsgeprüft).</span>
               </li>
             </ul>
 
-            <a href="#leistungen" class="mt-8 inline-block text-sm font-bold text-white hover:text-silver-300 transition-colors">
+            <a href="#leistungen" class="mt-8 inline-block text-sm font-bold text-white hover:text-emerald-400 transition-colors">
               Alle Medienleistungen ansehen →
             </a>
           </div>
