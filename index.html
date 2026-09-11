@@ -78,6 +78,7 @@
       overflow: hidden;
     }
 
+    /* ORIGINAL HINTERGRUND-POSITION (EXAKT WIE IM URSPRUNG) */
     .hero-background {
       position: relative;
       background-color: #090a0b;
@@ -89,7 +90,7 @@
           rgba(9, 10, 11, 1) 100%
         ),
         url("hero-drohne-koeln.PNG");
-      background-position: center, 65% center;
+      background-position: center, 45% center;
       background-repeat: no-repeat;
       background-size: cover, cover;
     }
@@ -150,10 +151,11 @@
       display: flex;
     }
 
+    /* ORIGINAL MOBILE-POSITION MIT AUTO 94% (DAMIT DIE DROHNE SICHTBAR BLEIBT) */
     @media (max-width: 767px) {
       .hero-background {
-        background-position: center, 50% 20%;
-        background-size: cover, cover;
+        background-position: center, 68% 30%;
+        background-size: cover, auto 94%;
       }
     }
 
@@ -803,9 +805,9 @@
 
             <a
               href="tel:+4917656114565"
-              class="rounded-full border border-white/25 px-8 py-4 font-bold hover:bg-white/10 transition-colors"
+              class="rounded-full border border-emerald-500/30 bg-black/40 px-8 py-4 text-sm font-bold text-white hover:bg-emerald-500/10 hover:border-emerald-400 transition-colors flex items-center justify-center gap-2"
             >
-              0176 56114565 anrufen
+              <span class="text-emerald-400">📞</span> 0176 56114565
             </a>
           </div>
 
