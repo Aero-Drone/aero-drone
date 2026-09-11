@@ -16,27 +16,11 @@
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              50: '#f0fdfa',
-              500: '#0d9488',
-              600: '#0f766e',
-              900: '#134e4a',
-            }
-          }
-        }
-      }
-    }
-  </script>
 </head>
-<body id="start" class="bg-slate-950 text-slate-100 antialiased font-sans selection:bg-teal-500 selection:text-white">
+<body id="start" class="bg-zinc-950 text-zinc-100 antialiased font-sans selection:bg-teal-500 selection:text-white">
 
   <!-- Navigation Header -->
-  <header class="sticky top-0 z-40 w-full border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-md">
+  <header class="sticky top-0 z-40 w-full border-b border-zinc-800/80 bg-zinc-950/90 backdrop-blur-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <a href="#start" class="flex items-center gap-3 group" aria-label="AERO-DRONE Startseite">
         <img src="aero-drone-logo.PNG" alt="AERO-DRONE Logo" class="h-10 w-auto object-contain transition group-hover:opacity-90" onerror="this.style.display='none'">
@@ -44,44 +28,50 @@
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-300">
         <a href="#direkteinstieg" class="hover:text-teal-400 transition">Schnellauswahl</a>
         <a href="#schaden" class="hover:text-teal-400 transition">Dach & Schaden</a>
         <a href="#kompetenzen" class="hover:text-teal-400 transition">Leistungsbereiche</a>
         <a href="#ueber-mich" class="hover:text-teal-400 transition">Über mich</a>
         <a href="#faq" class="hover:text-teal-400 transition">FAQ</a>
-        <a href="#kontakt" class="rounded-full bg-teal-500 px-5 py-2.5 text-slate-950 font-semibold hover:bg-teal-400 transition shadow-lg shadow-teal-500/20">
+        <a href="#kontakt" class="rounded-full bg-teal-500 px-5 py-2.5 text-zinc-950 font-semibold hover:bg-teal-400 transition shadow-lg shadow-teal-500/20">
           Projekt anfragen
         </a>
       </nav>
 
       <!-- Mobile Button -->
-      <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-400 hover:text-white" aria-label="Menü öffnen" aria-expanded="false">
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-zinc-400 hover:text-white" aria-label="Menü öffnen" aria-expanded="false">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
       </button>
     </div>
 
     <!-- Mobile Navigation Drawer -->
-    <nav id="mobile-nav" class="hidden md:hidden border-b border-slate-800 bg-slate-900 px-4 pt-2 pb-6 space-y-3 text-base">
-      <a href="#direkteinstieg" class="mobile-link block py-2 text-slate-300 hover:text-teal-400">Schnellauswahl</a>
-      <a href="#schaden" class="mobile-link block py-2 text-slate-300 hover:text-teal-400">Dach & Schaden</a>
-      <a href="#kompetenzen" class="mobile-link block py-2 text-slate-300 hover:text-teal-400">Leistungsbereiche</a>
-      <a href="#ueber-mich" class="mobile-link block py-2 text-slate-300 hover:text-teal-400">Über mich</a>
-      <a href="#faq" class="mobile-link block py-2 text-slate-300 hover:text-teal-400">FAQ</a>
-      <a href="#kontakt" class="mobile-link block text-center rounded-xl bg-teal-500 py-3 font-semibold text-slate-950">Jetzt unverbindlich anfragen</a>
+    <nav id="mobile-nav" class="hidden md:hidden border-b border-zinc-800 bg-zinc-900 px-4 pt-2 pb-6 space-y-3 text-base">
+      <a href="#direkteinstieg" class="mobile-link block py-2 text-zinc-300 hover:text-teal-400">Schnellauswahl</a>
+      <a href="#schaden" class="mobile-link block py-2 text-zinc-300 hover:text-teal-400">Dach & Schaden</a>
+      <a href="#kompetenzen" class="mobile-link block py-2 text-zinc-300 hover:text-teal-400">Leistungsbereiche</a>
+      <a href="#ueber-mich" class="mobile-link block py-2 text-zinc-300 hover:text-teal-400">Über mich</a>
+      <a href="#faq" class="mobile-link block py-2 text-zinc-300 hover:text-teal-400">FAQ</a>
+      <a href="#kontakt" class="mobile-link block text-center rounded-xl bg-teal-500 py-3 font-semibold text-zinc-950">Jetzt unverbindlich anfragen</a>
     </nav>
   </header>
 
   <main>
-    <!-- Hero Section -->
-    <section class="relative py-20 lg:py-28 overflow-hidden border-b border-slate-900">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Hero Section mit Drohnen-Hintergrundbild -->
+    <section class="relative py-24 lg:py-32 overflow-hidden border-b border-zinc-800">
+      <!-- Hintergrundbild & Abdunklung -->
+      <div class="absolute inset-0 z-0">
+        <img src="hero.jpg" alt="Köln Drohnenaufnahme" class="w-full h-full object-cover object-center" onerror="this.src='hero.png'">
+        <div class="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/90 to-zinc-950/60"></div>
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-teal-500/30 bg-teal-950/40 text-xs font-semibold text-teal-300 mb-6 tracking-wide uppercase">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-teal-500/30 bg-zinc-900/80 text-xs font-semibold text-teal-300 mb-6 tracking-wide uppercase backdrop-blur-sm">
             <span>Köln & Rheinland</span>
-            <span class="text-slate-600">•</span>
+            <span class="text-zinc-600">•</span>
             <span>🛡️ EU-zertifiziert A1/A3</span>
-            <span class="text-slate-600">•</span>
+            <span class="text-zinc-600">•</span>
             <span>✓ Luftfahrt-Haftpflicht</span>
           </div>
 
@@ -93,11 +83,11 @@
             Kein Gerüst. Kein Hubsteiger. Kein Kletterrisiko.
           </p>
 
-          <p class="mt-6 text-base sm:text-lg text-slate-300 leading-relaxed">
+          <p class="mt-6 text-base sm:text-lg text-zinc-200 leading-relaxed">
             Wir liefern hochauflösende 4K-Drohnendaten und fotogrammetrische Modelle genau dort, wo es zählt – schnell, sicher und bis ins kleinste Detail:
           </p>
 
-          <ul class="mt-6 space-y-3 text-slate-300 text-sm sm:text-base">
+          <ul class="mt-6 space-y-3 text-zinc-200 text-sm sm:text-base">
             <li class="flex items-start gap-3">
               <span class="text-teal-400 font-bold mt-0.5">•</span>
               <span><strong class="text-white">Handwerksbetriebe & Planer:</strong> Verlässliche visuelle Planungsgrundlagen, 3D-Bestandsdaten und Vorkontrollen ohne Rüstaufwand.</span>
@@ -117,32 +107,32 @@
           </ul>
 
           <div class="mt-8 flex flex-col sm:flex-row gap-4">
-            <a href="#kontakt" class="inline-flex justify-center items-center rounded-xl bg-teal-500 px-6 py-3.5 text-base font-bold text-slate-950 hover:bg-teal-400 transition shadow-lg shadow-teal-500/20">
+            <a href="#kontakt" class="inline-flex justify-center items-center rounded-xl bg-teal-500 px-6 py-3.5 text-base font-bold text-zinc-950 hover:bg-teal-400 transition shadow-lg shadow-teal-500/20">
               Jetzt Projekt anfragen
             </a>
-            <a href="tel:+4917656114565" class="inline-flex justify-center items-center rounded-xl border border-slate-700 bg-slate-900/60 px-6 py-3.5 text-base font-semibold text-slate-200 hover:bg-slate-800 transition">
+            <a href="tel:+4917656114565" class="inline-flex justify-center items-center rounded-xl border border-zinc-700 bg-zinc-900/80 px-6 py-3.5 text-base font-semibold text-zinc-200 hover:bg-zinc-800 transition backdrop-blur-sm">
               <span class="mr-2">📞</span> 0176 56114565
             </a>
           </div>
 
           <!-- Feature Cards Grid -->
           <div class="mt-14 grid grid-cols-1 sm:grid-cols-3 gap-5">
-            <div class="rounded-2xl border border-slate-800/80 bg-slate-900/40 p-5 backdrop-blur-sm">
+            <div class="rounded-2xl border border-zinc-800 bg-zinc-900/80 p-5 backdrop-blur-md">
               <div class="text-xs font-bold text-teal-400 uppercase tracking-wider">⏱️ 24–48h Bereitstellung</div>
               <div class="mt-2 text-lg font-bold text-white">Ergebnisse auf den Punkt</div>
-              <p class="mt-1 text-xs text-slate-400 leading-relaxed">Schnelle digitale Bildbereitstellung per Cloud-Link für Handwerker & Versicherungen.</p>
+              <p class="mt-1 text-xs text-zinc-400 leading-relaxed">Schnelle digitale Bildbereitstellung per Cloud-Link für Handwerker & Versicherungen.</p>
             </div>
 
-            <div class="rounded-2xl border border-slate-800/80 bg-slate-900/40 p-5 backdrop-blur-sm">
+            <div class="rounded-2xl border border-zinc-800 bg-zinc-900/80 p-5 backdrop-blur-md">
               <div class="text-xs font-bold text-teal-400 uppercase tracking-wider">🔍 4K Detailoptik</div>
               <div class="mt-2 text-lg font-bold text-white">Messerscharfe Ansicht</div>
-              <p class="mt-1 text-xs text-slate-400 leading-relaxed">Hohe Sensorauflösung macht feinste Risse, verstopfte Fallrohre und lose Pfannen sichtbar.</p>
+              <p class="mt-1 text-xs text-zinc-400 leading-relaxed">Hohe Sensorauflösung macht feinste Risse, verstopfte Fallrohre und lose Pfannen sichtbar.</p>
             </div>
 
-            <div class="rounded-2xl border border-slate-800/80 bg-slate-900/40 p-5 backdrop-blur-sm">
+            <div class="rounded-2xl border border-zinc-800 bg-zinc-900/80 p-5 backdrop-blur-md">
               <div class="text-xs font-bold text-teal-400 uppercase tracking-wider">🛡️ 100% Konform</div>
               <div class="mt-2 text-lg font-bold text-white">Rechtlich abgesichert</div>
-              <p class="mt-1 text-xs text-slate-400 leading-relaxed">Flugprüfung nach EU-Drohnenrecht, DSGVO-konform und mit spezieller Luftfahrt-Haftpflicht.</p>
+              <p class="mt-1 text-xs text-zinc-400 leading-relaxed">Flugprüfung nach EU-Drohnenrecht, DSGVO-konform und mit spezieller Luftfahrt-Haftpflicht.</p>
             </div>
           </div>
 
@@ -151,92 +141,92 @@
     </section>
 
     <!-- Direkteinstieg -->
-    <section id="direkteinstieg" class="py-16 border-b border-slate-900 bg-slate-950">
+    <section id="direkteinstieg" class="py-16 border-b border-zinc-900 bg-zinc-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p class="text-xs font-bold tracking-widest text-teal-400 uppercase">Direkteinstieg</p>
         <h2 class="mt-2 text-2xl sm:text-3xl font-bold text-white">Was möchten Sie heute erfassen lassen?</h2>
 
         <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <a href="#schaden" class="group block p-6 rounded-2xl border border-slate-800 bg-slate-900/30 hover:border-teal-500/50 hover:bg-slate-900/60 transition">
+          <a href="#schaden" class="group block p-6 rounded-2xl border border-zinc-850 bg-zinc-900/50 hover:border-teal-500/50 hover:bg-zinc-900 transition">
             <div class="text-3xl mb-3">🏠</div>
             <div class="font-bold text-white group-hover:text-teal-400 transition">Dach & Regenrinne</div>
-            <p class="mt-1 text-xs text-slate-400">Zustand, Moos & Rinnen-Check</p>
+            <p class="mt-1 text-xs text-zinc-400">Zustand, Moos & Rinnen-Check</p>
           </a>
-          <a href="#schaden" class="group block p-6 rounded-2xl border border-slate-800 bg-slate-900/30 hover:border-teal-500/50 hover:bg-slate-900/60 transition">
+          <a href="#schaden" class="group block p-6 rounded-2xl border border-zinc-850 bg-zinc-900/50 hover:border-teal-500/50 hover:bg-zinc-900 transition">
             <div class="text-3xl mb-3">🌪️</div>
             <div class="font-bold text-white group-hover:text-teal-400 transition">Sturmschaden</div>
-            <p class="mt-1 text-xs text-slate-400">Beweise für die Versicherung</p>
+            <p class="mt-1 text-xs text-zinc-400">Beweise für die Versicherung</p>
           </a>
-          <a href="#kompetenzen" class="group block p-6 rounded-2xl border border-slate-800 bg-slate-900/30 hover:border-teal-500/50 hover:bg-slate-900/60 transition">
+          <a href="#kompetenzen" class="group block p-6 rounded-2xl border border-zinc-850 bg-zinc-900/50 hover:border-teal-500/50 hover:bg-zinc-900 transition">
             <div class="text-3xl mb-3">⚡</div>
             <div class="font-bold text-white group-hover:text-teal-400 transition">Handwerk, PV & 3D</div>
-            <p class="mt-1 text-xs text-slate-400">Dachflächen, Photogrammetrie & Maße</p>
+            <p class="mt-1 text-xs text-zinc-400">Dachflächen, Photogrammetrie & Maße</p>
           </a>
-          <a href="#kompetenzen" class="group block p-6 rounded-2xl border border-slate-800 bg-slate-900/30 hover:border-teal-500/50 hover:bg-slate-900/60 transition">
+          <a href="#kompetenzen" class="group block p-6 rounded-2xl border border-zinc-850 bg-zinc-900/50 hover:border-teal-500/50 hover:bg-zinc-900 transition">
             <div class="text-3xl mb-3">📸</div>
             <div class="font-bold text-white group-hover:text-teal-400 transition">Immobilien & Medien</div>
-            <p class="mt-1 text-xs text-slate-400">Exposés, Events & Fotografen-B2B</p>
+            <p class="mt-1 text-xs text-zinc-400">Exposés, Events & Fotografen-B2B</p>
           </a>
         </div>
       </div>
     </section>
 
     <!-- Dach- & Sturmschaden Detailbereich -->
-    <section id="schaden" class="py-20 border-b border-slate-900">
+    <section id="schaden" class="py-20 border-b border-zinc-900 bg-zinc-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           <div class="lg:col-span-7">
             <span class="text-xs font-bold tracking-widest text-teal-400 uppercase">Sicherheit & Werterhalt</span>
             <h2 class="mt-2 text-3xl sm:text-4xl font-black text-white">Dach- & Rinnencheck sowie Sturmschaden-Beweissicherung</h2>
 
-            <p class="mt-6 text-slate-300 leading-relaxed text-sm sm:text-base">
+            <p class="mt-6 text-zinc-300 leading-relaxed text-sm sm:text-base">
               Versteckte Schäden am Steildach verursachen unbemerkt Feuchtigkeitsschäden in tausenden Euro Höhe. Gleichzeitig verlangen Gebäudeversicherungen nach Hagel oder Sturm <strong class="text-white">lückenlose, datierte Bildbeweise</strong>, bevor eine Regulierung bewilligt wird.
             </p>
-            <p class="mt-4 text-slate-300 leading-relaxed text-sm sm:text-base">
+            <p class="mt-4 text-zinc-300 leading-relaxed text-sm sm:text-base">
               Mit unseren Drohnen überfliegen wir Ihr Gebäude sicher und berührungslos. Sie erhalten einen strukturierten Foto-Bericht mit <strong class="text-white">EXIF-Zeit- und GPS-Stempel</strong> – ideal zur Vorlage beim Dachdecker oder Ihrer Versicherung.
             </p>
 
             <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+              <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800">
                 <span class="text-teal-400 font-bold block text-sm">100% Sicher</span>
-                <p class="text-xs text-slate-400 mt-1">Niemand muss das Steildach betreten. Keine beschädigten Pfannen durch Tritte.</p>
+                <p class="text-xs text-zinc-400 mt-1">Niemand muss das Steildach betreten. Keine beschädigten Pfannen durch Tritte.</p>
               </div>
-              <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+              <div class="p-4 rounded-xl bg-zinc-900 border border-zinc-800">
                 <span class="text-teal-400 font-bold block text-sm">Detail-Nahaufnahme</span>
-                <p class="text-xs text-slate-400 mt-1">Haarrisse, verrottetes Blei und Kaminfugen in gestochen scharfer Vergrößerung.</p>
+                <p class="text-xs text-zinc-400 mt-1">Haarrisse, verrottetes Blei und Kaminfugen in gestochen scharfer Vergrößerung.</p>
               </div>
             </div>
           </div>
 
-          <div class="lg:col-span-5 rounded-2xl border border-slate-800 bg-slate-900/40 p-6">
-            <h3 class="text-lg font-bold text-white mb-5 border-b border-slate-800 pb-3">Was wir für Sie sichtbar machen:</h3>
+          <div class="lg:col-span-5 rounded-2xl border border-zinc-800 bg-zinc-900/60 p-6">
+            <h3 class="text-lg font-bold text-white mb-5 border-b border-zinc-800 pb-3">Was wir für Sie sichtbar machen:</h3>
             <div class="space-y-4 text-sm">
               <div class="flex gap-3">
                 <span class="text-xl">🍂</span>
                 <div>
                   <strong class="text-white block">Verstopfte Rinnen & Fallrohre:</strong>
-                  <span class="text-xs text-slate-400">Laubansammlungen, Schlamm, stehendes Wasser und defekte Einhangbleche.</span>
+                  <span class="text-xs text-zinc-400">Laubansammlungen, Schlamm, stehendes Wasser und defekte Einhangbleche.</span>
                 </div>
               </div>
               <div class="flex gap-3">
                 <span class="text-xl">💨</span>
                 <div>
                   <strong class="text-white block">Sturm- & Windsog-Schäden:</strong>
-                  <span class="text-xs text-slate-400">Verschobene Ziegel, abgekippte Firststeine und freiliegende Dämmbahnen.</span>
+                  <span class="text-xs text-zinc-400">Verschobene Ziegel, abgekippte Firststeine und freiliegende Dämmbahnen.</span>
                 </div>
               </div>
               <div class="flex gap-3">
                 <span class="text-xl">🧊</span>
                 <div>
                   <strong class="text-white block">Hagelschlag & Spannungsrisse:</strong>
-                  <span class="text-xs text-slate-400">Dachfenster-Rahmen, Zersplitterungen und beschädigte Gauben-Verkleidungen.</span>
+                  <span class="text-xs text-zinc-400">Dachfenster-Rahmen, Zersplitterungen und beschädigte Gauben-Verkleidungen.</span>
                 </div>
               </div>
               <div class="flex gap-3">
                 <span class="text-xl">🧱</span>
                 <div>
                   <strong class="text-white block">Schornstein & Wandanschlüsse:</strong>
-                  <span class="text-xs text-slate-400">Bröckelnde Fugen, rissige Kaminabdeckungen und undichte Wakaflex-/Bleibänder.</span>
+                  <span class="text-xs text-zinc-400">Bröckelnde Fugen, rissige Kaminabdeckungen und undichte Wakaflex-/Bleibänder.</span>
                 </div>
               </div>
             </div>
@@ -246,27 +236,27 @@
     </section>
 
     <!-- Kompetenzbereiche -->
-    <section id="kompetenzen" class="py-20 border-b border-slate-900">
+    <section id="kompetenzen" class="py-20 border-b border-zinc-900 bg-zinc-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-2xl">
           <span class="text-xs font-bold tracking-widest text-teal-400 uppercase">Kompetenzbereiche</span>
           <h2 class="mt-2 text-3xl sm:text-4xl font-black text-white">Unsere Kernbereiche im Überblick</h2>
-          <p class="mt-3 text-slate-400 text-sm sm:text-base">Für jede Anforderung die exakte Lösung: Technische Präzision für das Handwerk oder erstklassige 4K-Medienaufnahmen.</p>
+          <p class="mt-3 text-zinc-400 text-sm sm:text-base">Für jede Anforderung die exakte Lösung: Technische Präzision für das Handwerk oder erstklassige 4K-Medienaufnahmen.</p>
         </div>
 
         <div class="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
           <!-- Bereich 01 -->
-          <div class="rounded-3xl border border-slate-800 bg-slate-900/30 p-8 flex flex-col justify-between hover:border-slate-700 transition">
+          <div class="rounded-3xl border border-zinc-800 bg-zinc-900/40 p-8 flex flex-col justify-between hover:border-zinc-700 transition">
             <div>
               <div class="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-teal-400 mb-3">
                 <span>Bereich 01</span>
                 <span>Technik, Handwerk & 3D</span>
               </div>
               <h3 class="text-2xl font-bold text-white">Inspektion, Photogrammetrie & 3D-Erfassung</h3>
-              <p class="mt-3 text-slate-400 text-sm leading-relaxed">
+              <p class="mt-3 text-zinc-400 text-sm leading-relaxed">
                 Maßgeschneidert für Dachdecker, Solarteure, Gerüstbauer, Bauträger und Planungsbüros. Wir liefern die visuelle und dreidimensionale Basis für Ihre Angebote, Kalkulationen und Weiterverarbeitung.
               </p>
-              <ul class="mt-6 space-y-3 text-sm text-slate-300">
+              <ul class="mt-6 space-y-3 text-sm text-zinc-300">
                 <li class="flex items-start gap-2.5">
                   <span class="text-teal-400">•</span>
                   <span><strong class="text-white">Photogrammetrie & 3D-Modelle:</strong> Präzise Erfassung von Dach- und Geländestrukturen als detailgetreue 3D-Meshes und Punktwolken.</span>
@@ -285,23 +275,23 @@
                 </li>
               </ul>
             </div>
-            <div class="mt-8 pt-6 border-t border-slate-800/80">
+            <div class="mt-8 pt-6 border-t border-zinc-800">
               <a href="#leistungen" class="text-xs font-bold uppercase tracking-wider text-teal-400 hover:text-teal-300 transition">Alle Handwerksleistungen ansehen →</a>
             </div>
           </div>
 
           <!-- Bereich 02 -->
-          <div class="rounded-3xl border border-slate-800 bg-slate-900/30 p-8 flex flex-col justify-between hover:border-slate-700 transition">
+          <div class="rounded-3xl border border-zinc-800 bg-zinc-900/40 p-8 flex flex-col justify-between hover:border-zinc-700 transition">
             <div>
               <div class="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-teal-400 mb-3">
                 <span>Bereich 02</span>
                 <span>Immobilien & Medien</span>
               </div>
               <h3 class="text-2xl font-bold text-white">Exposés, Events & Fotografen-B2B</h3>
-              <p class="mt-3 text-slate-400 text-sm leading-relaxed">
+              <p class="mt-3 text-zinc-400 text-sm leading-relaxed">
                 Für Immobilienmakler, Medienagenturen, Fotografen und Firmen. Wir erstellen repräsentative Luftbilder oder agieren als Ihr externer Drohnenpilot für Ihre eigenen Produktionen.
               </p>
-              <ul class="mt-6 space-y-3 text-sm text-slate-300">
+              <ul class="mt-6 space-y-3 text-sm text-zinc-300">
                 <li class="flex items-start gap-2.5">
                   <span class="text-teal-400">•</span>
                   <span><strong class="text-white">Immobilien-Marketing:</strong> Hochwertige Verkaufsfotos, Grundstücksgrenzen und 4K-Video-Überflüge.</span>
@@ -320,7 +310,7 @@
                 </li>
               </ul>
             </div>
-            <div class="mt-8 pt-6 border-t border-slate-800/80">
+            <div class="mt-8 pt-6 border-t border-zinc-800">
               <a href="#leistungen" class="text-xs font-bold uppercase tracking-wider text-teal-400 hover:text-teal-300 transition">Alle Medienleistungen ansehen →</a>
             </div>
           </div>
@@ -329,110 +319,110 @@
     </section>
 
     <!-- Alle Leistungen Raster -->
-    <section id="leistungen" class="py-20 border-b border-slate-900 bg-slate-950">
+    <section id="leistungen" class="py-20 border-b border-zinc-900 bg-zinc-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <span class="text-xs font-bold tracking-widest text-teal-400 uppercase">Übersicht</span>
         <h2 class="mt-2 text-3xl font-black text-white">Alle Leistungen im Detail</h2>
-        <p class="mt-2 text-slate-400 text-sm">Jeder Einsatz wird individuell vorbereitet – inklusive Luftraumfreigabe, Wetter-Check und maßgeschneiderter Datenausgabe.</p>
+        <p class="mt-2 text-zinc-400 text-sm">Jeder Einsatz wird individuell vorbereitet – inklusive Luftraumfreigabe, Wetter-Check und maßgeschneiderter Datenausgabe.</p>
 
         <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <article class="p-6 rounded-2xl border border-slate-800/70 bg-slate-900/30">
+          <article class="p-6 rounded-2xl border border-zinc-850 bg-zinc-900/40">
             <span class="text-2xl mb-3 block">🔍</span>
             <h3 class="text-base font-bold text-white">Dach- & Regenrinnen-Check</h3>
-            <p class="mt-2 text-xs text-slate-400 leading-relaxed">Sichtprüfung von Rinnen, Firsten, Kehlen und Einläufen. Frühzeitiges Erkennen von Laub und Ziegelverschiebungen.</p>
+            <p class="mt-2 text-xs text-zinc-400 leading-relaxed">Sichtprüfung von Rinnen, Firsten, Kehlen und Einläufen. Frühzeitiges Erkennen von Laub und Ziegelverschiebungen.</p>
           </article>
-          <article class="p-6 rounded-2xl border border-slate-800/70 bg-slate-900/30">
+          <article class="p-6 rounded-2xl border border-zinc-850 bg-zinc-900/40">
             <span class="text-2xl mb-3 block">🌪️</span>
             <h3 class="text-base font-bold text-white">Sturm- & Hagelbeweise</h3>
-            <p class="mt-2 text-xs text-slate-400 leading-relaxed">Fristgerechte Dokumentation mit GPS- und Zeitstempel für die unkomplizierte Regulierung mit der Versicherung.</p>
+            <p class="mt-2 text-xs text-zinc-400 leading-relaxed">Fristgerechte Dokumentation mit GPS- und Zeitstempel für die unkomplizierte Regulierung mit der Versicherung.</p>
           </article>
-          <article class="p-6 rounded-2xl border border-slate-800/70 bg-slate-900/30">
+          <article class="p-6 rounded-2xl border border-zinc-850 bg-zinc-900/40">
             <span class="text-2xl mb-3 block">☀️</span>
             <h3 class="text-base font-bold text-white">PV- & Solargrundlagen</h3>
-            <p class="mt-2 text-xs text-slate-400 leading-relaxed">Visualisierung nutzbarer Dachflächen, Störobjekte und Verschattungsverläufe für Solarteure und Fachbetriebe.</p>
+            <p class="mt-2 text-xs text-zinc-400 leading-relaxed">Visualisierung nutzbarer Dachflächen, Störobjekte und Verschattungsverläufe für Solarteure und Fachbetriebe.</p>
           </article>
-          <article class="p-6 rounded-2xl border border-slate-800/70 bg-slate-900/30">
+          <article class="p-6 rounded-2xl border border-zinc-850 bg-zinc-900/40">
             <span class="text-2xl mb-3 block">📐</span>
             <h3 class="text-base font-bold text-white">Fassaden- & Gerüst-Scan</h3>
-            <p class="mt-2 text-xs text-slate-400 leading-relaxed">Erfassung von Traufhöhen, Erkern und Rissen zur fehlerfreien Vorbereitung von Gerüsten und Sanierungsarbeiten.</p>
+            <p class="mt-2 text-xs text-zinc-400 leading-relaxed">Erfassung von Traufhöhen, Erkern und Rissen zur fehlerfreien Vorbereitung von Gerüsten und Sanierungsarbeiten.</p>
           </article>
-          <article class="p-6 rounded-2xl border border-slate-800/70 bg-slate-900/30">
+          <article class="p-6 rounded-2xl border border-zinc-850 bg-zinc-900/40">
             <span class="text-2xl mb-3 block">🏗️</span>
             <h3 class="text-base font-bold text-white">Bautagebuch & Dokumentation</h3>
-            <p class="mt-2 text-xs text-slate-400 leading-relaxed">Regelmäßige Überflüge für Bauträger und Bauherren zur revisionssicheren Protokollierung des Baufortschritts.</p>
+            <p class="mt-2 text-xs text-zinc-400 leading-relaxed">Regelmäßige Überflüge für Bauträger und Bauherren zur revisionssicheren Protokollierung des Baufortschritts.</p>
           </article>
-          <article class="p-6 rounded-2xl border border-slate-800/70 bg-slate-900/30">
+          <article class="p-6 rounded-2xl border border-zinc-850 bg-zinc-900/40">
             <span class="text-2xl mb-3 block">🌐</span>
             <h3 class="text-base font-bold text-white">Photogrammetrie & 3D-Modelle*</h3>
-            <p class="mt-2 text-xs text-slate-400 leading-relaxed">Dreidimensionale Rekonstruktionen, dichte Punktwolken und Geländeprofile. Bereitstellung in allen gängigen Datenformaten für Ihre Planungs- und Konstruktionssoftware.</p>
+            <p class="mt-2 text-xs text-zinc-400 leading-relaxed">Dreidimensionale Rekonstruktionen, dichte Punktwolken und Geländeprofile. Bereitstellung in allen gängigen Datenformaten für Ihre Planungs- und Konstruktionssoftware.</p>
           </article>
-          <article class="p-6 rounded-2xl border border-slate-800/70 bg-slate-900/30">
+          <article class="p-6 rounded-2xl border border-zinc-850 bg-zinc-900/40">
             <span class="text-2xl mb-3 block">🏡</span>
             <h3 class="text-base font-bold text-white">Immobilien-Exposés</h3>
-            <p class="mt-2 text-xs text-slate-400 leading-relaxed">Hochwertige Perspektiven für Makler und Verkäufer – hebt Grundstücksgröße und Architektur sofort hervor.</p>
+            <p class="mt-2 text-xs text-zinc-400 leading-relaxed">Hochwertige Perspektiven für Makler und Verkäufer – hebt Grundstücksgröße und Architektur sofort hervor.</p>
           </article>
-          <article class="p-6 rounded-2xl border border-slate-800/70 bg-slate-900/30">
+          <article class="p-6 rounded-2xl border border-zinc-850 bg-zinc-900/40">
             <span class="text-2xl mb-3 block">🎬</span>
             <h3 class="text-base font-bold text-white">B2B für Fotografen</h3>
-            <p class="mt-2 text-xs text-slate-400 leading-relaxed">Wir fliegen nach Ihrem Drehbuch und übergeben RAW/D-Log Rohdaten direkt in Ihre Nachbearbeitung.</p>
+            <p class="mt-2 text-xs text-zinc-400 leading-relaxed">Wir fliegen nach Ihrem Drehbuch und übergeben RAW/D-Log Rohdaten direkt in Ihre Nachbearbeitung.</p>
           </article>
-          <article class="p-6 rounded-2xl border border-slate-800/70 bg-slate-900/30">
+          <article class="p-6 rounded-2xl border border-zinc-850 bg-zinc-900/40">
             <span class="text-2xl mb-3 block">🎪</span>
             <h3 class="text-base font-bold text-white">Firmengelände & Events</h3>
-            <p class="mt-2 text-xs text-slate-400 leading-relaxed">Eindrucksvolle Luftansichten von Gewerbeanlagen, Flotten und sichere Aufnahmen bei ausgewählten Freiluft-Events.</p>
+            <p class="mt-2 text-xs text-zinc-400 leading-relaxed">Eindrucksvolle Luftansichten von Gewerbeanlagen, Flotten und sichere Aufnahmen bei ausgewählten Freiluft-Events.</p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- Ablauf -->
-    <section class="py-20 border-b border-slate-900">
+    <section class="py-20 border-b border-zinc-900 bg-zinc-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <span class="text-xs font-bold tracking-widest text-teal-400 uppercase">Ablauf</span>
         <h2 class="mt-2 text-3xl font-black text-white">In 4 Schritten zu Ihren Drohnendaten</h2>
 
         <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/30">
+          <div class="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/40">
             <span class="text-xs font-black text-teal-400 uppercase">01 · Anfrage</span>
-            <p class="mt-2 text-sm text-slate-300">Standort und Einsatzzweck kurz telefonisch oder per E-Mail schildern (z. B. Rinneninspektion, Schaden, 3D-Erfassung oder Exposé).</p>
+            <p class="mt-2 text-sm text-zinc-300">Standort und Einsatzzweck kurz telefonisch oder per E-Mail schildern (z. B. Rinneninspektion, Schaden, 3D-Erfassung oder Exposé).</p>
           </div>
-          <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/30">
+          <div class="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/40">
             <span class="text-xs font-black text-teal-400 uppercase">02 · Flugprüfung</span>
-            <p class="mt-2 text-sm text-slate-300">Prüfung der Geozonen, Wetterverhältnisse und Genehmigungen. Feste und verlässliche Terminvereinbarung.</p>
+            <p class="mt-2 text-sm text-zinc-300">Prüfung der Geozonen, Wetterverhältnisse und Genehmigungen. Feste und verlässliche Terminvereinbarung.</p>
           </div>
-          <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/30">
+          <div class="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/40">
             <span class="text-xs font-black text-teal-400 uppercase">03 · Durchführung</span>
-            <p class="mt-2 text-sm text-slate-300">Sicherer Flug vor Ort. Kein Steiger nötig, keine Lärmbelastung und volle Einhaltung der Privatsphäre.</p>
+            <p class="mt-2 text-sm text-zinc-300">Sicherer Flug vor Ort. Kein Steiger nötig, keine Lärmbelastung und volle Einhaltung der Privatsphäre.</p>
           </div>
-          <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/30">
+          <div class="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/40">
             <span class="text-xs font-black text-teal-400 uppercase">04 · Übergabe</span>
-            <p class="mt-2 text-sm text-slate-300">Schnelle Bereitstellung der aufbereiteten 4K-Bilder, 3D-Datensätze, Berichte oder RAW-Dateien per sicherem Cloud-Link.</p>
+            <p class="mt-2 text-sm text-zinc-300">Schnelle Bereitstellung der aufbereiteten 4K-Bilder, 3D-Datensätze, Berichte oder RAW-Dateien per sicherem Cloud-Link.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Über mich -->
-    <section id="ueber-mich" class="py-20 border-b border-slate-900 bg-slate-950">
+    <section id="ueber-mich" class="py-20 border-b border-zinc-900 bg-zinc-950">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <span class="text-xs font-bold tracking-widest text-teal-400 uppercase">Über AERO-DRONE</span>
         <h2 class="mt-2 text-3xl font-black text-white">Persönlich. Zuverlässig. Vor Ort in Köln.</h2>
 
-        <p class="mt-6 text-slate-300 leading-relaxed text-base">
+        <p class="mt-6 text-zinc-300 leading-relaxed text-base">
           Mein Name ist <strong class="text-white">Patrick Runkel</strong>. Bei AERO-DRONE gibt es keine anonyme Hotline, sondern direkte Abstimmung von Pilot zu Auftraggeber. Ich kombiniere fundiertes technisches Verständnis mit präziser, sicherer Flugführung und moderner digitaler Weiterverarbeitung, um Ihnen genau die Datenformate zu liefern, die Sie für Ihre Angebote, Sanierungsentscheidungen oder Medienformate benötigen.
         </p>
 
         <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/50 border border-slate-800 text-sm font-medium text-slate-300">
+          <div class="flex items-center gap-3 p-3 rounded-xl bg-zinc-900 border border-zinc-800 text-sm font-medium text-zinc-300">
             <span class="text-teal-400 font-bold">✓</span> EU-Kompetenznachweis A1/A3 (LBA)
           </div>
-          <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/50 border border-slate-800 text-sm font-medium text-slate-300">
+          <div class="flex items-center gap-3 p-3 rounded-xl bg-zinc-900 border border-zinc-800 text-sm font-medium text-zinc-300">
             <span class="text-teal-400 font-bold">✓</span> Gewerbliche Luftfahrt-Haftpflicht
           </div>
-          <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/50 border border-slate-800 text-sm font-medium text-slate-300">
+          <div class="flex items-center gap-3 p-3 rounded-xl bg-zinc-900 border border-zinc-800 text-sm font-medium text-zinc-300">
             <span class="text-teal-400 font-bold">✓</span> 4K Sensorik & Photogrammetrie
           </div>
-          <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/50 border border-slate-800 text-sm font-medium text-slate-300">
+          <div class="flex items-center gap-3 p-3 rounded-xl bg-zinc-900 border border-zinc-800 text-sm font-medium text-zinc-300">
             <span class="text-teal-400 font-bold">✓</span> Schnelle Reaktionszeit in Köln & Region
           </div>
         </div>
@@ -440,68 +430,68 @@
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="py-20 border-b border-slate-900">
+    <section id="faq" class="py-20 border-b border-zinc-900 bg-zinc-950">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <span class="text-xs font-bold tracking-widest text-teal-400 uppercase">FAQ</span>
         <h2 class="mt-2 text-3xl font-black text-white">Häufig gestellte Fragen</h2>
 
         <div class="mt-10 space-y-4">
-          <details class="group rounded-2xl border border-slate-800 bg-slate-900/30 p-5 transition">
+          <details class="group rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 transition">
             <summary class="flex justify-between items-center cursor-pointer font-bold text-white group-open:text-teal-400 list-none">
               <span>Wie hilft die Drohnendokumentation bei einem Sturmschaden mit der Versicherung?</span>
               <span class="transition group-open:rotate-180 ml-4">▼</span>
             </summary>
-            <p class="mt-4 text-xs sm:text-sm text-slate-300 leading-relaxed">
+            <p class="mt-4 text-xs sm:text-sm text-zinc-300 leading-relaxed">
               Gebäudeversicherungen fordern für die Kostenübernahme nach Sturm oder Hagel eindeutige, datierte Belege. Mit der Drohne erfassen wir selbst schwer zugängliche Kehlen, Firste und Kaminanschlüsse in hochauflösender 4K-Qualität. Die Bilder enthalten EXIF-Zeit- und GPS-Koordinaten, sodass Sie einen unanfechtbaren Zustandsbericht einreichen können.
             </p>
           </details>
 
-          <details class="group rounded-2xl border border-slate-800 bg-slate-900/30 p-5 transition">
+          <details class="group rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 transition">
             <summary class="flex justify-between items-center cursor-pointer font-bold text-white group-open:text-teal-400 list-none">
               <span>In welchen Dateiformaten erhalte ich die 3D- und Messdaten?</span>
               <span class="transition group-open:rotate-180 ml-4">▼</span>
             </summary>
-            <p class="mt-4 text-xs sm:text-sm text-slate-300 leading-relaxed">
+            <p class="mt-4 text-xs sm:text-sm text-zinc-300 leading-relaxed">
               Wir stellen Ihnen die photogrammetrisch erfassten Daten in standardisierten Formaten zur Verfügung, die Sie direkt in gängige 3D-Viewer, Berechnungs- und Konstruktionssoftware importieren können (z. B. texturierte 3D-Meshes, dichte Punktwolken oder hochauflösende Orthofotos und digitale Höhenmodelle).
             </p>
           </details>
 
-          <details class="group rounded-2xl border border-slate-800 bg-slate-900/30 p-5 transition">
+          <details class="group rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 transition">
             <summary class="flex justify-between items-center cursor-pointer font-bold text-white group-open:text-teal-400 list-none">
               <span>Warum ist die Drohne wirtschaftlicher als ein Gerüst oder Hubsteiger?</span>
               <span class="transition group-open:rotate-180 ml-4">▼</span>
             </summary>
-            <p class="mt-4 text-xs sm:text-sm text-slate-300 leading-relaxed">
+            <p class="mt-4 text-xs sm:text-sm text-zinc-300 leading-relaxed">
               Das Mieten eines Steigers oder das Stellen eines Gerüsts kostet meist viele hundert Euro und erfordert oft Genehmigungen für den Gehweg. Eine Drohneninspektion ist meist in unter einer Stunde abgeschlossen – ohne Gerüstkosten, ohne Klettergefahr und ohne Spuren an Garten oder Pflaster.
             </p>
           </details>
 
-          <details class="group rounded-2xl border border-slate-800 bg-slate-900/30 p-5 transition">
+          <details class="group rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 transition">
             <summary class="flex justify-between items-center cursor-pointer font-bold text-white group-open:text-teal-400 list-none">
               <span>Können Fotografen und Agenturen Sie als externen Piloten buchen?</span>
               <span class="transition group-open:rotate-180 ml-4">▼</span>
             </summary>
-            <p class="mt-4 text-xs sm:text-sm text-slate-300 leading-relaxed">
+            <p class="mt-4 text-xs sm:text-sm text-zinc-300 leading-relaxed">
               Ja, genau dafür ist Säule 2 da. Wenn Sie als Fotograf oder Videograf Luftaufnahmen anbieten möchten, ohne selbst Scheine und Drohnen vorzuhalten, fliegen wir für Sie. Sie erhalten unberührte RAW-Fotos oder flache 4K/D-Log Profile zur perfekten Integration in Ihren Workflow.
             </p>
           </details>
 
-          <details class="group rounded-2xl border border-slate-800 bg-slate-900/30 p-5 transition">
+          <details class="group rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 transition">
             <summary class="flex justify-between items-center cursor-pointer font-bold text-white group-open:text-teal-400 list-none">
               <span>Sind die abgeleiteten Messwerte vermessungsgenau?</span>
               <span class="transition group-open:rotate-180 ml-4">▼</span>
             </summary>
-            <p class="mt-4 text-xs sm:text-sm text-slate-300 leading-relaxed">
+            <p class="mt-4 text-xs sm:text-sm text-zinc-300 leading-relaxed">
               Die abgeleiteten Strecken-, Höhen- und Flächenwerte dienen der Orientierung, Arbeitsvorbereitung und Vorkalkulation für Handwerker. Sie ersetzen kein amtliches Katasteraufmaß. Für bindende Materialbestellungen müssen entscheidende Maße durch den Fachbetrieb gegengeprüft werden.
             </p>
           </details>
 
-          <details class="group rounded-2xl border border-slate-800 bg-slate-900/30 p-5 transition">
+          <details class="group rounded-2xl border border-zinc-800 bg-zinc-900/40 p-5 transition">
             <summary class="flex justify-between items-center cursor-pointer font-bold text-white group-open:text-teal-400 list-none">
               <span>Was passiert bei schlechtem Wetter am geplanten Termin?</span>
               <span class="transition group-open:rotate-180 ml-4">▼</span>
             </summary>
-            <p class="mt-4 text-xs sm:text-sm text-slate-300 leading-relaxed">
+            <p class="mt-4 text-xs sm:text-sm text-zinc-300 leading-relaxed">
               Bei Regen, Sturm oder schlechter Sicht verschieben wir den Flug kostenfrei auf den nächstmöglichen Termin. Sicherheit und beste Bildqualität stehen an erster Stelle.
             </p>
           </details>
@@ -510,25 +500,25 @@
     </section>
 
     <!-- Kontakt Section -->
-    <section id="kontakt" class="py-20 bg-slate-950">
+    <section id="kontakt" class="py-20 bg-zinc-950">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <span class="text-xs font-bold tracking-widest text-teal-400 uppercase">Kontakt</span>
         <h2 class="mt-2 text-3xl sm:text-4xl font-black text-white">Jetzt unverbindlich anfragen</h2>
-        <p class="mt-4 text-slate-300 text-sm sm:text-base max-w-2xl mx-auto">
+        <p class="mt-4 text-zinc-300 text-sm sm:text-base max-w-2xl mx-auto">
           Nennen Sie mir kurz Standort, Objektart und Ihr Vorhaben (z. B. Rinnencheck, Sturmschaden, PV-Fläche, 3D-Erfassung oder Medienaufnahmen). Ich melde mich zeitnah bei Ihnen mit einer ehrlichen Einschätzung.
         </p>
 
         <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-          <a href="mailto:kontakt@aero-drone-koeln.de?subject=Projektanfrage%20AERO-DRONE" class="inline-flex justify-center items-center rounded-xl bg-teal-500 px-8 py-4 text-base font-bold text-slate-950 hover:bg-teal-400 transition shadow-lg shadow-teal-500/20">
+          <a href="mailto:kontakt@aero-drone-koeln.de?subject=Projektanfrage%20AERO-DRONE" class="inline-flex justify-center items-center rounded-xl bg-teal-500 px-8 py-4 text-base font-bold text-zinc-950 hover:bg-teal-400 transition shadow-lg shadow-teal-500/20">
             Anfrage per E-Mail senden
           </a>
-          <a href="tel:+4917656114565" class="inline-flex justify-center items-center rounded-xl border border-slate-700 bg-slate-900 px-8 py-4 text-base font-semibold text-slate-200 hover:bg-slate-800 transition">
+          <a href="tel:+4917656114565" class="inline-flex justify-center items-center rounded-xl border border-zinc-700 bg-zinc-900 px-8 py-4 text-base font-semibold text-zinc-200 hover:bg-zinc-800 transition">
             <span class="mr-2">📞</span> 0176 56114565
           </a>
         </div>
 
-        <div class="mt-12 pt-8 border-t border-slate-900 text-xs text-slate-400 space-y-1">
-          <p class="font-bold text-slate-300">Patrick Runkel · AERO-DRONE</p>
+        <div class="mt-12 pt-8 border-t border-zinc-900 text-xs text-zinc-400 space-y-1">
+          <p class="font-bold text-zinc-300">Patrick Runkel · AERO-DRONE</p>
           <p>Waldstraße 68 · 51145 Köln</p>
           <p>
             <a href="mailto:kontakt@aero-drone-koeln.de" class="hover:text-teal-400">kontakt@aero-drone-koeln.de</a> · 
@@ -540,10 +530,10 @@
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-slate-900 bg-slate-950 py-8 text-xs text-slate-400">
+  <footer class="border-t border-zinc-900 bg-zinc-950 py-8 text-xs text-zinc-400">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
       <div>
-        <span class="font-bold text-slate-300">AERO-DRONE</span>
+        <span class="font-bold text-zinc-300">AERO-DRONE</span>
         <span class="ml-2">© <span id="current-year"></span> Patrick Runkel · Alle Rechte vorbehalten</span>
       </div>
 
@@ -556,13 +546,13 @@
   </footer>
 
   <!-- Modal: Impressum -->
-  <dialog id="dialog-impressum" class="backdrop:bg-black/75 rounded-2xl bg-slate-900 text-slate-100 border border-slate-800 max-w-2xl w-full p-0 shadow-2xl">
+  <dialog id="dialog-impressum" class="backdrop:bg-black/75 rounded-2xl bg-zinc-900 text-zinc-100 border border-zinc-800 max-w-2xl w-full p-0 shadow-2xl">
     <div class="p-6 sm:p-8 max-h-[80vh] overflow-y-auto">
-      <div class="flex justify-between items-center pb-4 border-b border-slate-800">
+      <div class="flex justify-between items-center pb-4 border-b border-zinc-800">
         <h2 class="text-xl font-bold text-white">Impressum</h2>
-        <button id="close-impressum" class="text-slate-400 hover:text-white text-2xl font-bold">&times;</button>
+        <button id="close-impressum" class="text-zinc-400 hover:text-white text-2xl font-bold">&times;</button>
       </div>
-      <div class="mt-6 space-y-6 text-sm text-slate-300 leading-relaxed">
+      <div class="mt-6 space-y-6 text-sm text-zinc-300 leading-relaxed">
         <section>
           <h3 class="font-bold text-white mb-1">Angaben gemäß § 5 DDG</h3>
           <p>Patrick Runkel<br>AERO-DRONE<br>Waldstraße 68<br>51145 Köln<br>Deutschland</p>
@@ -577,51 +567,51 @@
         </section>
         <section>
           <h3 class="font-bold text-white mb-1">Haftung für Inhalte</h3>
-          <p class="text-xs text-slate-400">Als Diensteanbieter bin ich für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Eine Verpflichtung zur Überwachung übermittelter oder gespeicherter fremder Informationen besteht im Rahmen der gesetzlichen Regelungen nicht.</p>
+          <p class="text-xs text-zinc-400">Als Diensteanbieter bin ich für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Eine Verpflichtung zur Überwachung übermittelter oder gespeicherter fremder Informationen besteht im Rahmen der gesetzlichen Regelungen nicht.</p>
         </section>
         <section>
           <h3 class="font-bold text-white mb-1">Urheberrecht</h3>
-          <p class="text-xs text-slate-400">Die durch den Seitenbetreiber erstellten Inhalte, Bilder und Werke auf dieser Website unterliegen dem deutschen Urheberrecht. Eine Verwendung außerhalb der gesetzlichen Grenzen bedarf der vorherigen schriftlichen Zustimmung.</p>
+          <p class="text-xs text-zinc-400">Die durch den Seitenbetreiber erstellten Inhalte, Bilder und Werke auf dieser Website unterliegen dem deutschen Urheberrecht. Eine Verwendung außerhalb der gesetzlichen Grenzen bedarf der vorherigen schriftlichen Zustimmung.</p>
         </section>
       </div>
     </div>
   </dialog>
 
   <!-- Modal: Datenschutz -->
-  <dialog id="dialog-datenschutz" class="backdrop:bg-black/75 rounded-2xl bg-slate-900 text-slate-100 border border-slate-800 max-w-2xl w-full p-0 shadow-2xl">
+  <dialog id="dialog-datenschutz" class="backdrop:bg-black/75 rounded-2xl bg-zinc-900 text-zinc-100 border border-zinc-800 max-w-2xl w-full p-0 shadow-2xl">
     <div class="p-6 sm:p-8 max-h-[80vh] overflow-y-auto">
-      <div class="flex justify-between items-center pb-4 border-b border-slate-800">
+      <div class="flex justify-between items-center pb-4 border-b border-zinc-800">
         <h2 class="text-xl font-bold text-white">Datenschutzerklärung</h2>
-        <button id="close-datenschutz" class="text-slate-400 hover:text-white text-2xl font-bold">&times;</button>
+        <button id="close-datenschutz" class="text-zinc-400 hover:text-white text-2xl font-bold">&times;</button>
       </div>
-      <div class="mt-6 space-y-6 text-sm text-slate-300 leading-relaxed">
+      <div class="mt-6 space-y-6 text-sm text-zinc-300 leading-relaxed">
         <section>
           <h3 class="font-bold text-white mb-1">1. Verantwortlicher</h3>
           <p>Patrick Runkel<br>AERO-DRONE<br>Waldstraße 68<br>51145 Köln<br>E-Mail: kontakt@aero-drone-koeln.de<br>Telefon: 0176 56114565</p>
         </section>
         <section>
           <h3 class="font-bold text-white mb-1">2. Hosting</h3>
-          <p class="text-xs text-slate-400">Diese Website wird über GitHub Pages bereitgestellt. Beim Aufruf werden technisch notwendige Verbindungsdaten (z. B. IP-Adresse) durch den Hostinganbieter verarbeitet und in Serverprotokollen gespeichert.</p>
+          <p class="text-xs text-zinc-400">Diese Website wird über GitHub Pages bereitgestellt. Beim Aufruf werden technisch notwendige Verbindungsdaten (z. B. IP-Adresse) durch den Hostinganbieter verarbeitet und in Serverprotokollen gespeichert.</p>
         </section>
         <section>
           <h3 class="font-bold text-white mb-1">3. Kontaktaufnahme</h3>
-          <p class="text-xs text-slate-400">Wenn Sie per E-Mail oder Telefon Kontakt aufnehmen, werden die übermittelten Daten zur Bearbeitung Ihrer Anfrage und möglicher Anschlussfragen verarbeitet (Art. 6 Abs. 1 lit. b DSGVO).</p>
+          <p class="text-xs text-zinc-400">Wenn Sie per E-Mail oder Telefon Kontakt aufnehmen, werden die übermittelten Daten zur Bearbeitung Ihrer Anfrage und möglicher Anschlussfragen verarbeitet (Art. 6 Abs. 1 lit. b DSGVO).</p>
         </section>
         <section>
           <h3 class="font-bold text-white mb-1">4. Externe Skripte & CDNs</h3>
-          <p class="text-xs text-slate-400">Diese Website lädt Tailwind CSS über ein Content Delivery Network (CDN), um eine fehlerfreie Darstellung zu gewährleisten.</p>
+          <p class="text-xs text-zinc-400">Diese Website lädt Tailwind CSS über ein Content Delivery Network (CDN), um eine fehlerfreie Darstellung zu gewährleisten.</p>
         </section>
         <section>
           <h3 class="font-bold text-white mb-1">5. Drohnenaufnahmen & Privatsphäre</h3>
-          <p class="text-xs text-slate-400">Bei allen Flügen wird strikt auf das Recht am eigenen Bild und Nachbarschaftsrechte geachtet. Aufnahmen von Nachbargrundstücken werden vermieden bzw. vor einer Veröffentlichung oder Weitergabe unkenntlich gemacht.</p>
+          <p class="text-xs text-zinc-400">Bei allen Flügen wird strikt auf das Recht am eigenen Bild und Nachbarschaftsrechte geachtet. Aufnahmen von Nachbargrundstücken werden vermieden bzw. vor einer Veröffentlichung oder Weitergabe unkenntlich gemacht.</p>
         </section>
         <section>
           <h3 class="font-bold text-white mb-1">6. Ihre Rechte</h3>
-          <p class="text-xs text-slate-400">Sie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung und Widerspruch bezüglich Ihrer gespeicherten personenbezogenen Daten.</p>
+          <p class="text-xs text-zinc-400">Sie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung und Widerspruch bezüglich Ihrer gespeicherten personenbezogenen Daten.</p>
         </section>
         <section>
           <h3 class="font-bold text-white mb-1">7. Stand</h3>
-          <p class="text-xs text-slate-400">September 2026</p>
+          <p class="text-xs text-zinc-400">September 2026</p>
         </section>
       </div>
     </div>
