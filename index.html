@@ -42,7 +42,8 @@
           },
           boxShadow: {
             soft: "0 20px 60px rgba(0,0,0,.32)",
-            glow: "0 0 40px rgba(255,255,255,0.06)"
+            glow: "0 0 40px rgba(255,255,255,0.06)",
+            trust: "0 0 20px rgba(16,185,129,0.15)"
           }
         }
       }
@@ -88,7 +89,7 @@
           rgba(9, 10, 11, 1) 100%
         ),
         url("hero-drohne-koeln.PNG");
-      background-position: center, 45% center;
+      background-position: center, 65% center;
       background-repeat: no-repeat;
       background-size: cover, cover;
     }
@@ -151,8 +152,8 @@
 
     @media (max-width: 767px) {
       .hero-background {
-        background-position: center, 68% 30%;
-        background-size: cover, auto 94%;
+        background-position: center, 50% 18%;
+        background-size: cover, cover;
       }
     }
 
@@ -243,11 +244,17 @@
       <div
         class="relative z-10 mx-auto w-full max-w-6xl px-5 pb-16 pt-10 text-center md:px-8 md:py-24"
       >
-        <!-- BADGES -->
-        <div class="mb-5 flex flex-wrap items-center justify-center gap-2">
+        <!-- BADGES (VERTRAUENS- & ZERTIFIZIERUNGSELEMENTE) -->
+        <div class="mb-5 flex flex-wrap items-center justify-center gap-2.5">
           <span class="section-label">Köln &amp; Rheinland</span>
-          <span class="rounded-full bg-white/10 px-3 py-1 text-xs font-bold text-silver-200 border border-white/10">EU-zertifiziert A1/A3</span>
-          <span class="rounded-full bg-white/10 px-3 py-1 text-xs font-bold text-silver-200 border border-white/10">Luftfahrt-Haftpflicht</span>
+          
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-3.5 py-1 text-xs font-bold text-emerald-400 border border-emerald-500/30 shadow-trust">
+            <span>🛡️</span> EU-zertifiziert A1/A3
+          </span>
+
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-3.5 py-1 text-xs font-bold text-emerald-400 border border-emerald-500/30 shadow-trust">
+            <span>✓</span> Luftfahrt-Haftpflicht
+          </span>
         </div>
 
         <h1
@@ -298,9 +305,9 @@
 
           <a
             href="tel:+4917656114565"
-            class="rounded-full border border-white/30 bg-black/40 px-8 py-4 text-sm font-bold hover:bg-white/10 transition-colors flex items-center justify-center gap-2"
+            class="rounded-full border border-emerald-500/30 bg-black/40 px-8 py-4 text-sm font-bold text-white hover:bg-emerald-500/10 hover:border-emerald-400 transition-colors flex items-center justify-center gap-2"
           >
-            <span>📞</span> 0176 56114565
+            <span class="text-emerald-400">📞</span> 0176 56114565
           </a>
         </div>
 
@@ -309,23 +316,23 @@
           class="glass mx-auto mt-12 grid max-w-4xl rounded-2xl sm:grid-cols-3 text-left divide-y sm:divide-y-0 sm:divide-x divide-white/10"
         >
           <div class="p-5">
-            <div class="text-xl mb-1">⏱️</div>
-            <p class="font-bold text-white text-base">Ergebnisse in 24–48h</p>
+            <div class="text-xl mb-1 text-emerald-400 font-bold">⏱️ 24–48h</div>
+            <p class="font-bold text-white text-base">Ergebnisse auf den Punkt</p>
             <p class="mt-1 text-xs text-silver-400 leading-normal">
               Schnelle digitale Bildbereitstellung per Cloud-Link für Handwerker &amp; Versicherungen.
             </p>
           </div>
 
           <div class="p-5">
-            <div class="text-xl mb-1">🔍</div>
-            <p class="font-bold text-white text-base">Zentimetergenaue 4K-Optik</p>
+            <div class="text-xl mb-1 text-emerald-400 font-bold">🔍 4K Optik</div>
+            <p class="font-bold text-white text-base">Zentimetergenau</p>
             <p class="mt-1 text-xs text-silver-400 leading-normal">
               Verlustfreier Zoom erkennt Risse, verstopfte Fallrohre und lose Pfannen aus sicherer Distanz.
             </p>
           </div>
 
           <div class="p-5">
-            <div class="text-xl mb-1">🛡️</div>
+            <div class="text-xl mb-1 text-emerald-400 font-bold">🛡️ 100% Konform</div>
             <p class="font-bold text-white text-base">Rechtlich abgesichert</p>
             <p class="mt-1 text-xs text-silver-400 leading-normal">
               Flugprüfung nach EU-Drohnenrecht, DSGVO-konform und mit spezieller Luftfahrt-Haftpflicht.
@@ -395,7 +402,7 @@
             </p>
 
             <div class="mt-8 grid grid-cols-2 gap-4">
-              <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div class="rounded-2xl border border-emerald-500/30 bg-emerald-950/20 p-4">
                 <span class="text-emerald-400 text-lg font-bold">100% Sicher</span>
                 <p class="text-xs text-silver-400 mt-1">Niemand muss das Steildach betreten. Keine beschädigten Pfannen durch Tritte.</p>
               </div>
@@ -464,10 +471,10 @@
         <div class="mt-12 grid gap-8 lg:grid-cols-2">
           
           <!-- Säule 1 -->
-          <div class="card rounded-3xl p-8 lg:p-10 border-t-2 border-t-white/40">
+          <div class="card rounded-3xl p-8 lg:p-10 border-t-2 border-t-emerald-500/50">
             <div class="flex items-center justify-between">
-              <span class="text-xs font-black uppercase tracking-widest text-silver-400">Säule 01</span>
-              <span class="rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-silver-200">Technik &amp; Handwerk</span>
+              <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Säule 01</span>
+              <span class="rounded-full bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 text-xs font-semibold text-emerald-300">Technik &amp; Handwerk</span>
             </div>
             <h3 class="mt-4 text-2xl font-black text-white">Inspektion, Aufmaß &amp; Baufortschritt</h3>
             <p class="mt-3 text-silver-300 leading-relaxed text-sm md:text-base">
@@ -476,24 +483,24 @@
 
             <ul class="mt-6 space-y-3 text-sm text-silver-200 border-t border-white/10 pt-6">
               <li class="flex items-start gap-2">
-                <span class="text-white font-bold">•</span>
+                <span class="text-emerald-400 font-bold">•</span>
                 <span><strong>PV- &amp; Solargrundlagen:</strong> Neigungswinkel, Hindernisse &amp; Verschattung vorab analysieren.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-white font-bold">•</span>
+                <span class="text-emerald-400 font-bold">•</span>
                 <span><strong>Gerüstbau-Vorkontrolle:</strong> Traufhöhen, Versprünge und Aufstellflächen ohne Anfahrtsrisiko planen.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-white font-bold">•</span>
+                <span class="text-emerald-400 font-bold">•</span>
                 <span><strong>Baudokumentation:</strong> Manipulationssicheres Bautagebuch vom Erdaushub bis zur Endabnahme.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-white font-bold">•</span>
+                <span class="text-emerald-400 font-bold">•</span>
                 <span><strong>3D-Gelände &amp; Punktwolken:</strong> Orientierende Flächen- und Kubaturmaße für Garten- &amp; Landschaftsbau.</span>
               </li>
             </ul>
 
-            <a href="#leistungen" class="mt-8 inline-block text-sm font-bold text-white hover:text-silver-300 transition-colors">
+            <a href="#leistungen" class="mt-8 inline-block text-sm font-bold text-white hover:text-emerald-400 transition-colors">
               Alle Handwerksleistungen ansehen →
             </a>
           </div>
