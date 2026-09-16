@@ -37,13 +37,15 @@
             },
             accent: {
               emerald: "#10b981",
-              sky: "#38bdf8"
+              sky: "#38bdf8",
+              whatsapp: "#25D366"
             }
           },
           boxShadow: {
             soft: "0 20px 60px rgba(0,0,0,.32)",
             glow: "0 0 40px rgba(255,255,255,0.06)",
-            trust: "0 0 20px rgba(16,185,129,0.15)"
+            trust: "0 0 20px rgba(16,185,129,0.15)",
+            wa: "0 10px 25px rgba(37,211,102,0.35)"
           }
         }
       }
@@ -195,6 +197,18 @@
         <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
 
         <a
+          href="https://wa.me/4917656114565?text=Hallo%20Herr%20Runkel%2C%20ich%20habe%20eine%20Projektanfrage%20f%C3%BCr%20AERO-DRONE."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-2 font-bold text-black transition-all hover:bg-[#20bd5a] hover:scale-105 shadow-wa"
+        >
+          <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.311.045-.698.072-2.355-.615-1.617-.669-2.658-2.316-2.738-2.424-.079-.108-.648-.865-.648-1.65 0-.784.411-1.17.556-1.328.145-.159.317-.198.423-.198.106 0 .211.001.304.006.098.005.23-.037.36.274.133.317.457 1.112.497 1.192.04.08.067.173.013.28-.053.107-.079.174-.158.267-.079.093-.167.208-.238.28-.08.08-.163.167-.07.327.093.16.413.682.886 1.103.608.542 1.121.71 1.28.79.16.08.254.067.348-.041.093-.107.4-.467.507-.627.107-.16.213-.133.36-.08.147.053.931.439 1.09.519.16.08.267.12.307.187.04.067.04.386-.104.791z"/>
+          </svg>
+          WhatsApp
+        </a>
+
+        <a
           href="#kontakt"
           class="rounded-full bg-white px-5 py-2.5 font-extrabold text-black hover:bg-silver-200 transition-colors shadow-soft"
         >
@@ -228,7 +242,19 @@
         <a class="mobile-link py-3 font-semibold" href="#faq">FAQ</a>
 
         <a
-          class="mobile-link mt-3 rounded-xl bg-white px-5 py-3 font-bold text-black"
+          class="mobile-link mt-3 flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 font-bold text-black"
+          href="https://wa.me/4917656114565?text=Hallo%20Herr%20Runkel%2C%20ich%20habe%20eine%20Projektanfrage%20f%C3%BCr%20AERO-DRONE."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.311.045-.698.072-2.355-.615-1.617-.669-2.658-2.316-2.738-2.424-.079-.108-.648-.865-.648-1.65 0-.784.411-1.17.556-1.328.145-.159.317-.198.423-.198.106 0 .211.001.304.006.098.005.23-.037.36.274.133.317.457 1.112.497 1.192.04.08.067.173.013.28-.053.107-.079.174-.158.267-.079.093-.167.208-.238.28-.08.08-.163.167-.07.327.093.16.413.682.886 1.103.608.542 1.121.71 1.28.79.16.08.254.067.348-.041.093-.107.4-.467.507-.627.107-.16.213-.133.36-.08.147.053.931.439 1.09.519.16.08.267.12.307.187.04.067.04.386-.104.791z"/>
+          </svg>
+          Per WhatsApp schreiben
+        </a>
+
+        <a
+          class="mobile-link mt-2 rounded-xl bg-white px-5 py-3 font-bold text-black"
           href="#kontakt"
         >
           Unverbindlich anfragen
@@ -297,13 +323,25 @@
 
         <!-- CTA BUTTONS -->
         <div
-          class="mt-10 flex flex-col justify-center gap-3.5 sm:flex-row"
+          class="mt-10 flex flex-col flex-wrap justify-center gap-3.5 sm:flex-row"
         >
           <a
             href="#kontakt"
             class="rounded-full bg-white px-8 py-4 text-sm font-extrabold text-black shadow-soft hover:bg-silver-200 transition-colors"
           >
             Jetzt Projekt anfragen
+          </a>
+
+          <a
+            href="https://wa.me/4917656114565?text=Hallo%20Herr%20Runkel%2C%20ich%20m%C3%B6chte%20eine%20kurze%20Anfrage%20f%C3%BCr%20eine%20Drohnenaufnahme%20stellen."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rounded-full bg-[#25D366] px-8 py-4 text-sm font-bold text-black hover:bg-[#20bd5a] transition-all shadow-wa flex items-center justify-center gap-2"
+          >
+            <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.311.045-.698.072-2.355-.615-1.617-.669-2.658-2.316-2.738-2.424-.079-.108-.648-.865-.648-1.65 0-.784.411-1.17.556-1.328.145-.159.317-.198.423-.198.106 0 .211.001.304.006.098.005.23-.037.36.274.133.317.457 1.112.497 1.192.04.08.067.173.013.28-.053.107-.079.174-.158.267-.079.093-.167.208-.238.28-.08.08-.163.167-.07.327.093.16.413.682.886 1.103.608.542 1.121.71 1.28.79.16.08.254.067.348-.041.093-.107.4-.467.507-.627.107-.16.213-.133.36-.08.147.053.931.439 1.09.519.16.08.267.12.307.187.04.067.04.386-.104.791z"/>
+            </svg>
+            WhatsApp Chat
           </a>
 
           <a
@@ -638,7 +676,7 @@
       </div>
     </section>
 
-    <!-- NEU: FLYER & LEISTUNGSÜBERSICHT PRÄSENTATION -->
+    <!-- FLYER & LEISTUNGSÜBERSICHT PRÄSENTATION -->
     <section id="flyer" class="bg-graphite-950 py-24 border-t border-white/5">
       <div class="mx-auto max-w-7xl px-5 md:px-8">
         <div class="grid gap-12 lg:grid-cols-12 items-center">
@@ -722,7 +760,7 @@
           <article class="card rounded-3xl p-6">
             <strong class="text-base text-white">01 · Anfrage</strong>
             <p class="mt-2 text-silver-300 text-xs leading-relaxed">
-              Standort und Einsatzzweck kurz telefonisch oder per E-Mail schildern.
+              Standort und Einsatzzweck kurz telefonisch, per E-Mail oder WhatsApp mitteilen.
             </p>
           </article>
 
@@ -883,7 +921,19 @@
             Ich melde mich zeitnah bei Ihnen mit einer ehrlichen Einschätzung.
           </p>
 
-          <div class="mt-8 flex flex-col justify-center gap-3.5 sm:flex-row">
+          <div class="mt-8 flex flex-col flex-wrap justify-center gap-3.5 sm:flex-row">
+            <a
+              href="https://wa.me/4917656114565?text=Hallo%20Herr%20Runkel%2C%20ich%20m%C3%B6chte%20ein%20Projekt%20mit%20AERO-DRONE%20anfragen."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-full bg-[#25D366] px-8 py-4 font-bold text-black hover:bg-[#20bd5a] transition-all shadow-wa flex items-center justify-center gap-2"
+            >
+              <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.311.045-.698.072-2.355-.615-1.617-.669-2.658-2.316-2.738-2.424-.079-.108-.648-.865-.648-1.65 0-.784.411-1.17.556-1.328.145-.159.317-.198.423-.198.106 0 .211.001.304.006.098.005.23-.037.36.274.133.317.457 1.112.497 1.192.04.08.067.173.013.28-.053.107-.079.174-.158.267-.079.093-.167.208-.238.28-.08.08-.163.167-.07.327.093.16.413.682.886 1.103.608.542 1.121.71 1.28.79.16.08.254.067.348-.041.093-.107.4-.467.507-.627.107-.16.213-.133.36-.08.147.053.931.439 1.09.519.16.08.267.12.307.187.04.067.04.386-.104.791z"/>
+              </svg>
+              Per WhatsApp anfragen
+            </a>
+
             <a
               href="mailto:kontakt@aero-drone-koeln.de?subject=Projektanfrage%20AERO-DRONE"
               class="rounded-full bg-white px-8 py-4 font-extrabold text-black hover:bg-silver-200 transition-colors shadow-soft"
@@ -904,9 +954,10 @@
               Patrick Runkel · AERO-DRONE
             </p>
             <p class="mt-1">Waldstraße 68 · 51145 Köln</p>
-            <p class="mt-1">
+            <p class="mt-1 flex flex-wrap items-center justify-center gap-2">
               <a href="mailto:kontakt@aero-drone-koeln.de" class="hover:text-white transition-colors">kontakt@aero-drone-koeln.de</a> · 
-              <a href="tel:+4917656114565" class="hover:text-white transition-colors">0176 56114565</a>
+              <a href="tel:+4917656114565" class="hover:text-white transition-colors">0176 56114565</a> ·
+              <a href="https://wa.me/4917656114565" target="_blank" rel="noopener noreferrer" class="text-[#25D366] hover:underline font-semibold">WhatsApp Chat</a>
             </p>
           </div>
         </div>
@@ -914,6 +965,28 @@
     </section>
 
   </main>
+
+  <!-- FLOATING WHATSAPP BUTTON (STICKY UNTEN RECHTS) -->
+  <aside aria-label="WhatsApp Direktkontakt" class="fixed bottom-6 right-6 z-40">
+    <a
+      href="https://wa.me/4917656114565?text=Hallo%20Herr%20Runkel%2C%20ich%20habe%20eine%20kurze%20Frage%20zu%20einem%20Drohneneinsatz."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="group relative flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-black shadow-wa transition-all duration-300 hover:scale-110 hover:bg-[#20bd5a]"
+      aria-label="Chat auf WhatsApp starten"
+    >
+      <span class="absolute -top-1 -right-1 flex h-4 w-4">
+        <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#25D366] opacity-75"></span>
+        <span class="relative inline-flex h-4 w-4 rounded-full bg-emerald-400"></span>
+      </span>
+      <svg class="h-8 w-8 fill-current" viewBox="0 0 24 24">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.311.045-.698.072-2.355-.615-1.617-.669-2.658-2.316-2.738-2.424-.079-.108-.648-.865-.648-1.65 0-.784.411-1.17.556-1.328.145-.159.317-.198.423-.198.106 0 .211.001.304.006.098.005.23-.037.36.274.133.317.457 1.112.497 1.192.04.08.067.173.013.28-.053.107-.079.174-.158.267-.079.093-.167.208-.238.28-.08.08-.163.167-.07.327.093.16.413.682.886 1.103.608.542 1.121.71 1.28.79.16.08.254.067.348-.041.093-.107.4-.467.507-.627.107-.16.213-.133.36-.08.147.053.931.439 1.09.519.16.08.267.12.307.187.04.067.04.386-.104.791z"/>
+      </svg>
+      <span class="pointer-events-none absolute right-16 hidden whitespace-nowrap rounded-lg bg-graphite-900 border border-white/10 px-3 py-1.5 text-xs font-semibold text-white shadow-soft group-hover:block">
+        WhatsApp Chat starten
+      </span>
+    </a>
+  </aside>
 
   <!-- FOOTER -->
   <footer class="border-t border-white/10 bg-[#08090a]">
@@ -1054,6 +1127,12 @@
             </a>
             <br>
 
+            WhatsApp:
+            <a href="https://wa.me/4917656114565" target="_blank" rel="noopener noreferrer" class="hover:text-white">
+              0176 56114565
+            </a>
+            <br>
+
             E-Mail:
             <a
               href="mailto:kontakt@aero-drone-koeln.de"
@@ -1149,11 +1228,11 @@
 
         <section>
           <h3 class="font-bold text-white text-base">
-            3. Kontaktaufnahme
+            3. Kontaktaufnahme (E-Mail, Telefon &amp; WhatsApp)
           </h3>
 
           <p class="mt-2">
-            Wenn Sie per E-Mail oder Telefon Kontakt aufnehmen, werden die übermittelten Daten zur Bearbeitung Ihrer Anfrage und möglicher Anschlussfragen verarbeitet (Art. 6 Abs. 1 lit. b DSGVO).
+            Wenn Sie per E-Mail, Telefon oder über den externen Dienst WhatsApp Kontakt aufnehmen, werden die übermittelten Daten (u. a. Rufnummer, Name, Chatverlauf) ausschließlich zur Bearbeitung Ihrer Anfrage verarbeitet (Art. 6 Abs. 1 lit. b DSGVO). Bitte beachten Sie bei WhatsApp die Datenschutzbestimmungen der WhatsApp Ireland Limited.
           </p>
         </section>
 
@@ -1263,4 +1342,3 @@
 
 </body>
 </html>
-
