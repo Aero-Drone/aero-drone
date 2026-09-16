@@ -321,7 +321,7 @@
             <p class="text-xs text-silver-300 mt-1">Farbkodierte Höhendaten und exakte geometrische Erfassung.</p>
           </div>
 
-          <!-- Hier ist deine echte QGIS-PNG-Datei eingebunden -->
+          <!-- QGIS Orthofoto PNG -->
           <div class="card rounded-2xl p-4">
             <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3">
               <img src="ferdinand-dach-detail.png" alt="Zentimetergenaues Orthofoto Köln-Porz" class="w-full h-full object-cover">
@@ -356,23 +356,25 @@
 
         </div>
 
-        <!-- WERBEVIDEO & ANALYSE BEREICH -->
+        <!-- ECHTES VIDEO & ANALYSE BEREICH -->
         <div class="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           
-          <!-- VIDEO PLATZHALTER (FÜR DEIN WERBEVIDEO) -->
+          <!-- VIDEO BEREICH MIT rhp-clip.MOV -->
           <div class="glass rounded-3xl p-6 relative overflow-hidden">
             <div class="flex items-center justify-between mb-4">
               <h3 class="font-black text-white text-lg">Köln-Porz – Inspektion &amp; Visualisierung</h3>
-              <span class="text-xs bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-full font-bold">Werbevideo</span>
+              <span class="text-xs bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-full font-bold">Projektvideo</span>
             </div>
             
-            <div class="relative aspect-video w-full rounded-2xl bg-black/80 border border-white/10 flex flex-col items-center justify-center group overflow-hidden">
-              <div class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition-colors">
-                <div class="h-16 w-16 rounded-full bg-emerald-500 flex items-center justify-center text-black shadow-lg cursor-pointer hover:scale-110 transition-transform">
-                  ▶
-                </div>
-              </div>
-              <p class="absolute bottom-4 text-xs text-silver-300 font-medium">Video-Vorschau (Hier wird dein Werbevideo geladen)</p>
+            <div class="relative aspect-video w-full rounded-2xl bg-black border border-white/10 overflow-hidden shadow-2xl">
+              <video 
+                src="rhp-clip.MOV" 
+                controls 
+                playsinline 
+                preload="metadata"
+                class="w-full h-full object-cover">
+                Ihr Browser unterstützt das Video-Tag nicht.
+              </video>
             </div>
           </div>
 
