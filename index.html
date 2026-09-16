@@ -182,7 +182,6 @@
           src="aero-drone-logo1.PNG"
           alt="AERO-DRONE – Gebäude, Gelände und Luftaufnahmen"
           class="block h-16 max-w-[300px] object-contain md:h-20 md:max-w-[360px]"
-
         >
       </a>
 
@@ -385,37 +384,63 @@
     </section>
 
     <!-- SCHNELLWAHL -->
-    <section id="direkteinstieg" class="bg-graphite-950 py-16 border-y border-white/10">
-      <div class="mx-auto max-w-7xl px-5 md:px-8">
-        <p class="text-center text-xs font-black uppercase tracking-widest text-silver-400">Direkteinstieg</p>
+    <section id="direkteinstieg" class="relative bg-graphite-950 py-16 border-y border-white/10">
+      <!-- Subtiler Hintergrund-Glow zur Auflockerung -->
+      <div class="pointer-events-none absolute inset-0 flex items-center justify-center">
+        <div class="h-64 w-[600px] rounded-full bg-emerald-500/5 blur-[100px]"></div>
+      </div>
+
+      <div class="relative mx-auto max-w-7xl px-5 md:px-8">
+        <p class="text-center text-xs font-black uppercase tracking-widest text-emerald-400">Direkteinstieg</p>
         <h2 class="text-center text-2xl md:text-3xl font-black text-white mt-2">
-          Was möchten Sie heute erfassen lassen?
+          Was möchten Sie erfassen lassen?
         </h2>
 
-        <div class="mt-8 grid grid-cols-2 lg:grid-cols-4 gap-4 text-center">
-          <a href="#schaden" class="card rounded-2xl p-5 hover:border-emerald-500/50 transition-colors">
-            <div class="text-3xl mb-2">🏠</div>
-            <p class="font-bold text-white text-sm md:text-base">Dach &amp; Regenrinne</p>
-            <p class="text-xs text-silver-400 mt-1">Zustand, Moos, Rinnen-Check</p>
-          </a>
+        <!-- Transparenter Wrapper-Kasten -->
+        <div class="glass mt-10 rounded-3xl p-4 sm:p-6 lg:p-8 border border-white/15 shadow-glow">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            
+            <!-- Kachel 1 -->
+            <a href="#schaden" class="group relative rounded-2xl border border-white/10 bg-white/[0.03] p-5 text-left transition-all duration-300 hover:border-emerald-500/60 hover:bg-white/[0.07] hover:-translate-y-1 hover:shadow-trust">
+              <div class="flex items-center justify-between mb-4">
+                <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-2xl border border-emerald-500/20 group-hover:scale-110 transition-transform">🏠</span>
+                <span class="text-silver-400 text-xs font-bold group-hover:text-emerald-400 group-hover:translate-x-1 transition-all">→</span>
+              </div>
+              <p class="font-bold text-white text-base group-hover:text-emerald-300 transition-colors">Dach &amp; Regenrinne</p>
+              <p class="text-xs text-silver-300 mt-1 leading-normal">Zustandsprüfung, Verstopfungen &amp; Rinnen-Check</p>
+            </a>
 
-          <a href="#schaden" class="card rounded-2xl p-5 hover:border-emerald-500/50 transition-colors">
-            <div class="text-3xl mb-2">🌪️</div>
-            <p class="font-bold text-white text-sm md:text-base">Sturmschaden</p>
-            <p class="text-xs text-silver-400 mt-1">Beweise für die Versicherung</p>
-          </a>
+            <!-- Kachel 2 -->
+            <a href="#schaden" class="group relative rounded-2xl border border-white/10 bg-white/[0.03] p-5 text-left transition-all duration-300 hover:border-emerald-500/60 hover:bg-white/[0.07] hover:-translate-y-1 hover:shadow-trust">
+              <div class="flex items-center justify-between mb-4">
+                <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-2xl border border-emerald-500/20 group-hover:scale-110 transition-transform">🌪️</span>
+                <span class="text-silver-400 text-xs font-bold group-hover:text-emerald-400 group-hover:translate-x-1 transition-all">→</span>
+              </div>
+              <p class="font-bold text-white text-base group-hover:text-emerald-300 transition-colors">Sturmschaden</p>
+              <p class="text-xs text-silver-300 mt-1 leading-normal">Datierte Beweise &amp; Berichte für die Versicherung</p>
+            </a>
 
-          <a href="#kompetenzen" class="card rounded-2xl p-5 hover:border-emerald-500/50 transition-colors">
-            <div class="text-3xl mb-2">⚡</div>
-            <p class="font-bold text-white text-sm md:text-base">Handwerk, PV &amp; 3D</p>
-            <p class="text-xs text-silver-400 mt-1">Dachflächen, Photogrammetrie &amp; Maße</p>
-          </a>
+            <!-- Kachel 3 -->
+            <a href="#kompetenzen" class="group relative rounded-2xl border border-white/10 bg-white/[0.03] p-5 text-left transition-all duration-300 hover:border-emerald-500/60 hover:bg-white/[0.07] hover:-translate-y-1 hover:shadow-trust">
+              <div class="flex items-center justify-between mb-4">
+                <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-2xl border border-emerald-500/20 group-hover:scale-110 transition-transform">⚡</span>
+                <span class="text-silver-400 text-xs font-bold group-hover:text-emerald-400 group-hover:translate-x-1 transition-all">→</span>
+              </div>
+              <p class="font-bold text-white text-base group-hover:text-emerald-300 transition-colors">Handwerk, PV &amp; 3D</p>
+              <p class="text-xs text-silver-300 mt-1 leading-normal">Dachflächen, Photogrammetrie &amp; CAD-Exporte</p>
+            </a>
 
-          <a href="#kompetenzen" class="card rounded-2xl p-5 hover:border-emerald-500/50 transition-colors">
-            <div class="text-3xl mb-2">📸</div>
-            <p class="font-bold text-white text-sm md:text-base">Immobilien &amp; Medien</p>
-            <p class="text-xs text-silver-400 mt-1">Exposés, Events &amp; Fotografen-B2B</p>
-          </a>
+            <!-- Kachel 4 -->
+            <a href="#kompetenzen" class="group relative rounded-2xl border border-white/10 bg-white/[0.03] p-5 text-left transition-all duration-300 hover:border-emerald-500/60 hover:bg-white/[0.07] hover:-translate-y-1 hover:shadow-trust">
+              <div class="flex items-center justify-between mb-4">
+                <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-2xl border border-emerald-500/20 group-hover:scale-110 transition-transform">📸</span>
+                <span class="text-silver-400 text-xs font-bold group-hover:text-emerald-400 group-hover:translate-x-1 transition-all">→</span>
+              </div>
+              <p class="font-bold text-white text-base group-hover:text-emerald-300 transition-colors">Immobilien &amp; Medien</p>
+              <p class="text-xs text-silver-300 mt-1 leading-normal">Verkaufsexposés, Firmenareale &amp; Fotografen-B2B</p>
+            </a>
+
+          </div>
         </div>
       </div>
     </section>
@@ -1343,3 +1368,4 @@
 
 </body>
 </html>
+
