@@ -1,8 +1,198 @@
-<!-- REFERENZEN & PROJEKTERGEBNISSE -->
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AERO-DRONE Köln | Präzise Drohnen-Vermessung, 3D-Modelle & CAD-Dachaufmaß</title> 
+  <meta name="description" content="AERO-DRONE Köln – Zentimetergenaue Dachvermessung, Orthofotos (0,47 cm/Pixel), 3D-Modelle, Punktwolken & CAD-Exporte für Handwerk, Planer und Immobilien ohne Gerüst.">
+  <meta name="author" content="Patrick Runkel">
+  <meta name="theme-color" content="#090a0b">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            graphite: {
+              950: "#090a0b",
+              900: "#101214",
+              850: "#151719"
+            },
+            silver: {
+              200: "#d6d8da",
+              300: "#babec2",
+              400: "#979da3"
+            },
+            accent: {
+              emerald: "#10b981",
+              sky: "#38bdf8",
+              whatsapp: "#25D366"
+            }
+          },
+          boxShadow: {
+            soft: "0 20px 60px rgba(0,0,0,.32)",
+            glow: "0 0 40px rgba(255,255,255,0.06)",
+            trust: "0 0 20px rgba(16,185,129,0.15)",
+            wa: "0 10px 25px rgba(37,211,102,0.35)"
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    :root {
+      --header-height: 72px;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--header-height);
+    }
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      color: #eeeeee;
+      background: #090a0b;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .hero-background {
+      position: relative;
+      background-color: #090a0b;
+      background-image: linear-gradient(180deg, rgba(6, 7, 8, .45) 0%, rgba(9, 10, 11, .75) 55%, rgba(9, 10, 11, 1) 100%), url("hero-drohne-koeln.PNG");
+      background-position: center, 45% center;
+      background-repeat: no-repeat;
+      background-size: cover, cover;
+    }
+    .glass {
+      background: rgba(21,23,25,.86);
+      border: 1px solid rgba(255,255,255,.11);
+      box-shadow: 0 20px 60px rgba(0,0,0,.35);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .card {
+      background: linear-gradient(145deg, rgba(255,255,255,.06), rgba(255,255,255,.015));
+      border: 1px solid rgba(255,255,255,.09);
+      transition: all .25s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255,255,255,.24);
+      box-shadow: 0 16px 40px rgba(0,0,0,.4);
+    }
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      padding: .45rem .95rem;
+      color: #d6d8da;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 999px;
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    .section-label::before {
+      width: 6px;
+      height: 6px;
+      content: "";
+      background: #10b981;
+      border-radius: 50%;
+    }
+    @media (min-width: 768px) {
+      :root {
+        --header-height: 82px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-graphite-950/90 backdrop-blur-xl">
+    <div class="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-4 md:h-[82px] md:px-8">
+      <a href="#start" aria-label="AERO-DRONE Startseite">
+        <img src="aero-drone-logo1.PNG" alt="AERO-DRONE – Gebäude, Gelände und Luftaufnahmen" class="block h-16 max-w-[300px] object-contain md:h-20 md:max-w-[360px]">
+      </a>
+
+      <nav class="hidden items-center gap-6 text-sm font-semibold text-silver-300 xl:flex">
+        <a href="#referenzen" class="hover:text-white transition-colors text-emerald-400 font-bold">Referenzen</a>
+        <a href="#direkteinstieg" class="hover:text-white transition-colors">Schnellauswahl</a>
+        <a href="#schaden" class="hover:text-white transition-colors">Dach &amp; Sturmschaden</a>
+        <a href="#kompetenzen" class="hover:text-white transition-colors">Leistungsbereiche</a>
+        <a href="#leistungen" class="hover:text-white transition-colors">Alle Leistungen</a>
+        <a href="#ueber-mich" class="hover:text-white transition-colors">Über mich</a>
+        <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+
+        <a href="https://wa.me/4917656114565?text=Hallo%20Herr%20Runkel%2C%20ich%20habe%20eine%20Projektanfrage%20f%C3%BCr%20AERO-DRONE." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-2 font-bold text-black transition-all hover:bg-[#20bd5a] hover:scale-105 shadow-wa">
+          WhatsApp
+        </a>
+
+        <a href="#kontakt" class="rounded-full bg-white px-5 py-2.5 font-extrabold text-black hover:bg-silver-200 transition-colors shadow-soft">
+          Anfrage stellen
+        </a>
+      </nav>
+
+      <button id="menuButton" type="button" class="flex h-12 w-12 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-2xl xl:hidden text-white" aria-label="Menü öffnen" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <nav id="mobileMenu" class="hidden border-t border-white/10 bg-graphite-950 px-5 py-6 text-center xl:hidden">
+      <div class="flex flex-col gap-1">
+        <a class="mobile-link py-3 font-bold text-emerald-400" href="#referenzen">Referenzen</a>
+        <a class="mobile-link py-3 font-semibold text-white" href="#direkteinstieg">Schnellauswahl</a>
+        <a class="mobile-link py-3 font-semibold text-white" href="#schaden">Dach &amp; Sturmschaden</a>
+        <a class="mobile-link py-3 font-semibold text-white" href="#kompetenzen">Leistungsbereiche</a>
+        <a class="mobile-link py-3 font-semibold text-white" href="#leistungen">Alle Leistungen</a>
+        <a class="mobile-link py-3 font-semibold text-white" href="#ueber-mich">Über mich</a>
+        <a class="mobile-link py-3 font-semibold text-white" href="#faq">FAQ</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section id="start" class="hero-background flex min-h-screen items-start justify-center overflow-hidden pt-[72px] md:items-center md:pt-[82px]">
+      <div class="relative z-10 mx-auto w-full max-w-6xl px-5 pb-16 pt-10 text-center md:px-8 md:py-24">
+        <div class="mb-5 flex flex-wrap items-center justify-center gap-2.5">
+          <span class="section-label">Köln &amp; Rheinland</span>
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-3.5 py-1 text-xs font-bold text-emerald-400 border border-emerald-500/30 shadow-trust">EU-zertifiziert A1/A3</span>
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-3.5 py-1 text-xs font-bold text-emerald-400 border border-emerald-500/30 shadow-trust">Zentimetergenau (0.47 cm/Pixel)</span>
+        </div>
+
+        <h1 class="mx-auto max-w-5xl text-3xl font-black leading-[1.12] tracking-tight text-white sm:text-5xl md:text-7xl">
+          Präzise Drohnen-Vermessung, 3D-Modelle &amp; Dachaufmaß in Köln
+        </h1>
+        <p class="mx-auto mt-4 text-base font-semibold text-silver-300 sm:text-lg md:text-xl">
+          Zentimetergenaue Orthofotos, CAD-kompatible Punktwolken &amp; fotogrammetrische Analysen ohne Gerüst.
+        </p>
+
+        <div class="mt-10 flex flex-col flex-wrap justify-center gap-3.5 sm:flex-row">
+          <a href="#referenzen" class="rounded-full bg-emerald-500 px-8 py-4 text-sm font-extrabold text-black shadow-soft hover:bg-emerald-400 transition-colors">
+            Referenzen &amp; Ergebnisse ↓
+          </a>
+          <a href="#kontakt" class="rounded-full bg-white px-8 py-4 text-sm font-extrabold text-black shadow-soft hover:bg-silver-200 transition-colors">
+            Jetzt Projekt anfragen
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFERENZEN & PROJEKTERGEBNISSE (PERFEKT IM LOOK DER VORLAGE) -->
     <section id="referenzen" class="bg-graphite-900 py-24 md:py-32 border-y border-white/10">
       <div class="mx-auto max-w-7xl px-5 md:px-8">
         
-        <!-- Sektions-Header -->
         <div class="text-center max-w-3xl mx-auto mb-16">
           <span class="section-label">Referenzprojekte</span>
           <h2 class="mt-4 text-3xl font-black md:text-5xl text-white">
@@ -13,21 +203,17 @@
           </p>
         </div>
 
-        <!-- HAUPT-REFERENZCONTAINER (IM LOOK DER VORLAGE) -->
+        <!-- HAUPT-REFERENZCONTAINER -->
         <div class="rounded-3xl border border-emerald-500/40 bg-graphite-950 p-6 md:p-12 shadow-glow">
           
-          <!-- GROSSES VORSCHAUBILD OBEN (HERO DES PROJEKTS) -->
+          <!-- GROSSES VORSCHAUBILD OBEN -->
           <div class="relative rounded-2xl overflow-hidden mb-10 border border-white/15 shadow-soft group">
-            <!-- Das große Vorschaubild -->
             <div class="aspect-[21/9] w-full bg-black relative">
               <img src="DJI_20260915175658_0386_D.jpg" alt="Referenzprojekt Köln-Porz Ferdinand-Porsche-Straße" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
-              <!-- Dunkler Farbverlauf für perfekte Lesbarkeit des Textes darüber -->
               <div class="absolute inset-0 bg-gradient-to-t from-graphite-950 via-graphite-950/60 to-transparent"></div>
             </div>
 
-            <!-- Inhalt über dem Vorschaubild -->
             <div class="absolute inset-0 p-6 md:p-10 flex flex-col justify-between">
-              <!-- Oben: Badge & Partnerlink -->
               <div class="flex flex-wrap items-center justify-between gap-4">
                 <span class="rounded-full bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 px-4 py-1.5 text-xs font-black uppercase tracking-wider text-emerald-300">
                   Referenz 01 / 04 · Gewerbeobjekt
@@ -37,7 +223,6 @@
                 </a>
               </div>
 
-              <!-- Unten: Titel & Projektdaten -->
               <div>
                 <h3 class="text-2xl md:text-4xl font-black text-white tracking-tight drop-shadow-md">
                   Rolladen Handel Porz
@@ -67,19 +252,14 @@
 
           <!-- 6 BILDER / MODULE GRID -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            
             <div class="card rounded-2xl p-4">
-              <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 flex items-center justify-center border border-white/10">
-                <span class="text-silver-400 text-xs font-semibold">3D-Modell (BIM-Ansicht)</span>
-              </div>
+              <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 flex items-center justify-center border border-white/10 text-silver-400 text-xs font-semibold">3D-Modell (BIM-Ansicht)</div>
               <h4 class="font-bold text-white text-sm">1. 3D-Modelle &amp; BIM-Basis</h4>
               <p class="text-xs text-silver-300 mt-1">Realistische räumliche Darstellung für Architektur und Planung.</p>
             </div>
 
             <div class="card rounded-2xl p-4">
-              <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 flex items-center justify-center border border-white/10">
-                <span class="text-silver-400 text-xs font-semibold">LiDAR Punktwolke</span>
-              </div>
+              <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 flex items-center justify-center border border-white/10 text-silver-400 text-xs font-semibold">LiDAR Punktwolke</div>
               <h4 class="font-bold text-white text-sm">2. LiDAR-Punktwolken</h4>
               <p class="text-xs text-silver-300 mt-1">Farbkodierte Höhendaten und exakte geometrische Erfassung.</p>
             </div>
@@ -93,197 +273,141 @@
             </div>
 
             <div class="card rounded-2xl p-4">
-              <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 flex items-center justify-center border border-white/10">
-                <span class="text-silver-400 text-xs font-semibold">Detailaufnahme Dach</span>
-              </div>
+              <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 flex items-center justify-center border border-white/10 text-silver-400 text-xs font-semibold">Detailaufnahme Dach</div>
               <h4 class="font-bold text-white text-sm">4. Detailerfassung</h4>
               <p class="text-xs text-silver-300 mt-1">Höchste Auflösung zur Sichtprüfung von Rinnen, Kanten und Aufbauten.</p>
             </div>
 
             <div class="card rounded-2xl p-4">
-              <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 flex items-center justify-center border border-white/10">
-                <span class="text-silver-400 text-xs font-semibold">Fassaden-Inspektion</span>
-              </div>
+              <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 flex items-center justify-center border border-white/10 text-silver-400 text-xs font-semibold">Fassaden-Inspektion</div>
               <h4 class="font-bold text-white text-sm">5. Fassadenansichten &amp; Inspektion</h4>
               <p class="text-xs text-silver-300 mt-1">Lückenlose Sichtkontrolle ohne Hubsteiger oder Rüstaufwand.</p>
             </div>
 
             <div class="card rounded-2xl p-4">
-              <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 flex items-center justify-center border border-white/10">
-                <span class="text-silver-400 text-xs font-semibold">Bestandsdoku Areal</span>
-              </div>
+              <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 flex items-center justify-center border border-white/10 text-silver-400 text-xs font-semibold">Bestandsdoku Areal</div>
               <h4 class="font-bold text-white text-sm">6. Visualisierung &amp; Bestandsdoku</h4>
               <p class="text-xs text-silver-300 mt-1">Gesamtdokumentation des Gewerbeareals für Eigentümer und Partner.</p>
             </div>
-
           </div>
 
-          <!-- SPEZIAL-SEKTION: INSPEKTIONS- & ANALYSE-ERGEBNISSE -->
+          <!-- VIDEO & ANALYSE -->
           <div class="mb-12">
-            <div class="text-center mb-8">
-              <h3 class="text-2xl font-black text-white">Inspektions- &amp; Analyse-Ergebnisse</h3>
-            </div>
-            
+            <div class="text-center mb-8"><h3 class="text-2xl font-black text-white">Inspektions- &amp; Analyse-Ergebnisse</h3></div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              
-              <!-- Video Box -->
               <div class="glass rounded-3xl p-5 relative overflow-hidden border border-white/15">
                 <div class="flex items-center justify-between mb-3">
                   <span class="font-bold text-white text-sm">Köln-Porz – Inspektion &amp; Visualisierung</span>
                   <span class="text-xs bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-full font-bold">Video aktiv</span>
                 </div>
                 <div class="relative aspect-video w-full rounded-2xl bg-black border border-white/10 overflow-hidden shadow-2xl">
-                  <video src="rhp-clip-right.mp4" controls playsinline preload="metadata" class="w-full h-full object-cover">
-                    Ihr Browser unterstützt das Video-Tag nicht.
-                  </video>
+                  <video src="rhp-clip-right.mp4" controls playsinline preload="metadata" class="w-full h-full object-cover">Ihr Browser unterstützt das Video-Tag nicht.</video>
                 </div>
               </div>
 
-              <!-- Kennwerte Box -->
               <div class="glass rounded-3xl p-6 lg:p-8 border border-white/15 space-y-4">
                 <h4 class="text-base font-black text-white">Präziser Überblick in 45 Sekunden</h4>
                 <div class="space-y-3 pt-2 text-sm text-silver-200">
-                  <div class="flex items-center gap-3 border-b border-white/10 pb-3">
-                    <span class="text-emerald-400 font-bold">✓</span>
-                    <span>Dachfläche ca. 3.200 m²</span>
-                  </div>
-                  <div class="flex items-center gap-3 border-b border-white/10 pb-3">
-                    <span class="text-emerald-400 font-bold">✓</span>
-                    <span>Geländemodell ca. 512</span>
-                  </div>
-                  <div class="flex items-center gap-3">
-                    <span class="text-emerald-400 font-bold">✓</span>
-                    <span>Mehrfachnutzung garantiert</span>
-                  </div>
+                  <div class="flex items-center gap-3 border-b border-white/10 pb-3"><span class="text-emerald-400 font-bold">✓</span><span>Dachfläche ca. 3.200 m²</span></div>
+                  <div class="flex items-center gap-3 border-b border-white/10 pb-3"><span class="text-emerald-400 font-bold">✓</span><span>Geländemodell ca. 512</span></div>
+                  <div class="flex items-center gap-3"><span class="text-emerald-400 font-bold">✓</span><span>Mehrfachnutzung garantiert</span></div>
                 </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- VERGLEICH: MODELL VS. PUNKTWOLKE -->
-          <div class="mb-12">
-            <div class="text-center mb-8">
-              <h3 class="text-2xl font-black text-white">Vergleich Modell vs. Punktwolke</h3>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div class="card rounded-2xl p-5">
-                <div class="aspect-video bg-black/40 rounded-xl mb-3 flex items-center justify-center border border-white/10">
-                  <span class="text-xs text-silver-400">Modell aus Fotos und Punktwolken</span>
-                </div>
-                <h4 class="font-bold text-white text-sm">3D-Modell (Texturiert)</h4>
-                <p class="text-xs text-silver-300 mt-1">Realistische Darstellung &amp; Planungsgrundlage</p>
-              </div>
-              <div class="card rounded-2xl p-5">
-                <div class="aspect-video bg-black/40 rounded-xl mb-3 flex items-center justify-center border border-white/10">
-                  <span class="text-xs text-silver-400">Punktwolke aus LiDAR-Daten</span>
-                </div>
-                <h4 class="font-bold text-white text-sm">Punktwolke (Farbkodiert)</h4>
-                <p class="text-xs text-silver-300 mt-1">Höheninformationen &amp; exakte Geometrie</p>
               </div>
             </div>
           </div>
 
-          <!-- MESSDATEN & BERICHTSWESEN -->
-          <div class="mb-12">
-            <div class="text-center mb-8">
-              <h3 class="text-2xl font-black text-white">Messdaten &amp; Berichtswesen</h3>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div class="card rounded-2xl p-5">
-                <div class="aspect-video bg-black/40 rounded-xl mb-3 overflow-hidden border border-white/10">
-                  <img src="ferdinand-dach-detail.png" alt="Dachvermessung" class="w-full h-full object-cover">
-                </div>
-                <h4 class="font-bold text-white text-sm">Dachvermessung (Pläne &amp; Daten)</h4>
-                <p class="text-xs text-silver-300 mt-1">Detaillierte Pläne und Messdaten für exakte Kalkulationen.</p>
-              </div>
-              <div class="card rounded-2xl p-5">
-                <div class="aspect-video bg-black/40 rounded-xl mb-3 flex items-center justify-center border border-white/10">
-                  <span class="text-xs text-silver-400">Fassaden-Detailanalyse</span>
-                </div>
-                <h4 class="font-bold text-white text-sm">Fassaden- &amp; Detailanalyse</h4>
-                <p class="text-xs text-silver-300 mt-1">Exakte Aufnahmen für Ihre Dokumentation.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- GESAMT-DOKUMENTATION KÖLN-PORZ BERICHT -->
+          <!-- BERICHTS DOWNLOAD -->
           <div class="rounded-2xl border border-white/15 bg-black/40 p-6 md:p-8 flex flex-col lg:flex-row items-center justify-between gap-6">
             <div class="flex items-center gap-5">
-              <div class="hidden sm:flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-2xl">
-                📄
-              </div>
+              <div class="hidden sm:flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-2xl">📄</div>
               <div>
                 <h4 class="text-lg font-black text-white">Gesamt-Dokumentation Köln-Porz Bericht</h4>
-                <p class="text-xs text-silver-300 mt-1 max-w-xl">
-                  Umfassender 3D-Berichtsbericht mit allen Ergebnissen: Pläne, Analysen und Punktwolken.
-                </p>
+                <p class="text-xs text-silver-300 mt-1 max-w-xl">Umfassender 3D-Berichtsbericht mit allen Ergebnissen: Pläne, Analysen und Punktwolken.</p>
               </div>
             </div>
             <div class="flex flex-wrap gap-3 w-full lg:w-auto">
-              <a href="#kontakt" class="flex-1 lg:flex-none text-center rounded-xl bg-emerald-500 px-5 py-3 text-xs font-extrabold text-black hover:bg-emerald-400 transition-colors shadow-soft">
-                PDF-Ansicht (Online)
-              </a>
-              <a href="#kontakt" class="flex-1 lg:flex-none text-center rounded-xl bg-white/10 border border-white/20 px-5 py-3 text-xs font-bold text-white hover:bg-white/20 transition-colors">
-                Detaillierter Bericht &amp; Rohdaten (Download)
-              </a>
+              <a href="#kontakt" class="flex-1 lg:flex-none text-center rounded-xl bg-emerald-500 px-5 py-3 text-xs font-extrabold text-black hover:bg-emerald-400 transition-colors shadow-soft">PDF-Ansicht (Online)</a>
+              <a href="#kontakt" class="flex-1 lg:flex-none text-center rounded-xl bg-white/10 border border-white/20 px-5 py-3 text-xs font-bold text-white hover:bg-white/20 transition-colors">Detaillierter Bericht &amp; Rohdaten</a>
             </div>
           </div>
 
         </div>
 
-        <!-- PROJEKTE 2 BIS 4 (VORBEREITET FÜR ZUKÜNFTIGE EINTRÄGE) -->
+        <!-- PLATZHALTER PROJEKTE 2-4 -->
         <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-          
           <div class="card rounded-3xl p-6 flex flex-col justify-between border border-white/10">
             <div>
-              <div class="flex items-center justify-between mb-3">
-                <span class="text-xs font-black uppercase tracking-widest text-silver-400">Referenz 02 / 04</span>
-                <span class="rounded-full bg-white/5 px-3 py-1 text-[11px] font-semibold text-silver-300">In Vorbereitung</span>
-              </div>
+              <div class="flex items-center justify-between mb-3"><span class="text-xs font-black uppercase tracking-widest text-silver-400">Referenz 02 / 04</span><span class="rounded-full bg-white/5 px-3 py-1 text-[11px] font-semibold text-silver-300">In Vorbereitung</span></div>
               <h3 class="text-lg font-black text-white">Referenzprojekt 02</h3>
-              <p class="text-xs text-silver-300 mt-2 leading-relaxed">
-                Platzhalter für dein nächstes Gebäude- oder Industrie-Vermessungsprojekt im Großraum Köln.
-              </p>
+              <p class="text-xs text-silver-300 mt-2">Platzhalter für dein nächstes Gebäude- oder Industrie-Vermessungsprojekt im Großraum Köln.</p>
             </div>
-            <div class="mt-6 aspect-video rounded-2xl bg-black/40 border border-white/10 flex items-center justify-center text-xs text-silver-500">
-              [ Demnächst verfügbar ]
-            </div>
+            <div class="mt-6 aspect-video rounded-2xl bg-black/40 border border-white/10 flex items-center justify-center text-xs text-silver-500">[ Demnächst verfügbar ]</div>
           </div>
 
           <div class="card rounded-3xl p-6 flex flex-col justify-between border border-white/10">
             <div>
-              <div class="flex items-center justify-between mb-3">
-                <span class="text-xs font-black uppercase tracking-widest text-silver-400">Referenz 03 / 04</span>
-                <span class="rounded-full bg-white/5 px-3 py-1 text-[11px] font-semibold text-silver-300">In Vorbereitung</span>
-              </div>
+              <div class="flex items-center justify-between mb-3"><span class="text-xs font-black uppercase tracking-widest text-silver-400">Referenz 03 / 04</span><span class="rounded-full bg-white/5 px-3 py-1 text-[11px] font-semibold text-silver-300">In Vorbereitung</span></div>
               <h3 class="text-lg font-black text-white">Referenzprojekt 03</h3>
-              <p class="text-xs text-silver-300 mt-2 leading-relaxed">
-                Platzhalter für geplante Photogrammetrie- und CAD-Aufmaß-Aufträge.
-              </p>
+              <p class="text-xs text-silver-300 mt-2">Platzhalter für geplante Photogrammetrie- und CAD-Aufmaß-Aufträge.</p>
             </div>
-            <div class="mt-6 aspect-video rounded-2xl bg-black/40 border border-white/10 flex items-center justify-center text-xs text-silver-500">
-              [ Demnächst verfügbar ]
-            </div>
+            <div class="mt-6 aspect-video rounded-2xl bg-black/40 border border-white/10 flex items-center justify-center text-xs text-silver-500">[ Demnächst verfügbar ]</div>
           </div>
 
           <div class="card rounded-3xl p-6 flex flex-col justify-between border border-white/10">
             <div>
-              <div class="flex items-center justify-between mb-3">
-                <span class="text-xs font-black uppercase tracking-widest text-silver-400">Referenz 04 / 04</span>
-                <span class="rounded-full bg-white/5 px-3 py-1 text-[11px] font-semibold text-silver-300">In Vorbereitung</span>
-              </div>
+              <div class="flex items-center justify-between mb-3"><span class="text-xs font-black uppercase tracking-widest text-silver-400">Referenz 04 / 04</span><span class="rounded-full bg-white/5 px-3 py-1 text-[11px] font-semibold text-silver-300">In Vorbereitung</span></div>
               <h3 class="text-lg font-black text-white">Referenzprojekt 04</h3>
-              <p class="text-xs text-silver-300 mt-2 leading-relaxed">
-                Platzhalter für zukünftige Dach- und Solaranlagen-Analysen.
-              </p>
+              <p class="text-xs text-silver-300 mt-2">Platzhalter für zukünftige Dach- und Solaranlagen-Analysen.</p>
             </div>
-            <div class="mt-6 aspect-video rounded-2xl bg-black/40 border border-white/10 flex items-center justify-center text-xs text-silver-500">
-              [ Demnächst verfügbar ]
-            </div>
+            <div class="mt-6 aspect-video rounded-2xl bg-black/40 border border-white/10 flex items-center justify-center text-xs text-silver-500">[ Demnächst verfügbar ]</div>
           </div>
-
         </div>
 
       </div>
     </section>
+
+    <!-- SCHNELLWAHL -->
+    <section id="direkteinstieg" class="relative bg-graphite-950 py-16 border-y border-white/10">
+      <div class="relative mx-auto max-w-7xl px-5 md:px-8">
+        <p class="text-center text-xs font-black uppercase tracking-widest text-emerald-400">Direkteinstieg</p>
+        <h2 class="text-center text-2xl md:text-3xl font-black text-white mt-2">Was möchten Sie erfassen lassen?</h2>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="bg-graphite-950 py-24 md:py-32 border-t border-white/5 text-center">
+      <div class="mx-auto max-w-5xl px-5 md:px-8">
+        <div class="glass rounded-3xl p-8 md:p-14">
+          <span class="section-label">Kontakt</span>
+          <h2 class="mt-6 text-3xl font-black md:text-5xl text-white">Jetzt unverbindlich anfragen</h2>
+          <p class="mx-auto mt-5 max-w-2xl text-base text-silver-300">Haben Sie ein Objekt in Köln und Umgebung zu vermessen? Schreiben Sie direkt.</p>
+          <div class="mt-8 flex justify-center gap-4">
+            <a href="https://wa.me/4917656114565" class="rounded-full bg-[#25D366] px-8 py-4 font-bold text-black">WhatsApp anfragen</a>
+          </div>
+          <div class="mt-10 pt-8 border-t border-white/10 text-silver-400 text-xs">
+            <p class="font-bold text-white text-base">Patrick Runkel · AERO-DRONE</p>
+            <p class="mt-1">Waldstraße 68 · 51145 Köln-Porz</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-white/10 bg-[#08090a] py-8 text-center text-xs text-silver-400">
+    <p>© <span id="year"></span> Patrick Runkel · AERO-DRONE Köln</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const menuButton = document.getElementById("menuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+    if(menuButton && mobileMenu) {
+      menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    }
+  </script>
+
+</body>
+</html>
