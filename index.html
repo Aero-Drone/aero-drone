@@ -293,42 +293,47 @@
         <!-- PROJEKT 1: GEWERBEOBJEKT ROLLADEN HANDEL PORZ -->
         <div class="mt-16 rounded-3xl border border-emerald-500/40 bg-graphite-950 p-6 md:p-10 shadow-glow">
           
-          <!-- TOP BANNER MIT BILD DJI_20260915175658_0386_D.JPG (ZENTRAL VOLLSTÄNDIG SICHTBAR) -->
-          <div class="relative overflow-hidden rounded-2xl mb-8 border border-white/10 bg-[#060708] flex flex-col">
+          <!-- TOP BANNER: BILD VOLLSTÄNDIG + URL DIREKT UNTEN LINKS IM FOTO -->
+          <div class="relative overflow-hidden rounded-2xl mb-8 border border-white/10 bg-black">
             
-            <!-- Bildbereich: object-contain sorgt dafür, dass das gesamte Bild/Dach komplett im Frame bleibt -->
-            <div class="w-full bg-black/80 flex items-center justify-center p-2">
-              <img src="DJI_20260915175658_0386_D.JPG" alt="Referenzprojekt Köln-Porz Ferdinand-Porsche-Str." class="w-full max-h-[420px] object-contain rounded-xl">
-            </div>
+            <!-- Das Bild vollständig und zentriert -->
+            <img src="DJI_20260915175658_0386_D.JPG" alt="Referenzprojekt Köln-Porz Ferdinand-Porsche-Str." class="w-full max-h-[420px] object-contain mx-auto block">
 
-            <!-- Nur die Internetadresse links unten im Bild -->
-            <div class="absolute bottom-4 left-4 z-20 rounded-xl bg-graphite-950/90 border border-white/15 px-4 py-2 shadow-2xl backdrop-blur-md">
+            <!-- Die Internetadresse absolut direkt unten links im Bild platziert -->
+            <div class="absolute bottom-3 left-3 z-20 rounded-xl bg-graphite-950/90 border border-white/20 px-3.5 py-1.5 shadow-2xl backdrop-blur-md">
               <a href="https://www.rhp-online.de" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-400 hover:text-emerald-300 transition-colors">
                 <span>🔗</span> www.rhp-online.de
               </a>
             </div>
 
-            <!-- Unterer Bereich im Banner: Titel & Adresse links unten, Buttons rechts -->
-            <div class="p-5 md:p-8 bg-graphite-950/95 border-t border-white/10 flex flex-col md:flex-row md:items-center justify-between gap-6">
-              <div>
-                <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Referenz 01 / 04 · Gewerbeobjekt</span>
-                <h3 class="text-xl md:text-3xl font-black text-white mt-1">Rolladen Handel Porz</h3>
-                <p class="text-xs md:text-sm text-silver-300 mt-1">Ferdinand-Porsche-Str. 18 · 51149 Köln-Porz</p>
-              </div>
-              <div class="flex flex-wrap gap-3">
-                <a href="#kontakt" class="rounded-full bg-emerald-500 px-5 py-2.5 text-xs font-extrabold text-black hover:bg-emerald-400 transition-colors shadow-soft">
-                  Kostenlose Beratung anfordern
-                </a>
-                <a href="#direkteinstieg" class="rounded-full bg-white/10 border border-white/20 px-5 py-2.5 text-xs font-extrabold text-white hover:bg-white/20 transition-colors">
-                  Ihre Projekte in 3D
-                </a>
-              </div>
+            <!-- Status-Badge oben rechts -->
+            <div class="absolute top-3 right-3 z-20">
+              <span class="rounded-full bg-emerald-500/20 border border-emerald-500/40 px-3 py-1 text-[11px] font-bold text-emerald-300 backdrop-blur-md shadow-lg">
+                ✓ Abgeschlossen &amp; Vermessen
+              </span>
             </div>
 
           </div>
 
+          <!-- Unterer Bereich im Banner: Titel & Adresse links unten, Buttons rechts -->
+          <div class="p-5 md:p-8 bg-graphite-950/95 border-t border-white/10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div>
+              <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Referenz 01 / 04 · Gewerbeobjekt</span>
+              <h3 class="text-xl md:text-3xl font-black text-white mt-1">Rolladen Handel Porz</h3>
+              <p class="text-xs md:text-sm text-silver-300 mt-1">Ferdinand-Porsche-Str. 18 · 51149 Köln-Porz</p>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <a href="#kontakt" class="rounded-full bg-emerald-500 px-5 py-2.5 text-xs font-extrabold text-black hover:bg-emerald-400 transition-colors shadow-soft">
+                Kostenlose Beratung anfordern
+              </a>
+              <a href="#direkteinstieg" class="rounded-full bg-white/10 border border-white/20 px-5 py-2.5 text-xs font-extrabold text-white hover:bg-white/20 transition-colors">
+                Ihre Projekte in 3D
+              </a>
+            </div>
+          </div>
+
           <!-- 6 BILDER GRID FÜR PROJEKT 1 -->
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
             
             <div class="card rounded-2xl p-4">
               <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 flex items-center justify-center">
