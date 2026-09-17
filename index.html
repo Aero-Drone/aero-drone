@@ -141,7 +141,7 @@
       </a>
 
       <nav class="hidden items-center gap-6 text-sm font-semibold text-silver-300 xl:flex">
-        <a href="#referenzen" class="hover:text-white transition-colors text-emerald-400 font-bold">Praxis-Referenzen</a>
+        <a href="#referenzen" class="hover:text-white transition-colors text-emerald-400 font-bold">Referenzprojekte</a>
         <a href="#direkteinstieg" class="hover:text-white transition-colors">Schnellauswahl</a>
         <a href="#schaden" class="hover:text-white transition-colors">Dach &amp; Sturmschaden</a>
         <a href="#kompetenzen" class="hover:text-white transition-colors">Leistungsbereiche</a>
@@ -167,7 +167,7 @@
     <!-- MOBILE MENU -->
     <nav id="mobileMenu" class="hidden border-t border-white/10 bg-graphite-950 px-5 py-6 text-center xl:hidden">
       <div class="flex flex-col gap-1">
-        <a class="mobile-link py-3 font-bold text-emerald-400" href="#referenzen">Praxis-Referenzen</a>
+        <a class="mobile-link py-3 font-bold text-emerald-400" href="#referenzen">Referenzprojekte</a>
         <a class="mobile-link py-3 font-semibold" href="#direkteinstieg">Schnellauswahl</a>
         <a class="mobile-link py-3 font-semibold" href="#schaden">Dach &amp; Sturmschaden</a>
         <a class="mobile-link py-3 font-semibold" href="#kompetenzen">Leistungsbereiche</a>
@@ -237,7 +237,7 @@
         <!-- CTA BUTTONS -->
         <div class="mt-10 flex flex-col flex-wrap justify-center gap-3.5 sm:flex-row">
           <a href="#referenzen" class="rounded-full bg-emerald-500 px-8 py-4 text-sm font-extrabold text-black shadow-soft hover:bg-emerald-400 transition-colors">
-            Praxis-Referenzen ↓
+            Referenzprojekte ↓
           </a>
           <a href="#kontakt" class="rounded-full bg-white px-8 py-4 text-sm font-extrabold text-black shadow-soft hover:bg-silver-200 transition-colors">
             Jetzt Projekt anfragen
@@ -283,7 +283,7 @@
         <div class="text-center max-w-3xl mx-auto">
           <span class="section-label">Referenzprojekte</span>
           <h2 class="mt-4 text-3xl font-black md:text-5xl text-white">
-            Praxis-Referenzen &amp; CAD-Ergebnisse
+            Ausgewählte Projekte &amp; Fallstudien
           </h2>
           <p class="mt-4 text-silver-300 text-base">
             Einblick in unsere digitale Gebäudeerfassung, zentimetergenaue Dachvermessungen und 3D-Modellierungen in Köln und Umgebung.
@@ -293,31 +293,41 @@
         <!-- PROJEKT 1: GEWERBEOBJEKT ROLLADEN HANDEL PORZ -->
         <div class="mt-16 rounded-3xl border border-emerald-500/40 bg-graphite-950 p-6 md:p-10 shadow-glow">
           
-          <!-- TOP BANNER: BILD VOLLSTÄNDIG + TEXT & LINK LINKS UNTEN IM BILD -->
-          <div class="relative overflow-hidden rounded-2xl mb-8 border border-white/10 bg-[#060708]">
+          <!-- TOP BANNER MIT BILD DJI_20260915175658_0386_D.JPG (ZENTRAL VOLLSTÄNDIG SICHTBAR + WEBSEITE LINKS UNTEN IM BILD) -->
+          <div class="relative overflow-hidden rounded-2xl mb-8 border border-white/10 bg-[#060708] flex flex-col">
             
-            <!-- Bildbereich komplett zentriert und sichtbar -->
-            <div class="w-full bg-black/90 flex items-center justify-center p-2">
-              <img src="DJI_20260915175658_0386_D.JPG" alt="Referenzprojekt Köln-Porz Ferdinand-Porsche-Str." class="w-full max-h-[480px] object-contain rounded-xl">
+            <!-- Bildbereich: object-contain sorgt dafür, dass das gesamte Bild/Dach komplett im Frame bleibt -->
+            <div class="w-full bg-black/80 flex items-center justify-center p-2">
+              <img src="DJI_20260915175658_0386_D.JPG" alt="Referenzprojekt Köln-Porz Ferdinand-Porsche-Str." class="w-full max-h-[420px] object-contain rounded-xl">
             </div>
 
-            <!-- Rolladen Handel Porz, Adresse und Website in der linken unteren Ecke im Bild -->
-            <div class="absolute bottom-4 left-4 z-20 max-w-xs md:max-w-sm rounded-2xl bg-graphite-950/90 border border-white/15 p-4 shadow-2xl backdrop-blur-md">
-              <span class="text-[10px] font-black uppercase tracking-widest text-emerald-400">Referenz 01 / 04 · Gewerbeobjekt</span>
-              <h3 class="text-lg md:text-xl font-black text-white mt-0.5">Rolladen Handel Porz</h3>
-              <p class="text-xs text-silver-300 mt-0.5">Ferdinand-Porsche-Str. 18 · 51149 Köln-Porz</p>
-              <div class="mt-2 pt-2 border-t border-white/10">
-                <a href="https://www.rhp-online.de" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-400 hover:text-emerald-300 transition-colors">
-                  <span>🔗</span> www.rhp-online.de
+            <!-- Nur die Internetadresse links unten im Bild -->
+            <div class="absolute bottom-4 left-4 z-20 rounded-xl bg-graphite-950/90 border border-white/15 px-4 py-2 shadow-2xl backdrop-blur-md">
+              <a href="https://www.rhp-online.de" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-400 hover:text-emerald-300 transition-colors">
+                <span>🔗</span> www.rhp-online.de
+              </a>
+            </div>
+
+            <!-- Unterer Bereich im Banner: Titel & Adresse links unten, Buttons rechts -->
+            <div class="p-5 md:p-8 bg-graphite-950/95 border-t border-white/10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+              <div>
+                <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Referenz 01 / 04 · Gewerbeobjekt</span>
+                <h3 class="text-xl md:text-3xl font-black text-white mt-1">Rolladen Handel Porz</h3>
+                <p class="text-xs md:text-sm text-silver-300 mt-1">Ferdinand-Porsche-Str. 18 · 51149 Köln-Porz</p>
+                <div class="mt-2">
+                  <a href="https://www.rolladen-handel.de" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-400 hover:text-emerald-300 transition-colors">
+                    <span>🔗</span> www.rolladen-handel.de
+                  </a>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-3">
+                <a href="#kontakt" class="rounded-full bg-emerald-500 px-5 py-2.5 text-xs font-extrabold text-black hover:bg-emerald-400 transition-colors shadow-soft">
+                  Kostenlose Beratung anfordern
+                </a>
+                <a href="#direkteinstieg" class="rounded-full bg-white/10 border border-white/20 px-5 py-2.5 text-xs font-extrabold text-white hover:bg-white/20 transition-colors">
+                  Ihre Projekte in 3D
                 </a>
               </div>
-            </div>
-
-            <!-- Status-Badge oben rechts -->
-            <div class="absolute top-4 right-4 z-20">
-              <span class="rounded-full bg-emerald-500/20 border border-emerald-500/40 px-3 py-1 text-[11px] font-bold text-emerald-300 backdrop-blur-md shadow-lg">
-                ✓ Abgeschlossen &amp; Vermessen
-              </span>
             </div>
 
           </div>
@@ -827,7 +837,7 @@
           </p>
 
           <div class="mt-8 flex flex-col flex-wrap justify-center gap-3.5 sm:flex-row">
-            <a href="https://wa.me/4917656114565?text=Hallo%20Herr%20Runkel%2C%20ich%20m%C3%B6chte%20ein%20Projekt%20mit%20AERO-DRONE%20anfragen." target="_blank" rel="noopener noreferrer" class="rounded-full bg-[#25D366] px-8 py-4 font-bold text-black hover:bg-[#20bd5a] transition-all shadow-wa flex items-center justify-center gap-2">
+            <a href="https://wa.me/4917656114565?text=Hallo%20Herr%20Runkel%2C%20ich%20m%C3%B6chte%20eine%20Anfrage%20mit%20AERO-DRONE%20anfragen." target="_blank" rel="noopener noreferrer" class="rounded-full bg-[#25D366] px-8 py-4 font-bold text-black hover:bg-[#20bd5a] transition-all shadow-wa flex items-center justify-center gap-2">
               Per WhatsApp anfragen
             </a>
             <a href="mailto:kontakt@aero-drone-koeln.de?subject=Projektanfrage%20AERO-DRONE" class="rounded-full bg-white px-8 py-4 font-extrabold text-black hover:bg-silver-200 transition-colors shadow-soft">
