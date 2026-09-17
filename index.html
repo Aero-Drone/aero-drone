@@ -120,14 +120,6 @@
       border-radius: 50%;
     }
 
-    .modal {
-      display: none;
-    }
-
-    .modal.open {
-      display: flex;
-    }
-
     @media (max-width: 767px) {
       .hero-background {
         background-position: center, 68% 30%;
@@ -288,7 +280,7 @@
       </div>
     </section>
 
-    <!-- REFERENZEN (4 GEPLANTE PROJEKTE) -->
+    <!-- REFERENZEN -->
     <section id="referenzen" class="bg-graphite-900 py-24 md:py-32 border-y border-white/10">
       <div class="mx-auto max-w-7xl px-5 md:px-8">
         
@@ -302,23 +294,41 @@
           </p>
         </div>
 
-        <!-- PROJEKT 1: GEWERBEOBJEKT ROLLADEN HANDEL PORZ -->
+        <!-- PROJEKT 1: GEWERBEOBJEKT ROLLADEN HANDEL PORZ (EXAKT NACH DEINER VORLAGE ANGEPASST) -->
         <div class="mt-16 rounded-3xl border border-emerald-500/40 bg-graphite-950 p-6 md:p-10 shadow-glow">
-          <div class="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-6 mb-8">
-            <div>
-              <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Referenz 01 / 04 · Gewerbeobjekt</span>
-              <h3 class="text-2xl md:text-3xl font-black text-white mt-1">Rolladen Handel Porz</h3>
-              <p class="text-xs md:text-sm text-silver-300 mt-1">Ferdinand-Porsche-Str. 18 · 51149 Köln-Porz</p>
-              <!-- WERBE- / PARTNER-LINK -->
-              <div class="mt-2">
-                <a href="https://www.rolladen-handel.de" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-400 hover:text-emerald-300 transition-colors">
-                  <span>🔗</span> www.rolladen-handel.de
+          
+          <!-- TOP BANNER MIT BILD DJI_20260915175658_0386_D.JPG -->
+          <div class="relative overflow-hidden rounded-2xl mb-8 border border-white/10 bg-black">
+            <div class="absolute inset-0 bg-gradient-to-r from-graphite-950 via-graphite-950/80 to-transparent z-10"></div>
+            <img src="DJI_20260915175658_0386_D.JPG" alt="Referenzprojekt Köln-Porz Ferdinand-Porsche-Str." class="w-full h-72 md:h-96 object-cover object-center opacity-80">
+            <div class="absolute inset-0 z-20 p-6 md:p-10 flex flex-col justify-between">
+              <div class="flex flex-wrap items-center justify-between gap-4">
+                <div>
+                  <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Referenz 01 / 04 · Gewerbeobjekt</span>
+                  <h3 class="text-2xl md:text-4xl font-black text-white mt-1">REFERENZPROJEKT KÖLN-PORZ, FERDINAND-PORSCHE-STR.</h3>
+                  <p class="text-xs md:text-sm text-silver-300 mt-1">Vermessung, 3D-Modelle und Punktwolken mit Drohnentechnologie.</p>
+                </div>
+                <span class="rounded-full bg-emerald-500/20 border border-emerald-500/40 px-4 py-1.5 text-xs font-bold text-emerald-300 backdrop-blur-md">
+                  ✓ Abgeschlossen &amp; Vermessen
+                </span>
+              </div>
+              <div class="flex flex-wrap gap-3">
+                <a href="#kontakt" class="rounded-full bg-emerald-500 px-5 py-2.5 text-xs font-extrabold text-black hover:bg-emerald-400 transition-colors shadow-soft">
+                  Kostenlose Beratung anfordern
+                </a>
+                <a href="#direkteinstieg" class="rounded-full bg-white/10 border border-white/20 px-5 py-2.5 text-xs font-extrabold text-white hover:bg-white/20 transition-colors backdrop-blur-md">
+                  Ihre Projekte in 3D
                 </a>
               </div>
             </div>
-            <span class="rounded-full bg-emerald-500/10 border border-emerald-500/30 px-4 py-1.5 text-xs font-bold text-emerald-300">
-              ✓ Abgeschlossen &amp; Vermessen
-            </span>
+          </div>
+
+          <!-- PARTNER LINK -->
+          <div class="mb-8 flex items-center justify-between border-b border-white/10 pb-4">
+            <span class="text-sm text-silver-300">Projektpartner: <strong class="text-white">Rolladen Handel Porz</strong></span>
+            <a href="https://www.rolladen-handel.de" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-400 hover:text-emerald-300 transition-colors">
+              <span>🔗</span> www.rolladen-handel.de
+            </a>
           </div>
 
           <!-- 6 BILDER GRID FÜR PROJEKT 1 -->
@@ -328,7 +338,7 @@
               <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 flex items-center justify-center">
                 <span class="text-silver-400 text-xs">3D-Modell (BIM-Ansicht)</span>
               </div>
-              <h4 class="font-bold text-white text-sm">1. 3D-Modelle &amp; BIM-Basis</h4>
+              <h4 class="font-bold text-white text-sm">1. 3D-Modelle (BIM-Modell)</h4>
               <p class="text-xs text-silver-300 mt-1">Realistische räumliche Darstellung für Architektur und Planung.</p>
             </div>
 
@@ -336,16 +346,15 @@
               <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 flex items-center justify-center">
                 <span class="text-silver-400 text-xs">LiDAR Punktwolke</span>
               </div>
-              <h4 class="font-bold text-white text-sm">2. LiDAR-Punktwolken</h4>
+              <h4 class="font-bold text-white text-sm">2. LiDAR Punktwolken (hohe Genauigkeit)</h4>
               <p class="text-xs text-silver-300 mt-1">Farbkodierte Höhendaten und exakte geometrische Erfassung.</p>
             </div>
 
-            <!-- Echtes QGIS Orthofoto -->
             <div class="card rounded-2xl p-4">
               <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3">
                 <img src="ferdinand-dach-detail.png" alt="Zentimetergenaues Orthofoto Köln-Porz" class="w-full h-full object-cover">
               </div>
-              <h4 class="font-bold text-white text-sm">3. Maßstabsgetreue Orthofotos</h4>
+              <h4 class="font-bold text-white text-sm">3. Maßstabsgetreue Orthofotos/Analyse</h4>
               <p class="text-xs text-silver-300 mt-1">Verzerrungsfreie Draufsichten für direkte Messungen.</p>
             </div>
 
@@ -353,7 +362,7 @@
               <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 flex items-center justify-center">
                 <span class="text-silver-400 text-xs">Detailaufnahme Dach</span>
               </div>
-              <h4 class="font-bold text-white text-sm">4. Detailerfassung</h4>
+              <h4 class="font-bold text-white text-sm">4. Detailerfassung (hohe Auflösung)</h4>
               <p class="text-xs text-silver-300 mt-1">Höchste Auflösung zur Sichtprüfung von Rinnen, Kanten und Aufbauten.</p>
             </div>
 
@@ -369,22 +378,26 @@
               <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 flex items-center justify-center">
                 <span class="text-silver-400 text-xs">Bestandsdoku Areal</span>
               </div>
-              <h4 class="font-bold text-white text-sm">6. Visualisierung &amp; Bestandsdoku</h4>
+              <h4 class="font-bold text-white text-sm">6. Visualisierung &amp; Bestandsdokumentation</h4>
               <p class="text-xs text-silver-300 mt-1">Gesamtdokumentation des Gewerbeareals für Eigentümer und Partner.</p>
             </div>
 
           </div>
 
-          <!-- VIDEO rhp-clip-right.mp4 & ANALYSE -->
-          <div class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <!-- SPEZIAL-ABSCHNITT: INSPEKTIONS- & ANALYSE-ERGEBNISSE -->
+          <div class="mt-12 text-center">
+            <h4 class="text-2xl font-black text-white mb-2">INSPEKTIONS- &amp; ANALYSE-ERGEBNISSE</h4>
+          </div>
+
+          <div class="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             
             <div class="glass rounded-3xl p-6 relative overflow-hidden">
               <div class="flex items-center justify-between mb-4">
-                <h4 class="font-black text-white text-base">Projekt-Einblick (Rolladen Handel Porz)</h4>
+                <h5 class="font-bold text-white text-sm">Köln-Porz – Inspektion &amp; Visualisierung</h5>
                 <span class="text-xs bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-full font-bold">Video aktiv</span>
               </div>
               
-              <div class="relative aspect-video w-full rounded-2xl bg-black border border-white/10 overflow-hidden shadow-2xl">
+              <div class="relative aspect-video w-full rounded-2xl bg-black border border-white/10 overflow-hidden shadow-2xl flex items-center justify-center">
                 <video 
                   src="rhp-clip-right.mp4" 
                   controls 
@@ -397,36 +410,95 @@
             </div>
 
             <div class="glass rounded-3xl p-6 lg:p-8 space-y-4">
-              <h4 class="text-lg font-black text-white">Projekt-Kennwerte</h4>
-              <p class="text-xs text-silver-300">Aus den erfassten Rohdaten ermittelte Eckdaten für das Objekt:</p>
-              
+              <h5 class="text-lg font-black text-white">Präziser Überblick in 45 Sekunden</h5>
               <div class="space-y-3 pt-2">
                 <div class="flex items-center justify-between border-b border-white/10 pb-2.5">
                   <span class="text-sm text-silver-200">Dachfläche gesamt</span>
                   <span class="font-bold text-emerald-400 text-sm">ca. 3.200 m²</span>
                 </div>
                 <div class="flex items-center justify-between border-b border-white/10 pb-2.5">
-                  <span class="text-sm text-silver-200">Auflösung (GSD)</span>
-                  <span class="font-bold text-emerald-400 text-sm">0,47 cm / Pixel</span>
-                </div>
-                <div class="flex items-center justify-between border-b border-white/10 pb-2.5">
-                  <span class="text-sm text-silver-200">Messgenauigkeit</span>
-                  <span class="font-bold text-emerald-400 text-sm">1 – 2 cm Toleranz</span>
+                  <span class="text-sm text-silver-200">Geländemodell</span>
+                  <span class="font-bold text-emerald-400 text-sm">ca. 512</span>
                 </div>
                 <div class="flex items-center justify-between">
-                  <span class="text-sm text-silver-200">Datenformate</span>
-                  <span class="font-bold text-emerald-400 text-sm">GeoTIFF, OBJ, DXF, PDF</span>
+                  <span class="text-sm text-silver-200">Mehrfachnutzung</span>
+                  <span class="font-bold text-emerald-400 text-sm">garantiert</span>
                 </div>
               </div>
             </div>
 
           </div>
+
+          <!-- VERGLEICH MODELL VS. PUNKTWOLKE -->
+          <div class="mt-12 text-center">
+            <h4 class="text-2xl font-black text-white mb-2">VERGLEICH MODELL VS. PUNKTWOLKE</h4>
+          </div>
+
+          <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="card rounded-2xl p-5">
+              <div class="aspect-video bg-black/40 rounded-xl mb-3 flex items-center justify-center border border-white/10">
+                <span class="text-xs text-silver-400">3D-Modell (Texturiert)</span>
+              </div>
+              <h5 class="font-bold text-white text-sm">3D-Modell (Texturiert)</h5>
+              <p class="text-xs text-silver-300 mt-1">Realistische Darstellung &amp; Planungsgrundlage</p>
+            </div>
+
+            <div class="card rounded-2xl p-5">
+              <div class="aspect-video bg-black/40 rounded-xl mb-3 flex items-center justify-center border border-white/10">
+                <span class="text-xs text-silver-400">Punktwolke (Farbkodiert)</span>
+              </div>
+              <h5 class="font-bold text-white text-sm">Punktwolke (Farbkodiert)</h5>
+              <p class="text-xs text-silver-300 mt-1">Höheninformationen &amp; exakte Geometrie</p>
+            </div>
+          </div>
+
+          <!-- MESSDATEN & BERICHTSWESEN -->
+          <div class="mt-12 text-center">
+            <h4 class="text-2xl font-black text-white mb-2">MESSDATEN &amp; BERICHTSWESEN</h4>
+          </div>
+
+          <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="card rounded-2xl p-5">
+              <div class="aspect-video bg-black/40 rounded-xl mb-3 flex items-center justify-center border border-white/10">
+                <span class="text-xs text-silver-400">Dachvermessung (Pläne & Daten)</span>
+              </div>
+              <h5 class="font-bold text-white text-sm">Dachvermessung (Pläne &amp; Daten)</h5>
+              <p class="text-xs text-silver-300 mt-1">Detaillierte Pläne und Messdaten für Handwerker.</p>
+            </div>
+
+            <div class="card rounded-2xl p-5">
+              <div class="aspect-video bg-black/40 rounded-xl mb-3 flex items-center justify-center border border-white/10">
+                <span class="text-xs text-silver-400">Fassaden- & Detailanalyse</span>
+              </div>
+              <h5 class="font-bold text-white text-sm">Fassaden- &amp; Detailanalyse</h5>
+              <p class="text-xs text-silver-300 mt-1">Exakte Aufnahmen zur Dokumentation.</p>
+            </div>
+          </div>
+
+          <!-- GESAMT-DOKUMENTATION KÖLN-PORZ BERICHT -->
+          <div class="mt-12 rounded-2xl border border-white/10 bg-graphite-900 p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+              <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Abschlussbericht</span>
+              <h5 class="text-xl font-black text-white mt-1">GESAMT-DOKUMENTATION KÖLN-PORZ BERICHT</h5>
+              <p class="text-xs text-silver-300 mt-2 max-w-xl">
+                Umfassender 3D-Berichtbericht mit allen Ergebnissen: Pläne, Analysen und Punktwolken.
+              </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+              <a href="#kontakt" class="rounded-full bg-white px-5 py-3 text-xs font-extrabold text-black text-center hover:bg-silver-200 transition-colors shadow-soft">
+                📄 PDF-ANSICHT (ONLINE)
+              </a>
+              <a href="#kontakt" class="rounded-full bg-emerald-500 px-5 py-3 text-xs font-extrabold text-black text-center hover:bg-emerald-400 transition-colors shadow-soft">
+                📥 DETAILLIERTER BERICHT &amp; ROHDATEN (DOWNLOAD)
+              </a>
+            </div>
+          </div>
+
         </div>
 
         <!-- PROJEKTE 2 BIS 4 (VORBEREITET FÜR ZUKÜNFTIGE EINTRÄGE) -->
         <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
           
-          <!-- REFERENZ 2 (PLATZHALTER) -->
           <div class="card rounded-3xl p-6 flex flex-col justify-between border border-white/10">
             <div>
               <div class="flex items-center justify-between mb-3">
@@ -443,7 +515,6 @@
             </div>
           </div>
 
-          <!-- REFERENZ 3 (PLATZHALTER) -->
           <div class="card rounded-3xl p-6 flex flex-col justify-between border border-white/10">
             <div>
               <div class="flex items-center justify-between mb-3">
@@ -460,7 +531,6 @@
             </div>
           </div>
 
-          <!-- REFERENZ 4 (PLATZHALTER) -->
           <div class="card rounded-3xl p-6 flex flex-col justify-between border border-white/10">
             <div>
               <div class="flex items-center justify-between mb-3">
