@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AERO-DRONE Köln | Präzise Drohnen-Vermessung, 3D-Modelle & CAD-Dachaufmaß</title> 
-  <meta name="description" content="AERO-DRONE Köln – Zentimetergenaue Dachvermessung, Orthofotos (0,47 cm/Pixel), 3D-Modelle, Punktwolken & CAD-Exporte für Handwerk, Planer und Immobilien ohne Gerüst.">
+  <meta name="description" content="AERO-DRONE Köln – Zentimetergenaue Dachvermessung mit DJI Mini 5 Pro, Orthofotos (0,47 cm/Pixel), 3D-Modelle, Punktwolken & CAD-Exporte für Handwerk, Planer und Immobilien ohne Gerüst.">
   <meta name="author" content="Patrick Runkel">
   <meta name="theme-color" content="#090a0b">
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Model Viewer für interaktive 3D-Modelle (.glb) -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
   <script>
     tailwind.config = {
@@ -141,7 +143,7 @@
       </a>
 
       <nav class="hidden items-center gap-6 text-sm font-semibold text-silver-300 xl:flex">
-        <a href="#referenzen" class="hover:text-white transition-colors text-emerald-400 font-bold">Referenzprojekte</a>
+        <a href="#referenzen" class="hover:text-white transition-colors text-emerald-400 font-bold">Praxis-Referenzen</a>
         <a href="#direkteinstieg" class="hover:text-white transition-colors">Schnellauswahl</a>
         <a href="#schaden" class="hover:text-white transition-colors">Dach &amp; Sturmschaden</a>
         <a href="#kompetenzen" class="hover:text-white transition-colors">Leistungsbereiche</a>
@@ -167,7 +169,7 @@
     <!-- MOBILE MENU -->
     <nav id="mobileMenu" class="hidden border-t border-white/10 bg-graphite-950 px-5 py-6 text-center xl:hidden">
       <div class="flex flex-col gap-1">
-        <a class="mobile-link py-3 font-bold text-emerald-400" href="#referenzen">Referenzprojekte</a>
+        <a class="mobile-link py-3 font-bold text-emerald-400" href="#referenzen">Praxis-Referenzen</a>
         <a class="mobile-link py-3 font-semibold" href="#direkteinstieg">Schnellauswahl</a>
         <a class="mobile-link py-3 font-semibold" href="#schaden">Dach &amp; Sturmschaden</a>
         <a class="mobile-link py-3 font-semibold" href="#kompetenzen">Leistungsbereiche</a>
@@ -197,7 +199,7 @@
             <span>🛡️</span> EU-zertifiziert A1/A3
           </span>
           <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-3.5 py-1 text-xs font-bold text-emerald-400 border border-emerald-500/30 shadow-trust">
-            <span>✓</span> Zentimetergenau (0.47 cm/Pixel)
+            <span>✓</span> DJI Mini 5 Pro · 0.47 cm/Pixel
           </span>
         </div>
 
@@ -206,13 +208,13 @@
         </h1>
 
         <p class="mx-auto mt-4 text-base font-semibold text-silver-300 sm:text-lg md:text-xl">
-          Zentimetergenaue Orthofotos, CAD-kompatible Punktwolken &amp; fotogrammetrische Analysen ohne Gerüst.
+          Zentimetergenaue Orthofotos, fotogrammetrische Punktwolken &amp; CAD-Planungsgrundlagen ohne Gerüst.
         </p>
 
         <!-- VALUE PROPOSITION -->
         <div class="mx-auto mt-8 max-w-3xl text-left">
           <p class="text-sm font-medium text-silver-300 sm:text-base text-center md:text-left mb-4">
-            Wir erfassen Gebäude und Liegenschaften mit hochauflösender 4K-Sensorik und moderner Photogrammetrie für maximale Planungssicherheit:
+            Wir erfassen Gebäude und Liegenschaften mit der hochauflösenden 4K-Sensorik unserer DJI Mini 5 Pro und professioneller WebODM-Photogrammetrie:
           </p>
           <ul class="space-y-3.5 text-sm sm:text-base text-silver-200">
             <li class="flex items-start gap-3">
@@ -221,7 +223,7 @@
             </li>
             <li class="flex items-start gap-3">
               <span class="text-emerald-400 font-bold text-lg leading-none mt-0.5">•</span>
-              <span><strong class="text-white">3D-Modelle &amp; CAD-Exporte:</strong> Texturierte Meshes, 3D-Modelle und Photogrammetrische Punktwolke (3D-Höhendaten) für gängige Planungssoftware.</span>
+              <span><strong class="text-white">3D-Modelle &amp; CAD-Exporte:</strong> Texturierte Meshes, 3D-Modelle und photogrammetrische Punktwolken für gängige Planungssoftware.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-emerald-400 font-bold text-lg leading-none mt-0.5">•</span>
@@ -237,7 +239,7 @@
         <!-- CTA BUTTONS -->
         <div class="mt-10 flex flex-col flex-wrap justify-center gap-3.5 sm:flex-row">
           <a href="#referenzen" class="rounded-full bg-emerald-500 px-8 py-4 text-sm font-extrabold text-black shadow-soft hover:bg-emerald-400 transition-colors">
-            Referenzprojekte ↓
+            Praxis-Referenzen ↓
           </a>
           <a href="#kontakt" class="rounded-full bg-white px-8 py-4 text-sm font-extrabold text-black shadow-soft hover:bg-silver-200 transition-colors">
             Jetzt Projekt anfragen
@@ -251,9 +253,9 @@
         <div class="glass mx-auto mt-12 grid max-w-4xl rounded-2xl sm:grid-cols-3 text-left divide-y sm:divide-y-0 sm:divide-x divide-white/10">
           <div class="p-5">
             <div class="text-xl mb-1 text-emerald-400 font-bold">🎯 0.47 cm GSD</div>
-            <p class="font-bold text-white text-base">Höchste Bildauflösung</p>
+            <p class="font-bold text-white text-base">DJI Mini 5 Pro Optik</p>
             <p class="mt-1 text-xs text-silver-400 leading-normal">
-              Zentimetergenaue Pixel-Erfassung für verlässliche Auswertungen am Bildschirm.
+              Höchste Bildschärfe und zentimetergenaue Pixel-Erfassung für verlässliche Analysen.
             </p>
           </div>
 
@@ -269,7 +271,7 @@
             <div class="text-xl mb-1 text-emerald-400 font-bold">🌐 CAD / 3D</div>
             <p class="font-bold text-white text-base">Offene Schnittstellen</p>
             <p class="mt-1 text-xs text-silver-400 leading-normal">
-              Bereitstellung von Punktwolken, Meshes und Orthofotos für Ihre Planungssoftware.
+              Bereitstellung von Punktwolken, Meshes und Orthofotos für Ihre CAD-Software.
             </p>
           </div>
         </div>
@@ -283,7 +285,7 @@
         <div class="text-center max-w-3xl mx-auto">
           <span class="section-label">Referenzprojekte</span>
           <h2 class="mt-4 text-3xl font-black md:text-5xl text-white">
-            Ausgewählte Projekte &amp; Fallstudien
+            Praxis-Referenzen &amp; CAD-Ergebnisse
           </h2>
           <p class="mt-4 text-silver-300 text-base">
             Einblick in unsere digitale Gebäudeerfassung, zentimetergenaue Dachvermessungen und 3D-Modellierungen in Köln und Umgebung.
@@ -311,12 +313,11 @@
           <!-- Unterer Bereich im Banner: Titel & Adresse links unten, Buttons rechts -->
           <div class="p-5 md:p-8 bg-graphite-950/95 border-t border-white/10 flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div>
-              <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Referenz 01 / 04 ·<br><br> 
-                Partner-Gewerbeobjekt</span>
+              <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Referenz 01 / 04 · Partner-Gewerbeobjekt</span>
               <!-- Abgeschlossen & Vermessen unter Referenz 01 -->
               <div class="mt-1.5 mb-2">
                 <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 text-xs font-bold text-emerald-300">
-                  ✓ Abgeschlossen &amp; Vermessen
+                  ✓ Abgeschlossen &amp; Vermessen (DJI Mini 5 Pro)
                 </span>
               </div>
               <h3 class="text-xl md:text-3xl font-black text-white mt-1">Rolladen Handel Porz</h3>
@@ -332,22 +333,29 @@
             </div>
           </div>
 
-          <!-- 6 BILDER GRID FÜR PROJEKT 1 -->
+          <!-- 6 BILDER GRID FÜR PROJEKT 1 (Kachel 1 jetzt mit interaktivem 3D-Viewer) -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
             
             <div class="card rounded-2xl p-4">
-              <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 flex items-center justify-center">
-                <span class="text-silver-400 text-xs">3D-Modell (BIM-Ansicht)</span>
+              <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 relative flex items-center justify-center">
+                <model-viewer 
+                  src="odm_textured_model_geo.glb" 
+                  alt="3D-Modell Rolladen Handel Porz" 
+                  auto-rotate 
+                  camera-controls 
+                  shadow-intensity="1"
+                  style="width: 100%; height: 100%;">
+                </model-viewer>
               </div>
-              <h4 class="font-bold text-white text-sm">1. 3D-Modelle (BIM-Modell)</h4>
-              <p class="text-xs text-silver-300 mt-1">Realistische räumliche Darstellung für Architektur und Planung.</p>
+              <h4 class="font-bold text-white text-sm">1. 3D-Modell (Interaktiv)</h4>
+              <p class="text-xs text-silver-300 mt-1">Direkt im Browser drehbar – fotorealistische BIM-Basis.</p>
             </div>
 
             <div class="card rounded-2xl p-4">
               <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 flex items-center justify-center">
-                <span class="text-silver-400 text-xs">LiDAR Punktwolke</span>
+                <span class="text-silver-400 text-xs">Photogrammetrische Punktwolke</span>
               </div>
-              <h4 class="font-bold text-white text-sm">2. LiDAR Punktwolken (hohe Genauigkeit)</h4>
+              <h4 class="font-bold text-white text-sm">2. 3D-Punktwolken (Höhendaten)</h4>
               <p class="text-xs text-silver-300 mt-1">Farbkodierte Höhendaten und exakte geometrische Erfassung.</p>
             </div>
 
@@ -418,12 +426,12 @@
                   <span class="font-bold text-emerald-400 text-sm">ca. 3.200 m²</span>
                 </div>
                 <div class="flex items-center justify-between border-b border-white/10 pb-2.5">
-                  <span class="text-sm text-silver-200">Geländemodell</span>
-                  <span class="font-bold text-emerald-400 text-sm">ca. 512</span>
+                  <span class="text-sm text-silver-200">Auflösung (GSD)</span>
+                  <span class="font-bold text-emerald-400 text-sm">0,47 cm / Pixel</span>
                 </div>
                 <div class="flex items-center justify-between">
-                  <span class="text-sm text-silver-200">Mehrfachnutzung</span>
-                  <span class="font-bold text-emerald-400 text-sm">garantiert</span>
+                  <span class="text-sm text-silver-200">Messgenauigkeit</span>
+                  <span class="font-bold text-emerald-400 text-sm">1 – 2 cm Toleranz</span>
                 </div>
               </div>
             </div>
@@ -482,7 +490,7 @@
               <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Abschlussbericht</span>
               <h5 class="text-xl font-black text-white mt-1">GESAMT-DOKUMENTATION KÖLN-PORZ BERICHT</h5>
               <p class="text-xs text-silver-300 mt-2 max-w-xl">
-                Umfassender 3D-Berichtbericht mit allen Ergebnissen: Pläne, Analysen und Punktwolken.
+                Umfassender 3D-Bericht mit allen Ergebnissen: Pläne, Analysen und fotogrammetrischen Punktwolken.
               </p>
             </div>
             <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
