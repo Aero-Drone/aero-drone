@@ -148,14 +148,14 @@
 
     <!-- MOBILE MENU -->
     <nav id="mobileMenu" class="hidden border-t border-white/10 bg-graphite-950 px-5 py-6 text-center xl:hidden">
-      <div class="flex flex-col gap-1">
-        <a class="mobile-link py-3 font-bold text-emerald-400" href="#referenzen">Referenzen</a>
-        <a class="mobile-link py-3 font-semibold text-white" href="#direkteinstieg">Schnellauswahl</a>
-        <a class="mobile-link py-3 font-semibold text-white" href="#schaden">Dach &amp; Sturmschaden</a>
-        <a class="mobile-link py-3 font-semibold text-white" href="#kompetenzen">Leistungsbereiche</a>
-        <a class="mobile-link py-3 font-semibold text-white" href="#leistungen">Alle Leistungen</a>
-        <a class="mobile-link py-3 font-semibold text-white" href="#ueber-mich">Über mich</a>
-        <a class="mobile-link py-3 font-semibold text-white" href="#faq">FAQ</a>
+      <div class="flex flex-col gap-3">
+        <a class="mobile-link py-2 font-bold text-emerald-400 text-base" href="#referenzen">Referenzen</a>
+        <a class="mobile-link py-2 font-semibold text-white text-base" href="#direkteinstieg">Schnellauswahl</a>
+        <a class="mobile-link py-2 font-semibold text-white text-base" href="#schaden">Dach &amp; Sturmschaden</a>
+        <a class="mobile-link py-2 font-semibold text-white text-base" href="#kompetenzen">Leistungsbereiche</a>
+        <a class="mobile-link py-2 font-semibold text-white text-base" href="#leistungen">Alle Leistungen</a>
+        <a class="mobile-link py-2 font-semibold text-white text-base" href="#ueber-mich">Über mich</a>
+        <a class="mobile-link py-2 font-semibold text-white text-base" href="#faq">FAQ</a>
       </div>
     </nav>
   </header>
@@ -190,51 +190,51 @@
     </section>
 
     <!-- REFERENZEN & PROJEKTERGEBNISSE -->
-    <section id="referenzen" class="bg-graphite-900 py-24 md:py-32 border-y border-white/10">
-      <div class="mx-auto max-w-7xl px-5 md:px-8">
+    <section id="referenzen" class="bg-graphite-900 py-16 md:py-32 border-y border-white/10">
+      <div class="mx-auto max-w-7xl px-4 md:px-8">
         
-        <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <span class="section-label">Referenzprojekte</span>
-          <h2 class="mt-4 text-3xl font-black md:text-5xl text-white">
+          <h2 class="mt-4 text-2xl font-black sm:text-3xl md:text-5xl text-white">
             Referenzen &amp; Projektergebnisse
           </h2>
-          <p class="mt-4 text-silver-300 text-base">
+          <p class="mt-3 text-silver-300 text-sm md:text-base">
             Einblick in unsere digitale Gebäudeerfassung, zentimetergenaue Dachvermessungen und 3D-Modellierungen in Köln und Umgebung.
           </p>
         </div>
 
         <!-- HAUPT-REFERENZCONTAINER -->
-        <div class="rounded-3xl border border-emerald-500/40 bg-graphite-950 p-6 md:p-12 shadow-glow">
+        <div class="rounded-2xl md:rounded-3xl border border-emerald-500/40 bg-graphite-950 p-4 sm:p-6 md:p-12 shadow-glow">
           
-          <!-- GROSSES VORSCHAUBILD OBEN (MIT KORREKTER ENDUNG .JPG) -->
-          <div class="relative rounded-2xl overflow-hidden mb-10 border border-white/15 shadow-soft group">
-            <div class="aspect-[21/9] w-full bg-black relative">
-              <img src="DJI_20260915175658_0386_D.JPG" alt="Referenzprojekt Köln-Porz Ferdinand-Porsche-Straße" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
-              <div class="absolute inset-0 bg-gradient-to-t from-graphite-950 via-graphite-950/60 to-transparent"></div>
+          <!-- GROSSES VORSCHAUBILD OBEN (RESPONSIV UMSETZUNG FÜR HANDY) -->
+          <div class="rounded-2xl overflow-hidden mb-8 border border-white/15 bg-black shadow-soft">
+            <div class="w-full aspect-[16/9] sm:aspect-[21/9] relative">
+              <img src="DJI_20260915175658_0386_D.JPG" alt="Referenzprojekt Köln-Porz Ferdinand-Porsche-Straße" class="w-full h-full object-cover object-center">
             </div>
 
-            <div class="absolute inset-0 p-6 md:p-10 flex flex-col justify-between">
-              <div class="flex flex-wrap items-center justify-between gap-4">
-                <span class="rounded-full bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 px-4 py-1.5 text-xs font-black uppercase tracking-wider text-emerald-300">
+            <!-- Beschreibung unter dem Bild auf Mobile, elegant im Desktop -->
+            <div class="p-5 sm:p-6 md:p-8 bg-graphite-950 border-t border-white/10 flex flex-col gap-4">
+              <div class="flex flex-wrap items-center justify-between gap-3">
+                <span class="rounded-full bg-emerald-500/20 border border-emerald-500/40 px-3.5 py-1 text-[11px] sm:text-xs font-black uppercase tracking-wider text-emerald-300">
                   Referenz 01 / 04 · Gewerbeobjekt
                 </span>
-                <a href="https://www.rolladen-handel.de" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10 hover:text-emerald-400 transition-colors">
+                <a href="https://www.rolladen-handel.de" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-white/5 px-3 py-1.5 rounded-full border border-white/10 hover:text-emerald-400 transition-colors">
                   <span>🔗</span> www.rolladen-handel.de
                 </a>
               </div>
 
               <div>
-                <h3 class="text-2xl md:text-4xl font-black text-white tracking-tight drop-shadow-md">
+                <h3 class="text-xl sm:text-2xl md:text-4xl font-black text-white tracking-tight">
                   Rolladen Handel Porz
                 </h3>
-                <p class="text-xs md:text-sm text-silver-200 mt-1 drop-shadow">
+                <p class="text-xs sm:text-sm text-silver-300 mt-1">
                   Ferdinand-Porsche-Str. 18 · 51149 Köln-Porz (Vermessung, 3D-Modelle &amp; Punktwolken mit Drohnentechnologie)
                 </p>
                 <div class="mt-4 flex flex-wrap gap-3">
-                  <a href="#kontakt" class="rounded-full bg-emerald-500 px-5 py-2.5 text-xs font-extrabold text-black hover:bg-emerald-400 transition-colors shadow-soft">
+                  <a href="#kontakt" class="rounded-full bg-emerald-500 px-4 sm:px-5 py-2.5 text-xs font-extrabold text-black hover:bg-emerald-400 transition-colors shadow-soft">
                     Kostenlose Beratung anfordern
                   </a>
-                  <a href="#referenzen" class="rounded-full bg-white/10 backdrop-blur-md border border-white/20 px-5 py-2.5 text-xs font-bold text-white hover:bg-white/20 transition-colors">
+                  <a href="#referenzen" class="rounded-full bg-white/10 border border-white/20 px-4 sm:px-5 py-2.5 text-xs font-bold text-white hover:bg-white/20 transition-colors">
                     Ihre Projekte in 3D
                   </a>
                 </div>
@@ -243,15 +243,15 @@
           </div>
 
           <!-- ICON LEISTE UNTER DEM BILD -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-12 text-center text-xs font-bold text-silver-300 border-y border-white/10 py-4">
-            <div class="flex items-center justify-center gap-2"><span class="text-emerald-400">✈️</span> Drohnen-Vermessung</div>
-            <div class="flex items-center justify-center gap-2"><span class="text-emerald-400">🌐</span> 3D-Modelle</div>
-            <div class="flex items-center justify-center gap-2"><span class="text-emerald-400">📊</span> Punktwolken</div>
-            <div class="flex items-center justify-center gap-2"><span class="text-emerald-400">⚡</span> Präzise &amp; Effiziente Daten</div>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10 text-center text-xs font-bold text-silver-300 border-y border-white/10 py-4">
+            <div class="flex items-center justify-center gap-1.5"><span class="text-emerald-400">✈️</span> Drohnen-Vermessung</div>
+            <div class="flex items-center justify-center gap-1.5"><span class="text-emerald-400">🌐</span> 3D-Modelle</div>
+            <div class="flex items-center justify-center gap-1.5"><span class="text-emerald-400">📊</span> Punktwolken</div>
+            <div class="flex items-center justify-center gap-1.5"><span class="text-emerald-400">⚡</span> Präzise &amp; Effizient</div>
           </div>
 
           <!-- 6 BILDER / MODULE GRID -->
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
             <div class="card rounded-2xl p-4">
               <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 flex items-center justify-center border border-white/10 text-silver-400 text-xs font-semibold">3D-Modell (BIM-Ansicht)</div>
               <h4 class="font-bold text-white text-sm">1. 3D-Modelle &amp; BIM-Basis</h4>
@@ -292,24 +292,24 @@
           </div>
 
           <!-- VIDEO & ANALYSE -->
-          <div class="mb-12">
-            <div class="text-center mb-8"><h3 class="text-2xl font-black text-white">Inspektions- &amp; Analyse-Ergebnisse</h3></div>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div class="glass rounded-3xl p-5 relative overflow-hidden border border-white/15">
+          <div class="mb-10">
+            <div class="text-center mb-6"><h3 class="text-xl sm:text-2xl font-black text-white">Inspektions- &amp; Analyse-Ergebnisse</h3></div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+              <div class="glass rounded-2xl p-4 relative overflow-hidden border border-white/15">
                 <div class="flex items-center justify-between mb-3">
-                  <span class="font-bold text-white text-sm">Köln-Porz – Inspektion &amp; Visualisierung</span>
-                  <span class="text-xs bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-full font-bold">Video aktiv</span>
+                  <span class="font-bold text-white text-xs sm:text-sm">Köln-Porz – Inspektion</span>
+                  <span class="text-[10px] bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded-full font-bold">Video aktiv</span>
                 </div>
-                <div class="relative aspect-video w-full rounded-2xl bg-black border border-white/10 overflow-hidden shadow-2xl">
+                <div class="relative aspect-video w-full rounded-xl bg-black border border-white/10 overflow-hidden shadow-2xl">
                   <video src="rhp-clip-right.mp4" controls playsinline preload="metadata" class="w-full h-full object-cover">Ihr Browser unterstützt das Video-Tag nicht.</video>
                 </div>
               </div>
 
-              <div class="glass rounded-3xl p-6 lg:p-8 border border-white/15 space-y-4">
-                <h4 class="text-base font-black text-white">Präziser Überblick in 45 Sekunden</h4>
-                <div class="space-y-3 pt-2 text-sm text-silver-200">
-                  <div class="flex items-center gap-3 border-b border-white/10 pb-3"><span class="text-emerald-400 font-bold">✓</span><span>Dachfläche ca. 3.200 m²</span></div>
-                  <div class="flex items-center gap-3 border-b border-white/10 pb-3"><span class="text-emerald-400 font-bold">✓</span><span>Geländemodell ca. 512</span></div>
+              <div class="glass rounded-2xl p-6 border border-white/15 space-y-3">
+                <h4 class="text-sm sm:text-base font-black text-white">Präziser Überblick in 45 Sekunden</h4>
+                <div class="space-y-2 pt-1 text-xs sm:text-sm text-silver-200">
+                  <div class="flex items-center gap-3 border-b border-white/10 pb-2"><span class="text-emerald-400 font-bold">✓</span><span>Dachfläche ca. 3.200 m²</span></div>
+                  <div class="flex items-center gap-3 border-b border-white/10 pb-2"><span class="text-emerald-400 font-bold">✓</span><span>Geländemodell ca. 512</span></div>
                   <div class="flex items-center gap-3"><span class="text-emerald-400 font-bold">✓</span><span>Mehrfachnutzung garantiert</span></div>
                 </div>
               </div>
@@ -317,24 +317,24 @@
           </div>
 
           <!-- BERICHTS DOWNLOAD -->
-          <div class="rounded-2xl border border-white/15 bg-black/40 p-6 md:p-8 flex flex-col lg:flex-row items-center justify-between gap-6">
-            <div class="flex items-center gap-5">
-              <div class="hidden sm:flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-2xl">📄</div>
+          <div class="rounded-2xl border border-white/15 bg-black/40 p-5 md:p-8 flex flex-col lg:flex-row items-center justify-between gap-5">
+            <div class="flex items-center gap-4 text-left">
+              <div class="hidden sm:flex h-14 w-14 items-center justify-center rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-xl">📄</div>
               <div>
-                <h4 class="text-lg font-black text-white">Gesamt-Dokumentation Köln-Porz Bericht</h4>
-                <p class="text-xs text-silver-300 mt-1 max-w-xl">Umfassender 3D-Berichtsbericht mit allen Ergebnissen: Pläne, Analysen und Punktwolken.</p>
+                <h4 class="text-base sm:text-lg font-black text-white">Gesamt-Dokumentation Köln-Porz Bericht</h4>
+                <p class="text-xs text-silver-300 mt-0.5">Umfassender 3D-Bericht mit Plänen, Analysen und Punktwolken.</p>
               </div>
             </div>
-            <div class="flex flex-wrap gap-3 w-full lg:w-auto">
-              <a href="#kontakt" class="flex-1 lg:flex-none text-center rounded-xl bg-emerald-500 px-5 py-3 text-xs font-extrabold text-black hover:bg-emerald-400 transition-colors shadow-soft">PDF-Ansicht (Online)</a>
-              <a href="#kontakt" class="flex-1 lg:flex-none text-center rounded-xl bg-white/10 border border-white/20 px-5 py-3 text-xs font-bold text-white hover:bg-white/20 transition-colors">Detaillierter Bericht &amp; Rohdaten</a>
+            <div class="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
+              <a href="#kontakt" class="text-center rounded-xl bg-emerald-500 px-4 py-3 text-xs font-extrabold text-black hover:bg-emerald-400 transition-colors">PDF-Ansicht (Online)</a>
+              <a href="#kontakt" class="text-center rounded-xl bg-white/10 border border-white/20 px-4 py-3 text-xs font-bold text-white hover:bg-white/20 transition-colors">Rohdaten (Download)</a>
             </div>
           </div>
 
         </div>
 
         <!-- PLATZHALTER PROJEKTE 2-4 -->
-        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
           <div class="card rounded-3xl p-6 flex flex-col justify-between border border-white/10">
             <div>
               <div class="flex items-center justify-between mb-3"><span class="text-xs font-black uppercase tracking-widest text-silver-400">Referenz 02 / 04</span><span class="rounded-full bg-white/5 px-3 py-1 text-[11px] font-semibold text-silver-300">In Vorbereitung</span></div>
@@ -368,21 +368,21 @@
 
     <!-- SCHNELLWAHL -->
     <section id="direkteinstieg" class="relative bg-graphite-950 py-16 border-y border-white/10">
-      <div class="relative mx-auto max-w-7xl px-5 md:px-8">
-        <p class="text-center text-xs font-black uppercase tracking-widest text-emerald-400">Direkteinstieg</p>
-        <h2 class="text-center text-2xl md:text-3xl font-black text-white mt-2">Was möchten Sie erfassen lassen?</h2>
+      <div class="relative mx-auto max-w-7xl px-5 md:px-8 text-center">
+        <p class="text-xs font-black uppercase tracking-widest text-emerald-400">Direkteinstieg</p>
+        <h2 class="text-2xl md:text-3xl font-black text-white mt-2">Was möchten Sie erfassen lassen?</h2>
       </div>
     </section>
 
     <!-- KONTAKT -->
-    <section id="kontakt" class="bg-graphite-950 py-24 md:py-32 border-t border-white/5 text-center">
+    <section id="kontakt" class="bg-graphite-950 py-20 md:py-32 border-t border-white/5 text-center">
       <div class="mx-auto max-w-5xl px-5 md:px-8">
-        <div class="glass rounded-3xl p-8 md:p-14">
+        <div class="glass rounded-3xl p-6 md:p-14">
           <span class="section-label">Kontakt</span>
-          <h2 class="mt-6 text-3xl font-black md:text-5xl text-white">Jetzt unverbindlich anfragen</h2>
-          <p class="mx-auto mt-5 max-w-2xl text-base text-silver-300">Haben Sie ein Objekt in Köln und Umgebung zu vermessen? Schreiben Sie direkt.</p>
+          <h2 class="mt-6 text-2xl sm:text-3xl md:text-5xl font-black text-white">Jetzt unverbindlich anfragen</h2>
+          <p class="mx-auto mt-5 max-w-2xl text-sm sm:text-base text-silver-300">Haben Sie ein Objekt in Köln und Umgebung zu vermessen? Schreiben Sie direkt.</p>
           <div class="mt-8 flex justify-center gap-4">
-            <a href="https://wa.me/4917656114565" class="rounded-full bg-[#25D366] px-8 py-4 font-bold text-black">WhatsApp anfragen</a>
+            <a href="https://wa.me/4917656114565" class="rounded-full bg-[#25D366] px-8 py-4 font-bold text-black text-sm">WhatsApp anfragen</a>
           </div>
           <div class="mt-10 pt-8 border-t border-white/10 text-silver-400 text-xs">
             <p class="font-bold text-white text-base">Patrick Runkel · AERO-DRONE</p>
