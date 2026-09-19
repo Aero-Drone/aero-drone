@@ -210,7 +210,6 @@
           <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-3.5 py-1 text-xs font-bold text-emerald-400 border border-emerald-500/30 shadow-trust">
             <span>✓</span> High-End 4K-Sensorik · 0.47 cm/Pixel
           </span>
-
         </div>
 
         <h1 class="mx-auto max-w-5xl text-3xl font-black leading-[1.12] tracking-tight text-white sm:text-5xl md:text-7xl">
@@ -343,7 +342,7 @@
             </div>
           </div>
 
-          <!-- 6 BILDER GRID FÜR PROJEKT 1 (Kachel 1 mit Studio-Look im 3D-Viewer) -->
+          <!-- 6 BILDER GRID FÜR PROJEKT 1 -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
             
             <div class="card rounded-2xl p-4">
@@ -381,12 +380,16 @@
               <p class="text-xs text-silver-300 mt-1">Verzerrungsfreie Draufsichten für direkte Messungen.</p>
             </div>
 
-            <div class="card rounded-2xl p-4">
-              <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 flex items-center justify-center">
-                <span class="text-silver-400 text-xs">Detailaufnahme Dach</span>
+            <!-- NEU: HOCHPROFESSIONELLE AUFMASS- & CAD-KACHEL (ERSETZT DETAILAUFNAHME) -->
+            <div class="card rounded-2xl p-4 border border-emerald-500/30">
+              <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 border border-white/10 relative group">
+                <img src="dach-aufmass-beispiel.JPG" alt="Präzises Dachaufmaß und CAD-Planungsgrundlage Köln-Porz" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute top-2 right-2 bg-emerald-500 text-black text-[10px] font-extrabold px-2 py-0.5 rounded shadow">
+                  VERMESSEN ✓
+                </div>
               </div>
-              <h4 class="font-bold text-white text-sm">4. Detailerfassung (hohe Auflösung)</h4>
-              <p class="text-xs text-silver-300 mt-1">Höchste Auflösung zur Sichtprüfung von Rinnen, Kanten und Aufbauten.</p>
+              <h4 class="font-bold text-white text-sm">4. Präzises Dachaufmaß &amp; CAD</h4>
+              <p class="text-xs text-silver-300 mt-1">Zentimetergenaue Kantenlängen, Flächen ($\text{m}^2$) &amp; Lichtkuppel-Sperrflächen für Handwerker.</p>
             </div>
 
             <div class="card rounded-2xl p-4">
@@ -554,7 +557,7 @@
       </div>
     </section>
 
-    <!-- SCHNELLWAHL (Mit integrierten Luftaufnahmen & Medien) -->
+    <!-- SCHNELLWAHL -->
     <section id="direkteinstieg" class="relative bg-graphite-950 py-16 border-y border-white/10">
       <div class="relative mx-auto max-w-7xl px-5 md:px-8">
         <p class="text-center text-xs font-black uppercase tracking-widest text-emerald-400">Direkteinstieg</p>
@@ -876,7 +879,7 @@
     </div>
   </div>
 
-  <!-- FOOTER (Inklusive Impressum & Datenschutz) -->
+  <!-- FOOTER -->
   <footer class="border-t border-white/10 bg-[#08090a]">
     <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 px-5 py-8 text-center text-xs md:text-sm text-silver-400 md:flex-row md:px-8">
       <div>
@@ -913,13 +916,11 @@
 
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Cookie Banner Logik
     function checkCookieConsent() {
       const consent = localStorage.getItem('cookieConsent');
       if (!consent) {
         document.getElementById('cookieBanner').style.display = 'block';
       } else if (consent === 'declined') {
-        // Google Analytics deaktivieren, falls abgelehnt
         window['ga-disable-G-WX8T0EG0SH'] = true;
       }
     }
@@ -927,7 +928,7 @@
     function acceptCookies() {
       localStorage.setItem('cookieConsent', 'accepted');
       document.getElementById('cookieBanner').style.display = 'none';
-      location.reload(); // Lädt die Seite neu, damit Analytics aktiv wird
+      location.reload();
     }
 
     function declineCookies() {
@@ -936,7 +937,6 @@
       window['ga-disable-G-WX8T0EG0SH'] = true;
     }
 
-    // Beim Laden der Seite ausführen
     window.addEventListener('DOMContentLoaded', checkCookieConsent);
   </script>
 
