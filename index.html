@@ -85,7 +85,6 @@
     .hero-background {
       position: relative;
       background-color: #090a0b;
-      /* UNVERÄNDERTER DESKTOP-ZUSTAND */
       background-image: linear-gradient(180deg, rgba(6, 7, 8, .45) 0%, rgba(9, 10, 11, .75) 55%, rgba(9, 10, 11, 1) 100%), url("hero-drohne-koeln.PNG");
       background-position: center, 45% center;
       background-repeat: no-repeat;
@@ -135,11 +134,11 @@
       border-radius: 50%;
     }
 
-    /* KORREKTUR FÜR ALLE HANDYS: Originalbild wird bildschirmfüllend und scharf zentriert angezeigt. */
+    /* Mobiloptimierter Ausschnitt: Zentriert Drohne und beide Domtürme perfekt */
     @media (max-width: 767px) {
       .hero-background {
-        background-position: center, center;
-        background-size: cover, cover;
+        background-position: center, 50% 35%;
+        background-size: cover, auto 100%;
       }
     }
 
@@ -213,4 +212,690 @@
         
         <div class="mb-5 flex flex-wrap items-center justify-center gap-2.5">
           <span class="section-label">Köln &amp; Rheinland</span>
-          <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-3.5 py-1 text-xs font-bold text-emerald-400 border border-emerald-500/30 shadow-trust">
+            <span>🛡️</span> EU-zertifiziert A1/A3
+          </span>
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-3.5 py-1 text-xs font-bold text-emerald-400 border border-emerald-500/30 shadow-trust">
+            <span>✓</span> High-End 4K-Sensorik · 0.47 cm/Pixel
+          </span>
+        </div>
+
+        <h1 class="mx-auto max-w-5xl text-3xl font-black leading-[1.12] tracking-tight text-white sm:text-5xl md:text-7xl">
+          Professionelle Drohnen-Vermessung &amp; CAD-Dachaufmaß in Köln
+        </h1>
+
+        <p class="mx-auto mt-4 text-base font-semibold text-silver-300 sm:text-lg md:text-xl">
+          Zentimetergenaue Orthofotos, verlässliche Baudaten und 3D-Modelle für Handwerk und Planung – ohne Gerüst.
+        </p>
+
+        <!-- VALUE PROPOSITION -->
+        <div class="mx-auto mt-8 max-w-3xl text-left">
+          <p class="text-sm font-medium text-silver-300 sm:text-base text-center md:text-left mb-4">
+            Ich erfasse Gebäude und Liegenschaften mit hochauflösender 4K-Sensorik und präziser Photogrammetrie:
+          </p>
+          <ul class="space-y-3.5 text-sm sm:text-base text-silver-200">
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-400 font-bold text-lg leading-none mt-0.5">•</span>
+              <span><strong class="text-white">Handwerk &amp; Planer:</strong> Exakte Längen-, Flächen- und Detailmaße direkt aus dem Orthofoto für Vorkalkulation und Arbeitsvorbereitung.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-400 font-bold text-lg leading-none mt-0.5">•</span>
+              <span><strong class="text-white">3D-Modelle &amp; CAD-Exporte:</strong> Texturierte Meshes, 3D-Modelle und Punktwolken für gängige Planungssoftware.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-400 font-bold text-lg leading-none mt-0.5">•</span>
+              <span><strong class="text-white">Sturmschäden &amp; Versicherungen:</strong> Lückenlose Fotodokumentation mit EXIF-Zeit- und GPS-Stempel.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-400 font-bold text-lg leading-none mt-0.5">•</span>
+              <span><strong class="text-white">Immobilien &amp; Marketing:</strong> Hochwertige Luftbilder und Areal-Ansichten für Exposés und Präsentationen.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- CTA BUTTONS -->
+        <div class="mt-10 flex flex-col flex-wrap justify-center gap-3.5 sm:flex-row">
+          <a href="#referenzen" class="rounded-full bg-emerald-500 px-8 py-4 text-sm font-extrabold text-black shadow-soft hover:bg-emerald-400 transition-colors">
+            Praxis-Referenzen ↓
+          </a>
+          <a href="#kontakt" class="rounded-full bg-white px-8 py-4 text-sm font-extrabold text-black shadow-soft hover:bg-silver-200 transition-colors">
+            Jetzt Projekt anfragen
+          </a>
+          <a href="https://wa.me/4917656114565?text=Hallo%20Herr%20Runkel%2C%20ich%20m%C3%B6chte%20eine%20Anfrage%20stellen." target="_blank" rel="noopener noreferrer" class="rounded-full bg-[#25D366] px-8 py-4 text-sm font-bold text-black hover:bg-[#20bd5a] transition-all shadow-wa flex items-center justify-center gap-2">
+            WhatsApp Chat
+          </a>
+        </div>
+
+        <!-- HIGHLIGHTS -->
+        <div class="glass mx-auto mt-12 grid max-w-4xl rounded-2xl sm:grid-cols-3 text-left divide-y sm:divide-y-0 sm:divide-x divide-white/10">
+          <div class="p-5">
+            <div class="text-xl mb-1 text-emerald-400 font-bold">🎯 0.47 cm GSD</div>
+            <p class="font-bold text-white text-base">High-End 4K-Optik</p>
+            <p class="mt-1 text-xs text-silver-400 leading-normal">
+              Höchste Bildschärfe und detailgenaue Pixel-Erfassung für verlässliche Analysen.
+            </p>
+          </div>
+
+          <div class="p-5">
+            <div class="text-xl mb-1 text-emerald-400 font-bold">📐 Effizient &amp; Sicher</div>
+            <p class="font-bold text-white text-base">Zuverlässiges Aufmaß</p>
+            <p class="mt-1 text-xs text-silver-400 leading-normal">
+              Präzise Distanzen und Flächenberechnungen ohne teures Gerüst oder Kletterrisiko.
+            </p>
+          </div>
+
+          <div class="p-5">
+            <div class="text-xl mb-1 text-emerald-400 font-bold">🌐 CAD / 3D</div>
+            <p class="font-bold text-white text-base">Offene Schnittstellen</p>
+            <p class="mt-1 text-xs text-silver-400 leading-normal">
+              Bereitstellung von Punktwolken, Meshes und Orthofotos für Ihre CAD-Software.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFERENZEN -->
+    <section id="referenzen" class="bg-graphite-900 py-24 md:py-32 border-y border-white/10">
+      <div class="mx-auto max-w-7xl px-5 md:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto">
+          <span class="section-label">Referenzprojekt</span>
+          <h2 class="mt-4 text-3xl font-black md:text-5xl text-white">
+            Praxis-Referenz &amp; CAD-Ergebnisse
+          </h2>
+          <p class="mt-4 text-silver-300 text-base">
+            Einblick in meine digitale Gebäudeerfassung, zentimetergenaue Dachvermessung und 3D-Modellierung in Köln-Porz.
+          </p>
+        </div>
+
+        <!-- PROJEKT 1: GEWERBEOBJEKT ROLLADEN HANDEL PORZ -->
+        <div class="mt-16 rounded-3xl border border-emerald-500/40 bg-graphite-950 p-6 md:p-10 shadow-glow">
+          
+          <!-- TOP BANNER -->
+          <div class="relative overflow-hidden rounded-2xl mb-8 border border-white/10 bg-black">
+            <img src="DJI_20260915175658_0386_D.JPG" alt="Referenzprojekt Köln-Porz Ferdinand-Porsche-Str." class="w-full max-h-[420px] object-contain mx-auto block">
+
+            <div class="absolute bottom-3 left-3 z-20 rounded-xl bg-graphite-950/90 border border-white/20 px-3.5 py-1.5 shadow-2xl backdrop-blur-md">
+              <a href="https://www.rhp-online.de" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-400 hover:text-emerald-300 transition-colors">
+                <span>🔗</span> www.rhp-online.de
+              </a>
+            </div>
+          </div>
+
+          <!-- Unterer Bereich im Banner -->
+          <div class="p-5 md:p-8 bg-graphite-950/95 border-t border-white/10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div>
+              <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Referenz · Partner-Gewerbeobjekt</span>
+              <div class="mt-1.5 mb-2">
+                <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 text-xs font-bold text-emerald-300">
+                  ✓ Abgeschlossen &amp; Vermessen (High-End 4K-Sensorik)
+                </span>
+              </div>
+              <h3 class="text-xl md:text-3xl font-black text-white mt-1">Rolladen Handel Porz</h3>
+              <p class="text-xs md:text-sm text-silver-300 mt-1">Ferdinand-Porsche-Str. 18 · 51149 Köln-Porz</p>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <a href="#kontakt" class="rounded-full bg-emerald-500 px-5 py-2.5 text-xs font-extrabold text-black hover:bg-emerald-400 transition-colors shadow-soft">
+                Kostenlose Beratung anfordern
+              </a>
+              <a href="#direkteinstieg" class="rounded-full bg-white/10 border border-white/20 px-5 py-2.5 text-xs font-extrabold text-white hover:bg-white/20 transition-colors">
+                Leistungen ansehen
+              </a>
+            </div>
+          </div>
+
+          <!-- 6 BILDER GRID FÜR PROJEKT 1 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+            
+            <div class="card rounded-2xl p-4">
+              <div class="overflow-hidden rounded-xl aspect-video mb-3 relative flex items-center justify-center border border-white/10" style="background: radial-gradient(circle, #1a1d21 0%, #060708 100%);">
+                <model-viewer 
+                  src="odm_textured_model_geo.glb" 
+                  alt="3D-Modell Rolladen Handel Porz" 
+                  auto-rotate 
+                  camera-controls 
+                  shadow-intensity="2" 
+                  exposure="1.15"
+                  camera-orbit="45deg 55deg 2.5m"
+                  loading="lazy"
+                  style="width: 100%; height: 100%;">
+                </model-viewer>
+              </div>
+              <h4 class="font-bold text-white text-sm">1. 3D-Modell (Interaktiv)</h4>
+              <p class="text-xs text-silver-300 mt-1">Direkt im Browser drehbar – fotorealistische BIM-Basis.</p>
+            </div>
+
+            <div class="card rounded-2xl p-4">
+              <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 border border-white/10">
+                <img src="punktwolke-porz.png" alt="Photogrammetrische Punktwolke Köln-Porz" class="w-full h-full object-cover">
+              </div>
+              <h4 class="font-bold text-white text-sm">2. 3D-Punktwolken (Höhendaten)</h4>
+              <p class="text-xs text-silver-300 mt-1">Farbkodierte Höhendaten und exakte geometrische Erfassung.</p>
+            </div>
+
+            <div class="card rounded-2xl p-4">
+              <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3">
+                <img src="ferdinand-dach-detail.png" alt="Zentimetergenaues Orthofoto Köln-Porz" class="w-full h-full object-cover">
+              </div>
+              <h4 class="font-bold text-white text-sm">3. Maßstabsgetreue Orthofotos/Analyse</h4>
+              <p class="text-xs text-silver-300 mt-1">Verzerrungsfreie Draufsichten für direkte Messungen.</p>
+            </div>
+
+            <!-- KACHEL 4: AUFMASS & CAD -->
+            <div class="card rounded-2xl p-4 border border-emerald-500/30">
+              <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 border border-white/10 relative group">
+                <img src="dach-aufmass-beispiel.png" alt="Präzises Dachaufmaß und CAD-Planungsgrundlage Köln-Porz" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute top-2 right-2 bg-emerald-500 text-black text-[10px] font-extrabold px-2 py-0.5 rounded shadow">
+                  VERMESSEN ✓
+                </div>
+              </div>
+              <h4 class="font-bold text-white text-sm">4. Präzises Dachaufmaß &amp; CAD</h4>
+              <p class="text-xs text-silver-300 mt-1">Zentimetergenaue Kantenlängen, Teilflächen ($\text{m}^2$) &amp; Lichtkuppel-Sperrflächen für Handwerker.</p>
+            </div>
+
+            <!-- KACHEL 5: DACH- & FASSADEN-INSPEKTION MIT DACHDETAIL.JPG -->
+            <div class="card rounded-2xl p-4">
+              <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 border border-white/10">
+                <img src="dachdetail.JPG" alt="Dach- & Fassaden-Inspektion Köln-Porz" class="w-full h-full object-cover">
+              </div>
+              <h4 class="font-bold text-white text-sm">5. Dach- &amp; Fassaden-Inspektion</h4>
+              <p class="text-xs text-silver-300 mt-1">Lückenlose Sichtkontrolle von Rinnen, Kanten und Aufbauten ohne Gerüst.</p>
+            </div>
+
+            <div class="card rounded-2xl p-4">
+              <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 border border-white/10">
+                <img src="areal-bestandsdoku.JPG" alt="Bestandsdokumentation Gewerbeareal Köln-Porz" class="w-full h-full object-cover">
+              </div>
+              <h4 class="font-bold text-white text-sm">6. Visualisierung &amp; Bestandsdokumentation</h4>
+              <p class="text-xs text-silver-300 mt-1">Gesamtdokumentation des Gewerbeareals für Eigentümer und Partner.</p>
+            </div>
+
+          </div>
+
+          <!-- SPEZIAL-ABSCHNITT: ANALYSE-ERGEBNISSE -->
+          <div class="mt-12 text-center">
+            <h4 class="text-2xl font-black text-white mb-2">INSPEKTIONS- &amp; ANALYSE-ERGEBNISSE</h4>
+          </div>
+
+          <div class="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            
+            <div class="glass rounded-3xl p-6 relative overflow-hidden">
+              <div class="flex items-center justify-between mb-4">
+                <h5 class="font-bold text-white text-sm">🎥 20-Sekunden-Überflug: Gesamteindruck im Drohnenflug</h5>
+                <span class="text-xs bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-full font-bold">Video aktiv</span>
+              </div>
+              
+              <div class="relative aspect-video w-full rounded-2xl bg-black border border-white/10 overflow-hidden shadow-2xl flex items-center justify-center">
+                <video 
+                  src="rhp-clip-right.mp4" 
+                  controls 
+                  playsinline 
+                  preload="metadata"
+                  class="w-full h-full object-cover">
+                  Ihr Browser unterstützt das Video-Tag nicht.
+                </video>
+              </div>
+            </div>
+
+            <!-- INFOBOX MIT FLÄCHEN & RECHTLICHEM HINWEIS -->
+            <div class="glass rounded-3xl p-6 lg:p-8 space-y-4">
+              <h5 class="text-lg font-black text-white">Projekt- &amp; Flächenkennzahlen</h5>
+              <div class="space-y-3 pt-2">
+                <div class="flex items-center justify-between border-b border-white/10 pb-2.5">
+                  <span class="text-sm text-silver-200">Dachfläche (Objekt RHP)</span>
+                  <span class="font-bold text-emerald-400 text-sm">ca. 572 m² (Hauptdach)</span>
+                </div>
+                <div class="flex items-center justify-between border-b border-white/10 pb-2.5">
+                  <span class="text-sm text-silver-200">Gesamtes erfasstes Areal</span>
+                  <span class="font-bold text-emerald-400 text-sm">ca. 3.200 m² (inkl. Hallen &amp; Gelände)</span>
+                </div>
+                <div class="flex items-center justify-between border-b border-white/10 pb-2.5">
+                  <span class="text-sm text-silver-200">Auflösung (GSD)</span>
+                  <span class="font-bold text-emerald-400 text-sm">0,47 cm / Pixel</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-sm text-silver-200">Auswertung</span>
+                  <span class="font-bold text-emerald-400 text-sm">Photogrammetrie &amp; Orthofoto</span>
+                </div>
+              </div>
+              <p class="text-[11px] text-silver-400 leading-relaxed pt-2 border-t border-white/10">
+                *<strong>Hinweis zur Vorkalkulation:</strong> Die ca. 572 m² beschreiben das vermessene Hauptgebäude (457,22 m² + 114,94 m²). <em>Alle Maße und CAD-Daten dienen der effizienten Arbeitsvorbereitung und Vorkalkulation. Vor verbindlicher Materialbestellung oder Zuschnitt wird ein örtliches Kontrollaufmaß empfohlen.</em>
+              </p>
+            </div>
+
+          </div>
+
+          <!-- VERGLEICH: DSM VS DTM -->
+          <div class="mt-12 text-center">
+            <h4 class="text-2xl font-black text-white mb-2">MODELL-ANALYSE: DSM VS. DTM</h4>
+            <p class="text-xs text-silver-300">Präzise Höhendaten aus der photogrammetrischen Berechnung</p>
+          </div>
+
+          <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="card rounded-2xl p-5">
+              <div class="aspect-video bg-black/40 rounded-xl mb-3 border border-white/10 overflow-hidden">
+                <img src="digital-surface-model.png" alt="Digital Surface Model (DSM)" class="w-full h-full object-cover">
+              </div>
+              <h5 class="font-bold text-white text-sm">Digital Surface Model (DSM)</h5>
+              <p class="text-xs text-silver-300 mt-1">Oberflächenmodell inkl. Gebäuden, Dächern und Vegetation.</p>
+            </div>
+
+            <div class="card rounded-2xl p-5">
+              <div class="aspect-video bg-black/40 rounded-xl mb-3 border border-white/10 overflow-hidden">
+                <img src="digital-terrain-model.png" alt="Digital Terrain Model (DTM)" class="w-full h-full object-cover">
+              </div>
+              <h5 class="font-bold text-white text-sm">Digital Terrain Model (DTM)</h5>
+              <p class="text-xs text-silver-300 mt-1">Reines Geländemodell ohne Gebäude und Aufbauten.</p>
+            </div>
+          </div>
+
+          <!-- GESAMT-DOKUMENTATION BERICHT -->
+          <div class="mt-12 rounded-2xl border border-white/10 bg-graphite-900 p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+              <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Abschlussbericht</span>
+              <h5 class="text-xl font-black text-white mt-1">GESAMT-DOKUMENTATION ROLLADEN HANDEL PORZ</h5>
+              <p class="text-xs text-silver-300 mt-2 max-w-xl">
+                Umfassender 3D-Bericht mit allen Ergebnissen: Pläne, Analysen und photogrammetrischen Punktwolken.
+              </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+              <a href="Aero-Drone-Koeln-Porz-Qualitaetsbericht.pdf" target="_blank" rel="noopener noreferrer" class="rounded-full bg-white px-5 py-3 text-xs font-extrabold text-black text-center hover:bg-silver-200 transition-colors shadow-soft">
+                📄 PDF-ANSICHT (ONLINE)
+              </a>
+              <a href="Aero-Drone-Koeln-Porz-Qualitaetsbericht.pdf" download class="rounded-full bg-emerald-500 px-5 py-3 text-xs font-extrabold text-black text-center hover:bg-emerald-400 transition-colors shadow-soft">
+                📥 QUALITÄTSBERICHT (DOWNLOAD)
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SCHNELLWAHL -->
+    <section id="direkteinstieg" class="relative bg-graphite-950 py-16 border-y border-white/10">
+      <div class="relative mx-auto max-w-7xl px-5 md:px-8">
+        <p class="text-center text-xs font-black uppercase tracking-widest text-emerald-400">Direkteinstieg</p>
+        <h2 class="text-center text-2xl md:text-3xl font-black text-white mt-2">
+          Was möchten Sie erfassen lassen?
+        </h2>
+
+        <div class="glass mt-10 rounded-3xl p-4 sm:p-6 lg:p-8 border border-white/15 shadow-glow">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            
+            <a href="#schaden" class="group relative rounded-2xl border border-white/10 bg-white/[0.03] p-5 text-left transition-all duration-300 hover:border-emerald-500/60 hover:bg-white/[0.07] hover:-translate-y-1 hover:shadow-trust">
+              <div class="flex items-center justify-between mb-4">
+                <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-2xl border border-emerald-500/20">🏠</span>
+                <span class="text-silver-400 text-xs font-bold group-hover:text-emerald-400">→</span>
+              </div>
+              <p class="font-bold text-white text-base">Dach &amp; Rinnen-Check</p>
+              <p class="text-xs text-silver-300 mt-1">Zustandsprüfung &amp; Detailansichten</p>
+            </a>
+
+            <a href="#referenzen" class="group relative rounded-2xl border border-white/10 bg-white/[0.03] p-5 text-left transition-all duration-300 hover:border-emerald-500/60 hover:bg-white/[0.07] hover:-translate-y-1 hover:shadow-trust">
+              <div class="flex items-center justify-between mb-4">
+                <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-2xl border border-emerald-500/20">📐</span>
+                <span class="text-silver-400 text-xs font-bold group-hover:text-emerald-400">→</span>
+              </div>
+              <p class="font-bold text-white text-base">Aufmaß &amp; CAD</p>
+              <p class="text-xs text-silver-300 mt-1">Zentimetergenaue Maße &amp; Exporte</p>
+            </a>
+
+            <a href="#kompetenzen" class="group relative rounded-2xl border border-white/10 bg-white/[0.03] p-5 text-left transition-all duration-300 hover:border-emerald-500/60 hover:bg-white/[0.07] hover:-translate-y-1 hover:shadow-trust">
+              <div class="flex items-center justify-between mb-4">
+                <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-2xl border border-emerald-500/20">🎬</span>
+                <span class="text-silver-400 text-xs font-bold group-hover:text-emerald-400">→</span>
+              </div>
+              <p class="font-bold text-white text-base">Luftaufnahmen &amp; Medien</p>
+              <p class="text-xs text-silver-300 mt-1">Exposés, B2B &amp; Event-Drohneneinsatz</p>
+            </a>
+
+            <a href="#schaden" class="group relative rounded-2xl border border-white/10 bg-white/[0.03] p-5 text-left transition-all duration-300 hover:border-emerald-500/60 hover:bg-white/[0.07] hover:-translate-y-1 hover:shadow-trust">
+              <div class="flex items-center justify-between mb-4">
+                <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-2xl border border-emerald-500/20">🌪️</span>
+                <span class="text-silver-400 text-xs font-bold group-hover:text-emerald-400">→</span>
+              </div>
+              <p class="font-bold text-white text-base">Sturmschaden</p>
+              <p class="text-xs text-silver-300 mt-1">Dokumentation für Versicherungen</p>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOKUS: DACH & STURMSCHADEN -->
+    <section id="schaden" class="bg-graphite-900 py-24 md:py-32">
+      <div class="mx-auto max-w-7xl px-5 md:px-8">
+        <div class="grid gap-12 lg:grid-cols-12 items-center">
+          
+          <div class="lg:col-span-6">
+            <span class="section-label">Sicherheit &amp; Erhalt</span>
+            <h2 class="mt-4 text-3xl font-black md:text-5xl text-white">
+              Dach- &amp; Rinnencheck sowie Sturmschaden-Beweissicherung
+            </h2>
+            <p class="mt-6 text-silver-200 text-base leading-relaxed">
+              Versteckte Schäden am Dach verursachen unbemerkt Feuchtigkeitsschäden. Versicherungen verlangen nach Hagel oder Sturm lückenlose, datierte Bildbeweise mit GPS- und Zeitstempel.
+            </p>
+            <p class="mt-4 text-silver-300 text-sm leading-relaxed">
+              Mit professioneller Drohnentechnik überfliege ich Gebäude sicher und berührungslos. Sie erhalten präzise Einblicke und Messwerte ohne Kletterrisiko und ohne teure Gerüste.
+            </p>
+          </div>
+
+          <div class="lg:col-span-6">
+            <div class="glass rounded-3xl p-6 md:p-8 space-y-4">
+              <h3 class="text-lg font-black text-white">Was ich für Sie sichtbar und messbar mache:</h3>
+              
+              <div class="flex items-start gap-3 border-b border-white/10 pb-3">
+                <span class="text-xl">📐</span>
+                <div>
+                  <strong class="text-white text-sm">Zentimetergenaue Aufmaße:</strong>
+                  <p class="text-xs text-silver-300 mt-0.5">Längen, Breiten und Dachflächen direkt aus dem Orthofoto ermitteln.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3 border-b border-white/10 pb-3">
+                <span class="text-xl">🍂</span>
+                <div>
+                  <strong class="text-white text-sm">Verstopfte Rinnen &amp; Fallrohre:</strong>
+                  <p class="text-xs text-silver-300 mt-0.5">Laubansammlungen, Schlamm und defekte Einhangbleche.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3 border-b border-white/10 pb-3">
+                <span class="text-xl">🌪️</span>
+                <div>
+                  <strong class="text-white text-sm">Sturm- &amp; Windsog-Schäden:</strong>
+                  <p class="text-xs text-silver-300 mt-0.5">Verschobene Ziegel und abgekippte Firststeine dokumentieren.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <span class="text-xl">🧱</span>
+                <div>
+                  <strong class="text-white text-sm">Schornstein &amp; Anschlüsse:</strong>
+                  <p class="text-xs text-silver-300 mt-0.5">Bröckelnde Fugen und rissige Kaminabdeckungen prüfen.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- UNSERE KOMPETENZBEREICHE -->
+    <section id="kompetenzen" class="bg-graphite-950 py-24 border-t border-white/5">
+      <div class="mx-auto max-w-7xl px-5 md:px-8">
+        <div class="text-center">
+          <span class="section-label">Kompetenzbereiche</span>
+          <h2 class="mt-4 text-3xl font-black md:text-5xl text-white">
+            Meine Kernbereiche im Überblick
+          </h2>
+        </div>
+
+        <div class="mt-12 grid gap-8 lg:grid-cols-2">
+          
+          <div class="card rounded-3xl p-8 lg:p-10 border-t-2 border-t-emerald-500/50">
+            <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Bereich 01</span>
+            <h3 class="mt-4 text-2xl font-black text-white">Vermessung, Photogrammetrie &amp; 3D</h3>
+            <p class="mt-3 text-silver-300 leading-relaxed text-sm">
+              Maßgeschneidert für Dachdecker, Solarteure, Planungsbüros und Bauträger. Ich liefere verlässliche digitale Daten für Ihre Projekte.
+            </p>
+            <ul class="mt-6 space-y-3 text-sm text-silver-200 border-t border-white/10 pt-6">
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-400 font-bold">•</span>
+                <span><strong>Zentimetergenaue Orthofotos:</strong> 0,47 cm GSD Auflösung für direkte Maße und Analysen.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-400 font-bold">•</span>
+                <span><strong>3D-Modelle &amp; Punktwolken:</strong> Exportfähig für gängige CAD- und Planungssoftware.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-400 font-bold">•</span>
+                <span><strong>PV-Planungsgrundlagen:</strong> Flächen, Neigungen und Verschattungen im Vorfeld analysieren.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card rounded-3xl p-8 lg:p-10 border-t-2 border-t-emerald-500/50">
+            <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Bereich 02</span>
+            <h3 class="mt-4 text-2xl font-black text-white">Immobilien, Exposés &amp; Medien</h3>
+            <p class="mt-3 text-silver-300 leading-relaxed text-sm">
+              Für Makler, Medienagenturen und Fotografen. Repräsentative Luftaufnahmen und professioneller Drohneneinsatz.
+            </p>
+            <ul class="mt-6 space-y-3 text-sm text-silver-200 border-t border-white/10 pt-6">
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-400 font-bold">•</span>
+                <span><strong>Immobilien-Marketing:</strong> Hochwertige Perspektiven für Exposés und Verkäufe.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-400 font-bold">•</span>
+                <span><strong>Drohnenpilot für Fotografen:</strong> Sie leiten den Dreh – ich liefere saubere Luftdaten.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-400 font-bold">•</span>
+                <span><strong>Gewerbe &amp; Areale:</strong> Eindrucksvolle Panoramen von Firmengebäuden und Fuhrparks.</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ALLE LEISTUNGEN -->
+    <section id="leistungen" class="bg-graphite-900 py-24 md:py-32">
+      <div class="mx-auto max-w-7xl px-5 text-center md:px-8">
+        <span class="section-label">Übersicht</span>
+        <h2 class="mt-6 text-3xl font-black md:text-5xl text-white">
+          Alle Leistungen im Detail
+        </h2>
+
+        <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3 text-left">
+          
+          <article class="card rounded-3xl p-7">
+            <span class="text-2xl">📐</span>
+            <h3 class="text-xl font-bold text-white mt-3">Dach- &amp; Flächenaufmaß</h3>
+            <p class="mt-2 text-xs leading-relaxed text-silver-300">Zentimetergenaue Längen- und Flächenbestimmung direkt aus dem Orthofoto (1–2 cm relative Toleranz).</p>
+          </article>
+
+          <article class="card rounded-3xl p-7">
+            <span class="text-2xl">🌐</span>
+            <h3 class="text-xl font-bold text-white mt-3">Photogrammetrie &amp; 3D</h3>
+            <p class="mt-2 text-xs leading-relaxed text-silver-300">Erstellung von 3D-Modellen, texturierten Meshes und CAD-kompatiblen Punktwolken.</p>
+          </article>
+
+          <article class="card rounded-3xl p-7">
+            <span class="text-2xl">🔍</span>
+            <h3 class="text-xl font-bold text-white mt-3">Dach- &amp; Rinnen-Check</h3>
+            <p class="mt-2 text-xs leading-relaxed text-silver-300">Sichtprüfung von Rinnen, Firsten und Kehlen ohne Gerüst oder Kletterrisiko.</p>
+          </article>
+
+          <article class="card rounded-3xl p-7">
+            <span class="text-2xl">🌪️</span>
+            <h3 class="text-xl font-bold text-white mt-3">Sturmschaden-Beweise</h3>
+            <p class="mt-2 text-xs leading-relaxed text-silver-300">Fristgerechte Dokumentation mit GPS- und Zeitstempel für die Versicherung.</p>
+          </article>
+
+          <article class="card rounded-3xl p-7">
+            <span class="text-2xl">☀️</span>
+            <h3 class="text-xl font-bold text-white mt-3">PV- &amp; Solargrundlagen</h3>
+            <p class="mt-2 text-xs leading-relaxed text-silver-300">Visualisierung von Dachflächen und Störobjekten für Solarteure und Handwerker.</p>
+          </article>
+
+          <article class="card rounded-3xl p-7">
+            <span class="text-2xl">🏡</span>
+            <h3 class="text-xl font-bold text-white mt-3">Immobilien-Exposés</h3>
+            <p class="mt-2 text-xs leading-relaxed text-silver-300">Hochwertige Fotos und Videos für Makler zur optimalen Objektpräsentation.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ÜBER MICH -->
+    <section id="ueber-mich" class="bg-graphite-950 py-24 md:py-32 border-t border-white/5">
+      <div class="mx-auto max-w-5xl px-5 text-center md:px-8">
+        <div class="glass rounded-3xl p-8 md:p-12">
+          <span class="section-label">Über AERO-DRONE</span>
+          <h2 class="mt-6 text-3xl font-black md:text-5xl text-white">
+            Persönlich. Präzise. Vor Ort in Köln.
+          </h2>
+          <p class="mx-auto mt-6 max-w-3xl text-base md:text-lg leading-relaxed text-silver-300">
+            Mein Name ist <strong class="text-white">Patrick Runkel</strong>. Bei AERO-DRONE erhalten Sie professionelle Drohnen-Vermessung und Fotogrammetrie direkt vom Experten. Ich verbinde präzise Flugtechnik mit moderner digitaler Auswertung, um Ihnen exakte Maße und Daten für Ihre Website oder Ihr Projekt zu liefern.
+          </p>
+          <div class="mt-8 flex flex-wrap items-center justify-center gap-5 text-xs md:text-sm text-silver-200">
+            <div class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> EU-Kompetenznachweis A1/A3 (LBA)</div>
+            <div class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Gewerbliche Luftfahrt-Haftpflicht</div>
+            <div class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Zentimetergenaue WebODM Auswertung</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="bg-graphite-900 py-24 md:py-32">
+      <div class="mx-auto max-w-4xl px-5 md:px-8">
+        <div class="text-center">
+          <span class="section-label">FAQ</span>
+          <h2 class="mt-6 text-3xl font-black md:text-5xl text-white">
+            Häufig gestellte Fragen
+          </h2>
+        </div>
+
+        <div class="mt-12 space-y-4">
+          <details class="card rounded-2xl p-6">
+            <summary class="cursor-pointer font-bold text-white text-base">Wie genau kann mit der Drohne gemessen werden?</summary>
+            <p class="mt-4 leading-relaxed text-silver-300 text-sm">Dank hoher Auflösungen (z.B. 0,47 cm/Pixel) erreiche ich bei relativen Messungen eine hohe Genauigkeit. Alle Maße sind ideal für die Arbeitsvorbereitung und Vorkalkulation.</p>
+          </details>
+
+          <details class="card rounded-2xl p-6">
+            <summary class="cursor-pointer font-bold text-white text-base">Welche Formate werden für CAD und 3D bereitgestellt?</summary>
+            <p class="mt-4 leading-relaxed text-silver-300 text-sm">Ich liefere gängige Formate wie GeoTIFF (Orthofotos), texturierte 3D-Meshes, Punktwolken sowie übersichtliche PDF-Dokumentationen.</p>
+          </details>
+
+          <details class="card rounded-2xl p-6">
+            <summary class="cursor-pointer font-bold text-white text-base">Wie hilft die Dokumentation bei Sturmschäden?</summary>
+            <p class="mt-4 leading-relaxed text-silver-300 text-sm">Versicherungen fordern datierte Bildbelege. Meine 4K-Aufnahmen enthalten exakte EXIF-Zeit- und GPS-Stempel, wodurch der Schaden lückenlos dokumentiert wird.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="bg-graphite-950 py-24 md:py-32 border-t border-white/5">
+      <div class="mx-auto max-w-5xl px-5 text-center md:px-8">
+        <div class="glass rounded-3xl p-8 md:p-14">
+          <span class="section-label">Kontakt</span>
+          <h2 class="mt-6 text-3xl font-black md:text-5xl text-white">
+            Jetzt unverbindlich anfragen
+          </h2>
+          <p class="mx-auto mt-5 max-w-2xl text-base md:text-lg leading-relaxed text-silver-300">
+            Haben Sie ein Objekt in Köln und Umgebung zu vermessen oder zu inspizieren? Schreiben Sie mir direkt per WhatsApp oder E-Mail.
+          </p>
+
+          <div class="mt-8 flex flex-col flex-wrap justify-center gap-3.5 sm:flex-row">
+            <a href="https://wa.me/4917656114565?text=Hallo%20Herr%20Runkel%2C%20ich%20m%C3%B6chte%20ein%20Projekt%20mit%20AERO-DRONE%20anfragen." target="_blank" rel="noopener noreferrer" class="rounded-full bg-[#25D366] px-8 py-4 font-bold text-black hover:bg-[#20bd5a] transition-all shadow-wa flex items-center justify-center gap-2">
+              Per WhatsApp anfragen
+            </a>
+            <a href="mailto:kontakt@aero-drone-koeln.de?subject=Projektanfrage%20AERO-DRONE" class="rounded-full bg-white px-8 py-4 font-extrabold text-black hover:bg-silver-200 transition-colors shadow-soft">
+              Anfrage per E-Mail senden
+            </a>
+            <a href="tel:+4917656114565" class="rounded-full border border-emerald-500/30 bg-black/40 px-8 py-4 text-sm font-bold text-white hover:bg-emerald-500/10 transition-colors flex items-center justify-center gap-2">
+              <span class="text-emerald-400">📞</span> 0176 56114565
+            </a>
+          </div>
+
+          <div class="mt-10 pt-8 border-t border-white/10 leading-relaxed text-silver-400 text-xs md:text-sm">
+            <p class="font-bold text-white text-base">Patrick Runkel · AERO-DRONE</p>
+            <p class="mt-1">Waldstraße 68 · 51145 Köln-Porz</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookieBanner" style="display: none;" class="fixed bottom-0 inset-x-0 z-50 bg-graphite-900/95 border-t border-white/10 p-4 md:p-6 backdrop-blur-xl">
+    <div class="mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+      <p class="text-xs md:text-sm text-silver-300 max-w-3xl">
+        Wir nutzen Cookies und Analysetools (Google Analytics), um unsere Website zu verbessern und Statistiken zu erheben. Weitere Informationen finden Sie in unserer Datenschutzerklärung.
+      </p>
+      <div class="flex items-center gap-3">
+        <button onclick="acceptCookies()" class="rounded-full bg-emerald-500 px-6 py-2.5 text-xs font-extrabold text-black hover:bg-emerald-400 transition-colors shadow-soft">
+          Alle akzeptieren
+        </button>
+        <button onclick="declineCookies()" class="rounded-full bg-white/10 border border-white/20 px-6 py-2.5 text-xs font-extrabold text-white hover:bg-white/20 transition-colors">
+          Nur essenzielle
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 bg-[#08090a]">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 px-5 py-8 text-center text-xs md:text-sm text-silver-400 md:flex-row md:px-8">
+      <div>
+        <p class="font-bold tracking-[.12em] text-white">AERO-DRONE</p>
+        <p class="mt-1">© <span id="year"></span> Patrick Runkel · Alle Rechte vorbehalten</p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-6">
+        <a href="#impressum" onclick="alert('Impressum:\nPatrick Runkel\nAERO-DRONE\nWaldstraße 68, 51145 Köln-Porz\nTelefon: 0176 56114565\nE-Mail: kontakt@aero-drone-koeln.de'); return false;" class="hover:text-white transition-colors">Impressum</a>
+        <a href="#datenschutz" onclick="alert('Datenschutzhinweis:\nDiese Website nutzt Google Analytics. Sie können der Erfassung über den Cookie-Banner widersprechen.'); return false;" class="hover:text-white transition-colors">Datenschutz</a>
+        <a href="#start" class="underline decoration-white/30 underline-offset-4 hover:text-white">Nach oben ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuButton.addEventListener("click", () => {
+      const opening = mobileMenu.classList.contains("hidden");
+      mobileMenu.classList.toggle("hidden");
+      menuButton.textContent = opening ? "×" : "☰";
+      menuButton.setAttribute("aria-expanded", String(opening));
+    });
+
+    document.querySelectorAll(".mobile-link").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        menuButton.textContent = "☰";
+        menuButton.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function checkCookieConsent() {
+      const consent = localStorage.getItem('cookieConsent');
+      if (!consent) {
+        document.getElementById('cookieBanner').style.display = 'block';
+      } else if (consent === 'declined') {
+        window['ga-disable-G-WX8T0EG0SH'] = true;
+      }
+    }
+
+    function acceptCookies() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      document.getElementById('cookieBanner').style.display = 'none';
+      location.reload();
+    }
+
+    function declineCookies() {
+      localStorage.setItem('cookieConsent', 'declined');
+      document.getElementById('cookieBanner').style.display = 'none';
+      window['ga-disable-G-WX8T0EG0SH'] = true;
+    }
+
+    window.addEventListener('DOMContentLoaded', checkCookieConsent);
+  </script>
+
+</body>
+</html>
