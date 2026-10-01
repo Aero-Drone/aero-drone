@@ -18,7 +18,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.aero-drone-koeln.de">
 
-  <!-- GOOGLE ANALYTICS (GA4) - Erst nach Zustimmung geladen (Punkt 12) -->
+  <!-- GOOGLE ANALYTICS (GA4) - Erst nach Zustimmung geladen -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -31,7 +31,7 @@
       script.async = true;
       script.src = 'https://www.googletagmanager.com/gtag/js?id=G-WX8T0EG0SH';
       document.head.appendChild(script);
-      gt('config', 'G-WX8T0EG0SH');
+      gtag('config', 'G-WX8T0EG0SH');
     }
   </script>
 
@@ -392,7 +392,7 @@
                 </div>
               </div>
               <h4 class="font-bold text-white text-sm">2. 3D-Punktwolken (Höhendaten)</h4>
-              <p class="text-xs text-silver-300 mt-1">Farbkodierte Höhendaten und exakte geometrische Erfassung.</p>
+              <p class="text-xs text-silver-300 mt-1">Farbkodierte Höhendaten und räumliche Darstellung des erfassten Objekts.</p>
             </div>
 
             <div class="card rounded-2xl p-4">
@@ -430,7 +430,7 @@
                 </div>
               </div>
               <h4 class="font-bold text-white text-sm">5. Dach- &amp; Fassaden-Inspektion</h4>
-              <p class="text-xs text-silver-300 mt-1">Lückenlose Sichtkontrolle von Rinnen, Kanten und Aufbauten ohne Gerüst.</p>
+              <p class="text-xs text-silver-300 mt-1">Dokumentation der einsehbaren und sicher erreichbaren Bereiche von Rinnen, Kanten und Aufbauten.</p>
             </div>
 
             <div class="card rounded-2xl p-4">
@@ -533,7 +533,7 @@
             </div>
           </div>
 
-          <!-- GESAMT-DOKUMENTATION, FLYER DOWNLOAD & BERATUNGS-BUTTON -->
+          <!-- GESAMT-DOKUMENTATION, FLYER DOWNLOAD & BERATUNGS-BUTTON (Mit originalen PDF-Links) -->
           <div class="mt-12 rounded-2xl border border-white/10 bg-graphite-900 p-6 md:p-8 space-y-6">
             <div>
               <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Offizielle Projekt- &amp; Informations-Dokumente</span>
@@ -549,7 +549,7 @@
                 <div>
                   <span class="text-[10px] font-extrabold uppercase bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-full">Kern-Dokument</span>
                   <h6 class="font-bold text-white text-sm mt-2">Dach- &amp; Gebäudeaufmaß (PDF)</h6>
-                  <p class="text-xs text-silver-300 mt-1">Inkl. Maßstab 1:250, Teilflächen &amp; Passpunkt-Nachweis.</p>
+                  <p class="text-xs text-silver-300 mt-1">Inkl. Maßstab 1:250, Teilflächen &amp; Dokumentation der Kontrollmessungen.</p>
                 </div>
                 <div class="flex gap-2">
                   <a href="Dachaufmass_RHP.pdf" target="_blank" rel="noopener noreferrer" class="flex-1 rounded-lg bg-white py-2 text-xs font-extrabold text-black text-center hover:bg-silver-200 transition-colors shadow-soft">
@@ -696,7 +696,7 @@
               <ul class="mt-6 space-y-3 text-sm text-silver-200 border-t border-white/10 pt-6">
                 <li class="flex items-start gap-2">
                   <span class="text-emerald-400 font-bold">✓</span>
-                  <span>Enthalten: ca. 10–15 bearbeitete Luftbilder eines Objekts, digitale Übergabe als JPG und private Nutzungsrechte. Lieferung innerhalb von 3–5 Werktagen nach dem Aufnahmetermin. Gewerbliche Nutzung nach Vereinbarung.</span>
+                  <span>Enthalten: 10–15 bearbeitete Luftbilder eines Objekts, digitale Übergabe als JPG und private Nutzungsrechte. Lieferung innerhalb von 3–5 Werktagen nach dem Aufnahmetermin. Gewerbliche Nutzung nach Vereinbarung.</span>
                 </li>
               </ul>
             </div>
@@ -754,7 +754,7 @@
               <ul class="mt-6 space-y-3 text-sm text-silver-200 border-t border-white/10 pt-6">
                 <li class="flex items-start gap-2">
                   <span class="text-emerald-400 font-bold">✓</span>
-                  <span>Einstiegspreis für ein übersichtliches Objekt bis ca. 200 m² Erfassungsfläche. Enthalten sind die Befliegung, photogrammetrische Auswertung und digitale Übergabe von Orthofotos (GeoTIFF) und 3D-Modellen (Mesh/Punktwolke). Referenz- und Kontrollmessungen sowie zusätzliche Aufmaß- oder CAD-Ausarbeitungen werden im Angebot ausdrücklich beschrieben.</span>
+                  <span>Einstiegspreis für ein übersichtliches Objekt bis ca. 200 m² Erfassungsfläche. Enthalten sind die Befliegung, photogrammetrische Auswertung und digitale Übergabe von Orthofotos (GeoTIFF) und 3D-Modellen (Auswahl nach Angebot: Mesh und/oder Punktwolke). Referenz- und Kontrollmessungen sowie zusätzliche Aufmaß- oder CAD-Ausarbeitungen werden im Angebot ausdrücklich beschrieben.</span>
                 </li>
               </ul>
             </div>
@@ -768,7 +768,7 @@
 
         </div>
 
-        <!-- KLEINUNTERNEHMER-HINWEIS (Punkt 1) -->
+        <!-- KLEINUNTERNEHMER-HINWEIS -->
         <div class="mt-8 text-center text-xs text-silver-400 max-w-3xl mx-auto leading-relaxed">
           Die angegebenen Preise sind Endpreise. Aufgrund der Kleinunternehmerregelung gemäß § 19 UStG wird keine Umsatzsteuer berechnet oder ausgewiesen. Eventuelle Anfahrtskosten und zusätzlicher Aufwand werden vor der Beauftragung vereinbart.
         </div>
@@ -778,13 +778,14 @@
           <div>
             <h4 class="font-bold text-white text-base">📍 Faire Anfahrt im Großraum Köln</h4>
             <p class="text-xs text-silver-300 mt-1 leading-relaxed">
-              Bis zu einer einfachen Straßenentfernung von <strong class="text-white">5 km</strong> ab Waldstraße 68, 51145 Köln, ist die Anfahrt enthalten. Für jeden darüber hinausgehenden Kilometer der einfachen Strecke berechne ich 1,50 €. Die Anfahrtskosten werden im Angebot ausgewiesen.
+              Bis zu einer einfachen Straßenentfernung von <strong class="text-white">5 km</strong> ab Waldstraße 68, 51145 Köln, ist die Anfahrt enthalten. Für jeden darüber hinausgehenden Kilometer der einfachen Strecke berechne ich 1,50 €. Die Anfahrtskosten werden im Angebot ausgewiesen.<br>
+              <span class="text-emerald-400 text-[11px] block mt-1">Beispiel: Bei 20 km einfacher Straßenentfernung betragen die Anfahrtskosten 22,50 €.</span>
             </p>
           </div>
           <div>
             <h4 class="font-bold text-white text-base">🤝 B2B-Fotografen &amp; Individuelle Wünsche</h4>
             <p class="text-xs text-silver-300 mt-1 leading-relaxed">
-              Sie sind Fotograf und brauchen einen verlässlichen Piloten für Ihre Drohnen-Luftaufnahmen? Oder haben Sie ein individuelles Projekt? <strong class="text-white">Sprechen Sie mich an</strong> – ich arbeite flexibel, sympathisch und exakt nach Ihren Vorstellungen.
+              Sie sind Fotograf und brauchen einen verlässlichen Drohnenpiloten mit EU-Kompetenznachweis für Ihre Luftaufnahmen? Oder haben Sie ein individuelles Projekt? <strong class="text-white">Sprechen Sie mich an</strong> – ich arbeite flexibel, sympathisch und exakt nach Ihren Vorstellungen.
             </p>
           </div>
         </div>
@@ -831,7 +832,7 @@
               </div>
 
               <div class="flex items-start gap-3 border-b border-white/10 pb-3">
-                <span class="text-xl">🌪️️</span>
+                <span class="text-xl">🌪️</span>
                 <div>
                   <strong class="text-white text-sm">Sturm- &amp; Windsog-Schäden:</strong>
                   <p class="text-xs text-silver-300 mt-0.5">Verschobene Ziegel und abgekippte Firststeine dokumentieren.</p>
@@ -881,7 +882,7 @@
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-emerald-400 font-bold">•</span>
-                <span><strong>PV-Planungsgrundlagen:</strong> Flächen, Neigungen und Verschattungen im Vorfeld analysieren.</span>
+                <span><strong>PV-Planungsgrundlagen:</strong> Flächen, Neigungen und sichtbare Hindernisse als Grundlage für die weitere PV-Planung erfassen.</span>
               </li>
             </ul>
           </div>
@@ -995,7 +996,7 @@
         <div class="mt-12 space-y-4">
           <details class="card rounded-2xl p-6">
             <summary class="cursor-pointer font-bold text-white text-base">Wie präzise kann mit der Drohne gemessen werden?</summary>
-            <p class="mt-4 leading-relaxed text-silver-300 text-sm">Dank hoher Auflösungen erreichen wir bei relativen Messungen eine hohe Genauigkeit. Aufmaße werden anhand von Referenz- und Kontrollmessungen vor Ort überprüft. Die erreichte Genauigkeit wird projektbezogen dokumentiert. Bei geneigten Dächern werden Grundrissflächen und tatsächliche Dachflächen unterschieden. Für verbindlichen Zuschnitt und ausführungsrelevante Maße sind geeignete Kontrollmessungen erforderlich.</p>
+            <p class="mt-4 leading-relaxed text-silver-300 text-sm">Dank hoher Auflösungen erreiche ich bei relativen Messungen eine hohe Genauigkeit. Aufmaße werden anhand von Referenz- und Kontrollmessungen vor Ort überprüft. Die erreichte Genauigkeit wird projektbezogen dokumentiert. Bei geneigten Dächern werden Grundrissflächen und tatsächliche Dachflächen unterschieden. Für verbindlichen Zuschnitt und ausführungsrelevante Maße sind geeignete Kontrollmessungen erforderlich.</p>
           </details>
 
           <details class="card rounded-2xl p-6">
@@ -1054,7 +1055,7 @@
     </div>
   </div>
 
-  <!-- COOKIE BANNER (Punkt 12 korrigiert) -->
+  <!-- COOKIE BANNER -->
   <div id="cookieBanner" style="display: none;" class="fixed bottom-0 inset-x-0 z-50 bg-graphite-900/95 border-t border-white/10 p-4 md:p-6 backdrop-blur-xl">
     <div class="mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
       <p class="text-xs md:text-sm text-silver-300 max-w-3xl">
@@ -1071,16 +1072,17 @@
     </div>
   </div>
 
-  <!-- FOOTER (Punkt 11 korrigiert) -->
+  <!-- FOOTER -->
   <footer class="border-t border-white/10 bg-[#08090a]">
     <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 px-5 py-8 text-center text-xs md:text-sm text-silver-400 md:flex-row md:px-8">
       <div>
         <p class="font-bold tracking-[.12em] text-white">AERO-DRONE</p>
         <p class="mt-1">© <span id="year"></span> Patrick Runkel · Alle Rechte vorbehalten</p>
       </div>
-      <div class="flex flex-wrap justify-center gap-6">
+      <div class="flex flex-wrap items-center justify-center gap-6">
         <a href="impressum.html" class="hover:text-white transition-colors">Impressum</a>
         <a href="datenschutz.html" class="hover:text-white transition-colors">Datenschutz</a>
+        <button onclick="resetCookieConsent()" class="hover:text-white transition-colors underline bg-transparent border-0 cursor-pointer text-xs md:text-sm text-silver-400">Cookie-Einstellungen</button>
         <a href="#start" class="underline decoration-white/30 underline-offset-4 hover:text-white">Nach oben ↑</a>
       </div>
     </div>
@@ -1108,7 +1110,6 @@
 
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Cookie & Analytics Logik (Punkt 12)
     function checkCookieConsent() {
       const consent = localStorage.getItem('cookieConsent');
       if (!consent) {
@@ -1132,9 +1133,13 @@
       window['ga-disable-G-WX8T0EG0SH'] = true;
     }
 
+    function resetCookieConsent() {
+      localStorage.removeItem('cookieConsent');
+      document.getElementById('cookieBanner').style.display = 'block';
+    }
+
     window.addEventListener('DOMContentLoaded', checkCookieConsent);
 
-    // Lightbox Funktionen für Bildvergrößerung
     function openLightbox(src, alt) {
       const lightbox = document.getElementById('imageLightbox');
       const img = document.getElementById('lightboxImg');
