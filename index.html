@@ -18,7 +18,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.aero-drone-koeln.de">
 
-  <!-- GOOGLE ANALYTICS (GA4) - Bidirektional steuerbar -->
+  <!-- GOOGLE ANALYTICS (GA4) - Bidirektional steuerbar mit Cookie-Bereinigung -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -26,7 +26,6 @@
     
     function loadAnalytics() {
       if (window.analyticsLoaded) {
-        // Falls vorher deaktiviert, wieder aktivieren
         window['ga-disable-G-WX8T0EG0SH'] = false;
         return;
       }
@@ -41,6 +40,17 @@
 
     function disableAnalytics() {
       window['ga-disable-G-WX8T0EG0SH'] = true;
+      // Bereits gesetzte Analytics-Cookies löschen
+      const cookies = document.cookie.split(";");
+      for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i];
+        const eqPos = cookie.indexOf("=");
+        const name = eqPos > -1 ? cookie.substr(0, eqPos).trim() : cookie.trim();
+        if (name.startsWith("_ga") || name.startsWith("_gid") || name.startsWith("_gat")) {
+          document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=" + window.location.hostname;
+          document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;";
+        }
+      }
     }
   </script>
 
@@ -1020,7 +1030,7 @@
 
           <details class="card rounded-2xl p-6">
             <summary class="cursor-pointer font-bold text-white text-base">Kann ich Sie auch als B2B-Fotograf oder für individuelle Wünsche buchen?</summary>
-            <p class="mt-4 leading-relaxed text-silver-300 text-sm">Absolut! Ob Medienagentur, Drohnenpilot mit EU-Kompetenznachweis oder private Sonderwünsche – ich arbeite flexibel und zuverlässig mit Ihnen zusammen.</p>
+            <p class="mt-4 leading-relaxed text-silver-300 text-sm">Ja. Ich unterstütze Fotografen und Medienagenturen als Drohnenpilot mit EU-Kompetenznachweis. Auch individuelle private Projekte bespreche ich gerne mit Ihnen.</p>
           </details>
         </div>
       </div>
