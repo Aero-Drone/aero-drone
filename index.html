@@ -54,8 +54,9 @@
     }
   </script>
 
+  <!-- Tailwind CSS als externe JavaScript-Bibliothek -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Model Viewer für interaktive 3D-Modelle (.glb) -->
+  <!-- Google Model Viewer (Web Component / externe JavaScript-Bibliothek) für interaktive 3D-Modelle (.glb) -->
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
   <script>
@@ -415,8 +416,8 @@
             </div>
 
             <div class="card rounded-2xl p-4">
-              <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 relative group cursor-pointer" onclick="openLightbox('ferdinand-dach-detail.png', 'Zentimetergenaues Orthofoto Köln-Porz')">
-                <img src="ferdinand-dach-detail.png" alt="Zentimetergenaues Orthofoto Köln-Porz" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+              <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 border border-white/10 relative group cursor-pointer" onclick="openLightbox('ferdinand-dach-detail.png', 'Orthofoto des Referenzobjekts Köln-Porz')">
+                <img src="ferdinand-dach-detail.png" alt="Orthofoto des Referenzobjekts Köln-Porz" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-bold gap-1.5">
                   🔍 Vollbild öffnen
                 </div>
@@ -495,7 +496,7 @@
               <h5 class="text-lg font-black text-white">Projekt- &amp; Flächenkennzahlen</h5>
               <div class="space-y-3 pt-2">
                 <div class="flex items-center justify-between border-b border-white/10 pb-2.5">
-                  <span class="text-sm text-silver-200">Dachfläche (Objekt RHP)</span>
+                  <span class="text-sm text-silver-200">Dachgrundrissfläche (Objekt RHP)</span>
                   <span class="font-bold text-emerald-400 text-sm">572,07 m² Gesamt (455,72 + 116,35)</span>
                 </div>
                 <div class="flex items-center justify-between border-b border-white/10 pb-2.5">
@@ -730,7 +731,7 @@
           <!-- PAKET 2: HANDWERK & DACH (HAUPTFOKUS) -->
           <div class="card rounded-3xl p-8 flex flex-col justify-between border-2 border-emerald-500 shadow-glow relative bg-graphite-950">
             <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-emerald-500 text-black text-[10px] font-black uppercase tracking-widest px-4 py-1 rounded-full shadow">
-              Häufigste Wahl
+              Für Dach &amp; Handwerk
             </div>
 
             <div>
@@ -787,9 +788,14 @@
 
         </div>
 
-        <!-- HINWEIS UNTER DEN PREISEN -->
+        <!-- HINWEIS ZUR DURCHFÜHRUNG -->
         <div class="mt-8 rounded-2xl border border-emerald-500/30 bg-emerald-500/5 p-5 text-center text-xs md:text-sm text-silver-200 max-w-3xl mx-auto leading-relaxed shadow-trust">
           <strong class="text-white">Hinweis zur Durchführung:</strong> Die Durchführbarkeit wird vor der Beauftragung anhand von Einsatzort, Flugbedingungen und Wetter geprüft. Bei ungeeigneten Bedingungen vereinbaren wir einen Ersatztermin.
+        </div>
+
+        <!-- HINWEIS FÜR INDIVIDUELLE WÜNSCHE -->
+        <div class="mt-4 rounded-2xl border border-white/15 bg-black/40 p-5 text-center text-xs md:text-sm text-silver-300 max-w-3xl mx-auto leading-relaxed">
+          Haben Sie spezielle Anforderungen oder individuelle Wünsche, die hier nicht aufgeführt sind? <a href="#kontakt" class="text-emerald-400 font-bold underline hover:text-emerald-300">Sprechen Sie mich einfach an</a> – wir finden für jedes Vorhaben eine maßgeschneiderte Lösung.
         </div>
 
         <!-- KLEINUNTERNEHMER-HINWEIS -->
