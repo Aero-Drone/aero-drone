@@ -18,20 +18,29 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.aero-drone-koeln.de">
 
-  <!-- GOOGLE ANALYTICS (GA4) - Erst nach Zustimmung geladen -->
+  <!-- GOOGLE ANALYTICS (GA4) - Bidirektional steuerbar -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     
     function loadAnalytics() {
-      if (window.analyticsLoaded) return;
+      if (window.analyticsLoaded) {
+        // Falls vorher deaktiviert, wieder aktivieren
+        window['ga-disable-G-WX8T0EG0SH'] = false;
+        return;
+      }
       window.analyticsLoaded = true;
+      window['ga-disable-G-WX8T0EG0SH'] = false;
       var script = document.createElement('script');
       script.async = true;
       script.src = 'https://www.googletagmanager.com/gtag/js?id=G-WX8T0EG0SH';
       document.head.appendChild(script);
       gtag('config', 'G-WX8T0EG0SH');
+    }
+
+    function disableAnalytics() {
+      window['ga-disable-G-WX8T0EG0SH'] = true;
     }
   </script>
 
@@ -166,7 +175,7 @@
   <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-graphite-950/90 backdrop-blur-xl">
     <div class="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-4 md:h-[82px] md:px-8">
       <a href="#start" aria-label="AERO-DRONE Startseite">
-        <img src="aero-drone-logo1.PNG" alt="AERO-DRONE – Gebäude, Gelände und Luftaufnahmen" class="block h-16 max-w-[300px] object-contain md:h-20 md:max-w-[360px]">
+        <img src="aero-drone-logo1.PNG" alt="AERO-DRONE – Gebäude, Gelände und Luftaufnahmen" class="block h-16 max-w-[300px] object-contain md:h-20 md:max-w-[360px]" loading="lazy">
       </a>
 
       <nav class="hidden items-center gap-6 text-sm font-semibold text-silver-300 xl:flex">
@@ -329,7 +338,7 @@
           
           <!-- TOP BANNER -->
           <div class="relative overflow-hidden rounded-2xl mb-8 border border-white/10 bg-black">
-            <img src="DJI_20260915175658_0386_D.JPG" alt="Referenzprojekt Köln-Porz Ferdinand-Porsche-Str." class="w-full max-h-[420px] object-contain mx-auto block cursor-pointer hover:opacity-95 transition-opacity" onclick="openLightbox(this.src, this.alt)">
+            <img src="DJI_20260915175658_0386_D.JPG" alt="Referenzprojekt Köln-Porz Ferdinand-Porsche-Str." class="w-full max-h-[420px] object-contain mx-auto block cursor-pointer hover:opacity-95 transition-opacity" loading="lazy" onclick="openLightbox(this.src, this.alt)">
 
             <div class="absolute bottom-3 left-3 z-20 rounded-xl bg-graphite-950/90 border border-white/20 px-3.5 py-1.5 shadow-2xl backdrop-blur-md">
               <a href="https://www.rhp-online.de" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-400 hover:text-emerald-300 transition-colors">
@@ -386,7 +395,7 @@
 
             <div class="card rounded-2xl p-4">
               <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 border border-white/10 relative group cursor-pointer" onclick="openLightbox('punktwolke-porz.png', 'Photogrammetrische Punktwolke Köln-Porz')">
-                <img src="punktwolke-porz.png" alt="Photogrammetrische Punktwolke Köln-Porz" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="punktwolke-porz.png" alt="Photogrammetrische Punktwolke Köln-Porz" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-bold gap-1.5">
                   🔍 Vollbild öffnen
                 </div>
@@ -397,7 +406,7 @@
 
             <div class="card rounded-2xl p-4">
               <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 relative group cursor-pointer" onclick="openLightbox('ferdinand-dach-detail.png', 'Zentimetergenaues Orthofoto Köln-Porz')">
-                <img src="ferdinand-dach-detail.png" alt="Zentimetergenaues Orthofoto Köln-Porz" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="ferdinand-dach-detail.png" alt="Zentimetergenaues Orthofoto Köln-Porz" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-bold gap-1.5">
                   🔍 Vollbild öffnen
                 </div>
@@ -409,7 +418,7 @@
             <!-- KACHEL 4: AUFMASS & CAD -->
             <div class="card rounded-2xl p-4 border border-emerald-500/30">
               <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 border border-white/10 relative group cursor-pointer" onclick="openLightbox('dach-aufmass-beispiel.png', 'Präzises Dachaufmaß und CAD-Planungsgrundlage Köln-Porz')">
-                <img src="dach-aufmass-beispiel.png" alt="Präzises Dachaufmaß und CAD-Planungsgrundlage Köln-Porz" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="dach-aufmass-beispiel.png" alt="Präzises Dachaufmaß und CAD-Planungsgrundlage Köln-Porz" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
                 <div class="absolute top-2 right-2 bg-emerald-500 text-black text-[10px] font-extrabold px-2 py-0.5 rounded shadow">
                   VERMESSEN ✓
                 </div>
@@ -424,7 +433,7 @@
             <!-- KACHEL 5: DACH- & FASSADEN-INSPEKTION MIT DACHDETAIL.JPG -->
             <div class="card rounded-2xl p-4">
               <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 border border-white/10 relative group cursor-pointer" onclick="openLightbox('dachdetail.JPG', 'Dach- & Fassaden-Inspektion Köln-Porz')">
-                <img src="dachdetail.JPG" alt="Dach- & Fassaden-Inspektion Köln-Porz" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="dachdetail.JPG" alt="Dach- & Fassaden-Inspektion Köln-Porz" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-bold gap-1.5">
                   🔍 Vollbild öffnen
                 </div>
@@ -435,7 +444,7 @@
 
             <div class="card rounded-2xl p-4">
               <div class="overflow-hidden rounded-xl bg-black/50 aspect-video mb-3 border border-white/10 relative group cursor-pointer" onclick="openLightbox('areal-bestandsdoku.JPG', 'Bestandsdokumentation Gewerbeareal Köln-Porz')">
-                <img src="areal-bestandsdoku.JPG" alt="Bestandsdokumentation Gewerbeareal Köln-Porz" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="areal-bestandsdoku.JPG" alt="Bestandsdokumentation Gewerbeareal Köln-Porz" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-bold gap-1.5">
                   🔍 Vollbild öffnen
                 </div>
@@ -464,7 +473,7 @@
                   src="rhp-clip-right.mp4" 
                   controls 
                   playsinline 
-                  preload="metadata"
+                  preload="none"
                   class="w-full h-full object-cover">
                   Ihr Browser unterstützt das Video-Tag nicht.
                 </video>
@@ -512,7 +521,7 @@
           <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="card rounded-2xl p-5">
               <div class="aspect-video bg-black/40 rounded-xl mb-3 border border-white/10 overflow-hidden relative group cursor-pointer" onclick="openLightbox('digital-surface-model.png', 'Digital Surface Model (DSM)')">
-                <img src="digital-surface-model.png" alt="Digital Surface Model (DSM)" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="digital-surface-model.png" alt="Digital Surface Model (DSM)" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-bold gap-1.5">
                   🔍 Vollbild öffnen
                 </div>
@@ -523,7 +532,7 @@
 
             <div class="card rounded-2xl p-5">
               <div class="aspect-video bg-black/40 rounded-xl mb-3 border border-white/10 overflow-hidden relative group cursor-pointer" onclick="openLightbox('digital-terrain-model.png', 'Digital Terrain Model (DTM)')">
-                <img src="digital-terrain-model.png" alt="Digital Terrain Model (DTM)" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <img src="digital-terrain-model.png" alt="Digital Terrain Model (DTM)" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-bold gap-1.5">
                   🔍 Vollbild öffnen
                 </div>
@@ -533,7 +542,7 @@
             </div>
           </div>
 
-          <!-- GESAMT-DOKUMENTATION, FLYER DOWNLOAD & BERATUNGS-BUTTON (Mit originalen PDF-Links) -->
+          <!-- GESAMT-DOKUMENTATION, FLYER DOWNLOAD & BERATUNGS-BUTTON -->
           <div class="mt-12 rounded-2xl border border-white/10 bg-graphite-900 p-6 md:p-8 space-y-6">
             <div>
               <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Offizielle Projekt- &amp; Informations-Dokumente</span>
@@ -768,8 +777,13 @@
 
         </div>
 
+        <!-- HINWEIS UNTER DEN PREISEN -->
+        <div class="mt-8 rounded-2xl border border-emerald-500/30 bg-emerald-500/5 p-5 text-center text-xs md:text-sm text-silver-200 max-w-3xl mx-auto leading-relaxed shadow-trust">
+          <strong class="text-white">Hinweis zur Durchführung:</strong> Die Durchführbarkeit wird vor der Beauftragung anhand von Einsatzort, Flugbedingungen und Wetter geprüft. Bei ungeeigneten Bedingungen vereinbaren wir einen Ersatztermin.
+        </div>
+
         <!-- KLEINUNTERNEHMER-HINWEIS -->
-        <div class="mt-8 text-center text-xs text-silver-400 max-w-3xl mx-auto leading-relaxed">
+        <div class="mt-6 text-center text-xs text-silver-400 max-w-3xl mx-auto leading-relaxed">
           Die angegebenen Preise sind Endpreise. Aufgrund der Kleinunternehmerregelung gemäß § 19 UStG wird keine Umsatzsteuer berechnet oder ausgewiesen. Eventuelle Anfahrtskosten und zusätzlicher Aufwand werden vor der Beauftragung vereinbart.
         </div>
 
@@ -1006,7 +1020,7 @@
 
           <details class="card rounded-2xl p-6">
             <summary class="cursor-pointer font-bold text-white text-base">Kann ich Sie auch als B2B-Fotograf oder für individuelle Wünsche buchen?</summary>
-            <p class="mt-4 leading-relaxed text-silver-300 text-sm">Absolut! Ob Medienagentur, Fotograf auf Suche nach einem lizenzierten Piloten oder private Sonderwünsche – ich arbeite flexibel und zuverlässig mit Ihnen zusammen.</p>
+            <p class="mt-4 leading-relaxed text-silver-300 text-sm">Absolut! Ob Medienagentur, Drohnenpilot mit EU-Kompetenznachweis oder private Sonderwünsche – ich arbeite flexibel und zuverlässig mit Ihnen zusammen.</p>
           </details>
         </div>
       </div>
@@ -1050,7 +1064,7 @@
   <div id="imageLightbox" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-4 md:p-8" onclick="closeLightbox()">
     <div class="relative max-w-7xl max-h-full flex flex-col items-center" onclick="event.stopPropagation()">
       <button onclick="closeLightbox()" class="absolute -top-12 right-0 text-white bg-white/10 hover:bg-white/20 rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold transition-colors">✕</button>
-      <img id="lightboxImg" src="" alt="" class="max-h-[85vh] max-w-full object-contain rounded-xl border border-white/20 shadow-2xl">
+      <img id="lightboxImg" src="" alt="" class="max-h-[85vh] max-w-full object-contain rounded-xl border border-white/20 shadow-2xl" loading="lazy">
       <p id="lightboxCaption" class="mt-3 text-silver-300 text-xs md:text-sm font-semibold text-center"></p>
     </div>
   </div>
@@ -1117,7 +1131,7 @@
       } else if (consent === 'accepted') {
         loadAnalytics();
       } else if (consent === 'declined') {
-        window['ga-disable-G-WX8T0EG0SH'] = true;
+        disableAnalytics();
       }
     }
 
@@ -1130,12 +1144,13 @@
     function declineCookies() {
       localStorage.setItem('cookieConsent', 'declined');
       document.getElementById('cookieBanner').style.display = 'none';
-      window['ga-disable-G-WX8T0EG0SH'] = true;
+      disableAnalytics();
     }
 
     function resetCookieConsent() {
       localStorage.removeItem('cookieConsent');
       document.getElementById('cookieBanner').style.display = 'block';
+      disableAnalytics();
     }
 
     window.addEventListener('DOMContentLoaded', checkCookieConsent);
