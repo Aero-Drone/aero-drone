@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutz | AERO-DRONE Köln</title>
+  <meta name="robots" content="noindex, follow">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { color: #eeeeee; background: #090a0b; font-family: Inter, system-ui, sans-serif; }
+    .glass { background: rgba(21,23,25,.86); border: 1px solid rgba(255,255,255,.11); backdrop-filter: blur(16px); }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between p-6 md:p-12">
+  <div class="max-w-3xl mx-auto w-full glass rounded-3xl p-8 md:p-12 shadow-2xl">
+    <a href="index.html" class="text-xs text-emerald-400 font-bold hover:underline mb-6 inline-block">← Zurück zur Startseite</a>
+    
+    <h1 class="text-3xl font-black text-white mb-6">Datenschutzerklärung</h1>
+    
+    <div class="space-y-6 text-sm text-silver-300 leading-relaxed">
+      <div>
+        <h2 class="font-bold text-white mb-1">1. Datenschutz auf einen Blick</h2>
+        <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
+      </div>
+
+      <div>
+        <h2 class="font-bold text-white mb-1">2. Verantwortlicher</h2>
+        <p>Verantwortlicher für die Datenverarbeitung auf dieser Website im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:<br>
+        Patrick Runkel<br>
+        AERO-DRONE Köln<br>
+        Waldstraße 68, 51145 Köln-Porz<br>
+        E-Mail: kontakt@aero-drone-koeln.de</p>
+      </div>
+
+      <div>
+        <h2 class="font-bold text-white mb-1">3. Erfassung von Daten auf unserer Website</h2>
+        <p><strong>Cookies:</strong> Unsere Website verwendet so genannte Cookies. Das sind kleine Textdateien, die auf Ihrem Endgerät gespeichert werden. Einige Cookies sind technisch notwendig, während andere (wie Google Analytics) erst nach Ihrer ausdrücklichen Einwilligung geladen werden.<br><br>
+        <strong>Google Analytics:</strong> Sofern Sie über unseren Cookie-Banner Ihre Einwilligung erteilen, nutzt diese Website Funktionen des Webanalysedienstes Google Analytics. Anbieter ist die Google Ireland Limited. Die Datenerfassung erfolgt erst nach aktiver Zustimmung (Opt-in). Sie können Ihre erteilte Einwilligung jederzeit widerrufen, indem Sie Ihre Browser-Daten löschen oder die Cookie-Einstellungen anpassen.</p>
+      </div>
+
+      <div>
+        <h2 class="font-bold text-white mb-1">4. Ihre Rechte</h2>
+        <p>Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie bei weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center text-xs text-silver-400 mt-8">
+    <p>© <span id="year"></span> Patrick Runkel · AERO-DRONE Köln</p>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
