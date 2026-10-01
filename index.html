@@ -360,7 +360,7 @@
             </div>
           </div>
 
-          <!-- Unterer Bereich im Banner (Button "Ihre Projekte in 3D" ist weg, "Kostenlose Beratung anfordern" bleibt) -->
+          <!-- Unterer Bereich im Banner (ohne den oberen extra Button, dafür mit dem "Ihre Projekte in 3D"-Button wiederhergestellt) -->
           <div class="p-5 md:p-8 bg-graphite-950/95 border-t border-white/10 flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div>
               <span class="text-xs font-black uppercase tracking-widest text-emerald-400">· Referenz Gewerbeobjekt</span>
@@ -372,19 +372,19 @@
               <h3 class="text-xl md:text-3xl font-black text-white mt-1">Rolladen Handel Porz</h3>
               <p class="text-xs md:text-sm text-silver-300 mt-1">Ferdinand-Porsche-Str. 18 · 51149 Köln-Porz</p>
             </div>
-            <div>
-              <a href="#kontakt" class="rounded-full bg-emerald-500 px-6 py-3 text-xs font-extrabold text-black hover:bg-emerald-400 transition-colors shadow-soft inline-block">
-                Kostenlose Beratung anfordern
+            <div class="flex flex-wrap gap-3">
+              <a href="#direkteinstieg" class="rounded-full bg-white/10 border border-white/20 px-5 py-2.5 text-xs font-extrabold text-white hover:bg-white/20 transition-colors">
+                Ihre Projekte in 3D
               </a>
             </div>
           </div>
 
-          <!-- 6 BILDER GRID FÜR PROJEKT 1 -->
+          <!-- 6 BILDER GRID FÜR PROJEKT 1 (MIT DEM 3D-MODELL IN KACHEL 1) -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
             
             <div class="card rounded-2xl p-4">
               <div class="overflow-hidden rounded-xl aspect-video mb-3 relative flex items-center justify-center border border-white/10" style="background: radial-gradient(circle, #1a1d21 0%, #060708 100%);">
-                <!-- Optimierter model-viewer mit Lade-Attribut und fester Mindesthöhe für Mobile & Desktop -->
+                <!-- Interaktiver 3D-Model-Viewer für das .glb-Modell -->
                 <model-viewer 
                   src="odm_textured_model_geo.glb" 
                   alt="3D-Modell Rolladen Handel Porz" 
@@ -670,7 +670,7 @@
 
             <a href="#schaden" class="group relative rounded-2xl border border-white/10 bg-white/[0.03] p-5 text-left transition-all duration-300 hover:border-emerald-500/60 hover:bg-white/[0.07] hover:-translate-y-1 hover:shadow-trust">
               <div class="flex items-center justify-between mb-4">
-                <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-2xl border border-emerald-500/20">🌪️️</span>
+                <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-2xl border border-emerald-500/20">🌪️</span>
                 <span class="text-silver-400 text-xs font-bold group-hover:text-emerald-400">→</span>
               </div>
               <p class="font-bold text-white text-base">Sturmschaden</p>
