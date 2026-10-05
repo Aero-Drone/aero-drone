@@ -385,15 +385,16 @@
             
             <div class="card rounded-2xl p-4">
               <div class="overflow-hidden rounded-xl aspect-video mb-3 relative flex items-center justify-center border border-white/10" style="background: radial-gradient(circle, #1a1d21 0%, #060708 100%);">
-                <!-- Interaktiver 3D-Model-Viewer für das .glb-Modell -->
+                <!-- Interaktiver 3D-Model-Viewer (verbesserte Bedienbarkeit, weicher Zoom und angepasste Startperspektive) -->
                 <model-viewer 
                   src="odm_textured_model_geo.glb" 
                   alt="3D-Modell Rolladen Handel Porz" 
-                  auto-rotate 
                   camera-controls 
+                  interaction-prompt="auto"
+                  touch-action="pan-y"
                   shadow-intensity="2" 
                   exposure="1.15"
-                  camera-orbit="45deg 55deg 2.5m"
+                  camera-orbit="30deg 60deg 2.2m"
                   loading="eager"
                   style="width: 100%; height: 100%; min-height: 240px;">
                 </model-viewer>
@@ -495,7 +496,7 @@
               <div class="space-y-3 pt-2">
                 <div class="flex items-center justify-between border-b border-white/10 pb-2.5">
                   <span class="text-sm text-silver-200">Dachgrundrissfläche (Objekt RHP)</span>
-                  <span class="font-bold text-emerald-400 text-sm">566,78 m² Gesamt (452,91 + 113,87)</span>
+                  <span class="font-bold text-emerald-400 text-sm">566,78 m² Gesamt (452,91 + 113,87)[cite: 1]</span>
                 </div>
                 <div class="flex items-center justify-between border-b border-white/10 pb-2.5">
                   <span class="text-sm text-silver-200">Gesamtes erfasstes Areal</span>
@@ -503,7 +504,7 @@
                 </div>
                 <div class="flex items-center justify-between border-b border-white/10 pb-2.5">
                   <span class="text-sm text-silver-200">Auflösung (GSD)</span>
-                  <span class="font-bold text-emerald-400 text-sm">0,47 cm / Pixel</span>
+                  <span class="font-bold text-emerald-400 text-sm">0,47 cm / Pixel[cite: 3]</span>
                 </div>
                 <div class="flex items-center justify-between border-b border-white/10 pb-2.5">
                   <span class="text-sm text-silver-200">Skalierung &amp; Referenz</span>
@@ -511,7 +512,7 @@
                 </div>
                 <div class="flex items-center justify-between">
                   <span class="text-sm text-silver-200">Auswertung</span>
-                  <span class="font-bold text-emerald-400 text-sm">Photogrammetrie &amp; Orthofoto</span>
+                  <span class="font-bold text-emerald-400 text-sm">Photogrammetrie &amp; Orthofoto[cite: 1]</span>
                 </div>
               </div>
               <p class="text-[11px] text-silver-400 leading-relaxed pt-2 border-t border-white/10">
@@ -551,7 +552,7 @@
             </div>
           </div>
 
-          <!-- WIEDERHERGESTELLTE PDF-DOWNLOAD- & ANSICHTS-SEKTION -->
+          <!-- PDF-DOWNLOAD- & ANSICHTS-SEKTION -->
           <div class="mt-12 rounded-2xl border border-white/10 bg-graphite-900 p-6 md:p-8 space-y-6">
             <div>
               <span class="text-xs font-black uppercase tracking-widest text-emerald-400">Offizielle Projekt- &amp; Informations-Dokumente</span>
@@ -562,11 +563,11 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
-              <!-- Aufmaß-Bericht (Wieder da!) -->
+              <!-- Aufmaß-Bericht -->
               <div class="rounded-xl border border-white/15 bg-black/40 p-4 flex flex-col justify-between gap-4">
                 <div>
                   <span class="text-[10px] font-extrabold uppercase bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-full">Kern-Dokument</span>
-                  <h6 class="font-bold text-white text-sm mt-2">Dachaufmaß & photogrammetrische Bestandsdokumentation (PDF)</h6>
+                  <h6 class="font-bold text-white text-sm mt-2">Dach- &amp; Gebäudeaufmaß (PDF)</h6>
                   <p class="text-xs text-silver-300 mt-1">Inkl. Maßstab 1:250, Teilflächen &amp; Dokumentation der Kontrollmessungen.</p>
                 </div>
                 <div class="flex gap-2">
@@ -1034,6 +1035,16 @@
           <details class="card rounded-2xl p-6">
             <summary class="cursor-pointer font-bold text-white text-base">Kann ich Sie auch als B2B-Fotograf oder für individuelle Wünsche buchen?</summary>
             <p class="mt-4 leading-relaxed text-silver-300 text-sm">Ja. Ich unterstütze Fotografen und Medienagenturen als Drohnenpilot mit EU-Kompetenznachweis. Auch individuelle private Projekte bespreche ich gerne mit Ihnen.</p>
+          </details>
+
+          <details class="card rounded-2xl p-6">
+            <summary class="cursor-pointer font-bold text-white text-base">Muss für die Drohnen-Inspektion ein Gerüst aufgebaut werden?</summary>
+            <p class="mt-4 leading-relaxed text-silver-300 text-sm">Nein, überhaupt nicht. Genau darin liegt der große Vorteil: Die Befliegung erfolgt komplett berührungslos und aus der Luft. Es werden weder teure Gerüste noch Hebebühnen oder Kletterausrüstung benötigt, wodurch wertvolle Zeit und Kosten gespart werden.</p>
+          </details>
+
+          <details class="card rounded-2xl p-6">
+            <summary class="cursor-pointer font-bold text-white text-base">Was passiert bei schlechtem Wetter am Aufnahmetermin?</summary>
+            <p class="mt-4 leading-relaxed text-silver-300 text-sm">Sicherheit und optimale Bildqualität stehen an erster Stelle. Bei starkem Regen, Sturm oder dichten Nebelbedingungen kann nicht geflogen werden. In diesem Fall kontaktiere ich Sie rechtzeitig, und wir vereinbaren unkompliziert einen zeitnahen Ersatztermin.</p>
           </details>
 
           <details class="card rounded-2xl p-6">
